@@ -1,0 +1,312 @@
+---
+#subtitle: "UNIVERSIDAD BERNARDO O’HIGGINS FACULTAD DE INGENIERÍA, CIENCIA Y TECNOLOGIA ESCUELA DE INGENIERÍA CIVIL INDUSTRIAL"
+title: "Propuesta de mejora de tiempo en proceso de gestión y control de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON"
+subtitle: "ANTEPROYECTO PARA SEMINARIO DE TITULO PARA LA OBTENCIÓN DEL TITULO INGENIERO CIVIL INDUSTRIAL"
+author: "Felipe Kiefer"
+date: '\today'
+output:
+  #html_document:
+  #  theme: united
+  #  highlight: tango
+  #  toc: true
+  #  toc_float: false
+  #  toc_depth: 2
+  #  number_sections: true
+  officedown::rdocx_document:
+    reference_docx: template.docx
+    tables:
+      style: Table
+      layout: autofit
+      width: 1.0
+      caption:
+        style: Table Caption
+        pre: 'Table '
+        sep: ': '
+      conditional:
+        first_row: true
+        first_column: false
+        last_row: false
+        last_column: false
+        no_hband: false
+        no_vband: true
+    plots:
+      style: Normal
+      align: center
+      caption:
+        style: Image Caption
+        pre: 'Figure '
+        sep: ': '
+    lists:
+      ol.style: null
+      ul.style: null
+    mapstyles:
+      Normal: ['First Paragraph', 'Author', 'Date']
+    page_margins:
+      bottom: 1.28
+      top: 1.38
+      right: 1.18
+      left: 1.28
+      header: 0
+      footer: 0
+      gutter: 0
+    reference_num: true
+bibliography: biblio.bib
+csl: apa.csl
+lang: es-MX
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.cap = TRUE)
+library(officedown)
+library(officer)
+source('~/R/tesis/bbdd.R')
+```
+\newpage
+<style>
+body {
+text-align: justify}
+</style>
+
+# Nombre del seminario
+:ropuesta de mejora del proceso de gestión y control de inventario, mediante la implementación de WMS, para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON.
+
+# Fundamentos
+
+## antecedentes, situación actual mercado automóvil
+
+El inicio de la pandemia del COVID-19 a afectado la venta de automóvil, el primer semestre del año 2020 hubo una reducción en la compra de vehículos livianos y medianos. la figura \@ref(fig:vauto) presenta las ventas del mercado automotor de livianos y medianos, realizado por Asociación Nacional Automotriz de Chile (ANAC).
+
+```{r echo=FALSE, fig.cap='Ventas mensuales a publico del mercado de livianos y medianos',fig.id="vauto"}
+ptl1
+```
+Se puede observar un aumento en el consumo desde el segundo semestre del 2020, ademas el parque de automotriz se acelera y rozará los 5,5 millones de unidades este año. Esto en un contexto de mayor liquidez por los retiros del 10% de las AFP y también del uso de vehículos para actividades laborales como las de reparto y servicios de movilización privada [@mercu]. En consecuencia se espera un aumento en la demanda de los servicios de mantenimiento y reparación automotriz lo cual es el servicio que entrega Duarcon.
+
+## Descripción del taller
+
+```{r echo= FALSE}
+area.nuevo=27*9
+area.viejo=19*22
+
+area.total.almacen=area.nuevo+area.viejo
+
+lado= 11+8+27
+base= 44
+yapa= (65-lado)*base/2
+area= lado*base+yapa
+
+```
+
+Duarcon.Ltda es una pequeña empresa dedicada la reparación mecánica y eléctrica automotriz, su mercado objetivo es el vehículo mediano, esta ubicada en la comuna de Quilicura, el taller cuenta con una plantilla 5 trabajadores (1 administrador, 4 mecánicos), estructurados tal como muestra la figura \@ref(fig:estruc). El modelo de proceso del servicio se realiza como muestra la figura \@ref(fig:bpmn).
+
+```{r echo=FALSE, fig.cap='Estructura organizacional', fig.id='estruc', fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Diagram1.png")
+```
+
+```{r echo=FALSE,fig.cap='BPMN de servicio reparación', fig.id='bpmn', out.width = '100%',fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Duarcon-1.0.png")
+```
+
+Cuenta con una plaza total de `r area` ft^2^ con capacidad de 6 vehículos y distribución orientada al proceso (véase \@ref(fig:layout)).
+
+```{r echo=FALSE,fig.cap='layout taller', fig.id='layout', fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/plan.png")
+```
+
+## justificación
+
+justifique la realización de este proyector
+
+Hasta el primer semestre el almacén era de `r area.viejo` ft^2^, en el segundo semestre realiza una ampliación del área de almacén de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén, la figura \@ref(fig:layout) muestra un plano de la distribución del taller.
+
+
+**formulario**
+
+con respecto a la ampliación el dueño señala que **"la ampliación del almacén es por que quiero comenzar a vender neumáticos, y también es por que ya no me cae nada mas en la bodega que tenia"**, (véase \@ref(tab:resu)) cabe señalar que no existe una herramienta de sistema de gestión de inventario en el almacén, por lo que también explica que **"No se lo que tengo, cuanto tengo, donde lo tengo, lo que hago es ordenar los productos por marca de vehículo (en el caso de filtros) o ordenar según su código (disco y pastilla de frenos), pero igual se me pierden productos que los encuentro después cuando ya no los necesito, cuando ya compre a un minorista por un precio mayor que mi proveedor"**
+
+Con respecto a lo anterior, analizaremos el inventario existente, la variedad de producto es de `r lng.ttl.prod` y una cantidad total de stock de `r sm.total.in`, clasificado según el tipo de repuesto y un **costo aproximado** de $`r #costo` pesos. Para resumir el stock existente continuación se presenta la distribución de frecuencia de cantidad agrupado según su clasificación
+
+```{r echo=FALSE,tab.cap="Resumen de existencias", tab.id="inventario", tab.id="resu"}
+res.prd
+```
+```{r echo=FALSE,fig.cap="Histograma, resumen de existencias", fig.id="inventario", fig.id="resu"}
+plt.rsmn.prd
+```
+
+## porque es importante este proyecto
+
+Para entender la importancia del inventario, y por que de enfocarse en ello, se señala que "el inventario es uno de los activos más costosos de muchas compañías, llega a representar hasta un 50% del capital total invertido.[...] Por un lado, una empresa puede reducir sus costos al disminuir el inventario" [@heizer2009principios, pp. 484], ademas "la sola permanencia de este inventario está generando un sin número de costos asociados" [@salas2009inventarios, pp. XVI].
+
+## cual es la problemática que intenta solucionar
+
+Obtenidos los datos, se puede señalar que la problemática es de tipo metodológico (que implican un método o proceso estricto para ser solucionados), e involucra al proceso completo desde la entrada hasta la salida de stock, evidenciando la falta de control del inventario. 
+
+"Las buenas políticas de inventarios pierden sentido si la administración no sabe qué hay disponible en su inventario" [@heizer2009principios, pp. 486]. En consecuencia este sera la problemática a solucionar. Para la presente proyecto el objetivo es **mejorar** la gestión de inventario actual de Duarcon con respecto a la rapidez de y solides de la información, para ello se propone implementar una herramienta tecnológica en especifico un software, capas de registrar, controlar y entregar métodos, técnicas que otorguen al administrador capacidad de tomar decisiones concretas acerca de pedidos.
+
+## por que este proyecto y no otro
+
+La realización de este proyecto es importante debido a que "Sólo cuando la organización puede determinar con exactitud qué está disponible es capaz de tomar decisiones concretas acerca de pedidos, programación y embarque", "La exactitud de los registros permite a las organizaciones enfocarse en aquellos artículos que son más necesarios, en vez de tener la seguridad de que “algo de todo” está en inventario" [@heizer2009principios, pp. 486]. Por lo que se puede inferir que de haber existido un sistema gestión de inventario, correcto con exactitud en los registros, habría desechado el costo de oportunidad de realizar de la ampliación de almacén por utilizar ese espacio en otra estación de reparación.
+
+# Objetivo general:
+Proponer mejora en el control de inventario del área de almacén, mediante la implementación de métodos, herramientas y técnicas que contribuyan en la gestión y control logístico del almacén con la finalidad de proporcionar información suficiente para una solida toma de decisiones.
+
+## Objetivos Específicos
+
+* Identificar situación actual, estructurar el proceso de gestión de inventario (BPM, Business Process Management).
+* Intervenir el almacén para ajustar a los requerimientos del nuevo sistema (Clasificar ubicaciones).
+* Modelar el proceso completo de gestión en la base de datos.
+* Inventariar el almacén e ingresar la información en la base de datos.
+* Analizar la información para integrar métodos de clasificación y control de inventario.
+* Construir un software de gestión de inventario para registrar entrada, salidas y posicionamiento de stock.
+* implementar software y evaluar experiencia.
+
+# Metodología
+
+### Tipo de estudio.
+El tipo de investigación sera **descriptivo**, porque describe la problemática actual que atraviesa la bodega del taller por la falta de un sistema de inventario, ademas de **exploratoria** porque permite participación, para posteriormente obtener los datos suficientes.
+
+### Método de investigación.
+Los métodos utilizados en la presente investigación son:
+
+**Metodología explicativa:** Se realizara una técnica explicativa que consiste en buscar el por qué de los hechos mediante el establecimiento de relaciones causa-efecto.
+
+**Metodología descriptiva:** Los datos son obtenidos directamente del proceso, la información es recopilada a través de la observación mientras se realizan las actividades de manera normal, ademas se realizará una entrevista al personal, acerca de la experiencia de la mejora de proceso.
+
+### Fuentes y técnicas para la recolección de información.
+#### Fuentes Primarias.
+Para la recolección de la información se usará la técnica de **observación directa**, la cual consiste en observar, y medir atentamente las actividades laborales que se realizan en la Bodega del Taller. Esto se realizará sin obstaculizar ni intervenir en el ambiente de trabajo para que la recolección de datos sea veraz. Después se realizará una entrevista al personal de la bodega, en donde se hará una serie de preguntas las cuales, con base a las respuestas del personal,
+serán tabuladas para detectar las áreas con problemas, para que sean analizadas y a su vez desarrollar una posible solución.
+
+#### Fuentes Secundarias.
+Otro método para la recolección de datos, ya inventariado se revisara el comportamiento del stock, ubicación, clasificación, ademas se solicitara el acceso a datos de recepción y despacho, esto para generar información útil para el desarrollo de la presente propuesta.
+
+### Tratamiento de la información.
+La información resultante del proceso de investigación será procesada, analizada utilizando las distintas herramientas de  **TQM** (Total Quality Management; administración de la calidad total), para identificar y priorizar en las principales causas que originan el problema a tratar durante el desarrollo de la presente propuesta. A continuación, se mencionarán algunas herramientas que se utilizarán en la investigación:
+
+#### Análisis causa – efecto:
+Para identificar problemas de calidad y puntos de inspección el diagrama de
+causa y efecto, también es conocido como diagrama de Ishikawa o diagrama de espina de pescado. ilustra un diagrama de este tipo (observe que la forma es parecida al esqueleto de un pez)
+para un problema cotidiano de control de calidad. Cada “hueso” representa
+una fuente posible de error (@heizer2009principios, pp. 205).
+
+#### Diagrama de Pareto:
+Las gráficas de Pareto son un método empleado para organizar errores, problemas o defectos, con el
+propósito de ayudar a enfocar los esfuerzos para encontrar la solución de problemas. Tienen como
+base el trabajo de Vilfredo Pareto, un economista del siglo XIX. Joseph M. Juran popularizó el trabajo
+de Pareto cuando sugirió que el 80% de los problemas de una empresa son resultado de sólo un
+20% de causas (@heizer2009principios, pp. 206).
+
+### Diagrama de flujo
+Los diagramas de flujo presentan gráficamente un proceso o sistema utilizando cuadros y líneas
+conectadas. Son sencillos, pero excelentes cuando se busca explicar un proceso o se
+pretende que tenga sentido [@heizer2009principios, pp. 207].
+
+# Alcance
+Este proyecto propone **mejorar el proceso de gestión de inventario de almacén**, para ello se analizara la situación actual del almacén, para hacer visibles los problemas de un sistema incapaz de responder a las necesidades del taller, y los costos que acarrea, por lo que se tendrá acceso a registros de recepción y despacho durante el periodo 2020 2021, ademas del stock existente, ademas se intervendrá con señaleticas los estantes de la bodega.
+
+# Estructura
+La estructura sería preliminarmente de la siguiente manera:
+
+1. Título.
+2. Dedicatoria.
+3. Agradecimientos.
+4. Índice de contenido.
+5. Índice de tablas y figuras.
+6. Resumen.
+7. Introducción.
+8. Objetivos.
+9. Objetivo general.
+10. Objetivos específicos.
+11. Marco teórico.
+12. Metodología.
+13. Resumen capitular.
+14. Desarrollo del trabajo.
+15. Conclusiones y/o recomendaciones.
+16. Bibliografía.
+17. Anexos.
+
+# Carta Gantt
+La figura \@ref(fig:gantt) presenta la planificación de elaboración del proyecto propuesto.
+
+```{r echo=FALSE, fig.cap="Planificación desarrollo proyecto", fig.id='gantt'}
+gantt1
+```
+
+\newpage
+# Nombre del(los) memorista(s)
+Nombre:     Felipe Kiefer
+
+Rut:        17.414.046-4
+
+Firma
+
+## Profesor Guía
+
+Nombre:
+
+Rut:
+
+Firma
+
+## Malla Curricular
+
+Malla año 2010
+
+\newpage
+
+
+Para la temática de mejora de proceso se utilizara como guía preliminar el libro de principios de administración de operaciones de Jay Heizer y Barry Render, para posterior conocer metodologias que podrian ser aplicadas por lo que se escojera la mas apta debido segun requerimientos, estas serán analizadas en la en el capitulo III referente a metodologia
+
+### Estrategia de proceso
+
+Una estrategia del proceso (o de transformación) es el enfoque adoptado por una organización para transformar los recursos en bienes y servicios. El objetivo de una estrategia del proceso es encontrar la forma de producir bienes y servicios que cumplan con los requerimientos del cliente y las especificaciones del producto en cuanto a costos y otras restricciones de la administración. El proceso seleccionado tendrá un efecto a largo plazo sobre la eficiencia y flexibilidad de la producción, así como sobre el costo y la calidad de los bienes producidos. Por lo tanto, gran parte de la estrategia de operaciones de una empresa se determina en el momento de tomar esta decisión sobre el proceso.
+
+A continuación se presenta la figura \@ref(fig:str_proc) que gráfica la decisión de estrategia de proceso según volumen y a la variedad de salida del proceso, para este caso es relacionado con el inventario, como se indicaba en la figura \@ref(fig:inventario) el inventario es variado y bajo por cada tipo de producto, en consecuncia cumple con la estrategia de **enfoque en el proceso**
+
+```{r echo=FALSE,fig.cap='El proceso seleccionado debe ajustarse al volumen y a la variedad', fig.id='str_proc', out.width = '50%',fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-10-31 21-40-03.png")
+```
+
+Con la ayuda de gráfica de cruce, la comparación de procesos puede mejorar aún más si se observa el punto donde cambia el costo total del proceso. Por ejemplo, en la figura \@ref(fig:str_cruce) se muestran las tres alternativas de proceso en una sola gráfica. Se puede observar que se atribuye un alto costo variable para alta variedad y bajo volumen el costo.
+
+```{r echo=FALSE,fig.cap='Costo asociado a volumen y a la variedad', fig.id='str_cruce', out.width = '50%',fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-01 11-11-14.png")
+```
+
+### Analisis y diseño de proceso
+
+Cuando se analizan y diseñan procesos de transformación de recursos en bienes y servicios, surgen
+preguntas como las siguientes:
+
+* ¿El proceso está diseñado para lograr una ventaja competitiva en términos de diferenciación,
+respuesta o bajo costo?
+* ¿El proceso elimina pasos que no agregan valor?
+* ¿El proceso maximiza el valor para el cliente según lo percibe el cliente?
+* ¿El proceso permitirá obtener pedidos?
+
+Algunas herramientas nos ayudan a entender las complejidades del diseño y rediseño del proceso. Son
+formas sencillas de hacer que tenga sentido lo que sucede o debe suceder en un proceso. Revisaremos
+cinco de estas herramientas:
+
+* diagramas de flujo
+* gráfica de la función tiempo
+* gráfica del flujo de valor
+* diagramas del proceso
+* diseño preliminar del servicio.
+
+### Seleccion de equipo y tecnologia
+
+Por último, tomar decisiones acerca de un proceso en particular requiere decisiones con respecto al equipo y la tecnología. La elección del mejor equipo significa comprender una industria específica y los procesos y tecnologías disponibles para su desarrollo. La selección del equipo idóneo para desarrollar un tipo de proceso en particular también proporciona una ventaja competitiva. Esta ventaja puede dar como resultado mayor flexibilidad para satisfacer los requerimientos del cliente, menor costo o calidad más alta. Las innovaciones y la modificación del equipo también pueden propiciar un proceso de producción más estable que necesite menos ajustes, mantenimiento, y capacitación del operario.
+
+La tecnología moderna también permite que los administradores de operaciones amplíen el alcance de sus procesos. Como resultado, un atributo que es importante buscar en la selección de nuevos equipos y procesos es el de equipo flexible. La flexibilidad es la capacidad de responder con pocos recargos en tiempo, costo o valor para el cliente. Esto puede representar equipo modular, móvil y hasta económico.
+
+### Control del proceso
+
+El control del proceso es el uso de tecnología de la información para monitorear y controlar un
+proceso físico. Por ejemplo, el control del proceso se utiliza para medir el contenido de humedad y
+el grosor del papel mientras éste recorre una máquina de papel a miles de pies por minuto. El control
+del proceso también se usa para determinar y controlar temperaturas, presiones y cantidades en refine-
+rías de petróleo, procesos petroquímicos, plantas de cemento, laminadoras de acero, reactores
+nucleares y otras instalaciones enfocadas en el producto.
+
+
+# Referencias

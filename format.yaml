@@ -1,0 +1,9 @@
+---
+  title: "Propuesta de mejora de proceso de gestión de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON Propuesta de mejora de tiempo en el proceso de despacho de repuesto, optimizando inventario, medieante el uso de WMS para el área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON"
+
+  subtitle: "Trabajo de titulación presentado en conformidad a los requisitos para obtener el Titulo de Ingueniero Civil Industrial TESIS PARA TITULO PARA LA OBTENCIÓN DEL TITULO INGENIERO CIVIL INDUSTRIAL"
+  author: "Felipe Kiefer"
+  date: \today
+  output:
+    pdf_document
+---
