@@ -12,30 +12,32 @@ library(ganttrify)
 library(data.table)
 library(bookdown)
 library(qcc)
+library(fdth)
 
 ## https://isci.cl/parque-de-autos-se-acelera-y-rozara-los-55-millones-de-unidades-este-ano/
 
 ##lapply(dbListConnections(MySQL()), dbDisconnect)
 
 #database----
-database<- dbConnect(MySQL(), user="root", host="127.0.0.1", password="pini", dbname="duarcon")
+  database<- dbConnect(MySQL(), user="root", host="127.0.0.1", password="pini", dbname="duarcon")
 
-query<- dbGetQuery(database,statement ="SELECT s.id,st.name,t.name as tipo,sum(q) as total FROM stock s
-inner join prod_st st on st.id=s.id
-inner join prod_tp t on t.id=st.tp
-group by id order by s.id;")
+# query----
+  query<- dbGetQuery(database,statement ="SELECT s.id,st.name,t.name as tipo,sum(q) as total FROM stock s
+  inner join prod_st st on st.id=s.id
+  inner join prod_tp t on t.id=st.tp
+  group by id order by s.id;")
 
-query.q.tipo<- dbGetQuery(database,statement = "SELECT t.name as tipo, sum(q) as total FROM stock s
-inner join prod_st st on st.id=s.id
-inner join prod_tp t on t.id=st.tp
-group by tipo;")
+  query.q.tipo<- dbGetQuery(database,statement = "SELECT t.name as tipo, sum(q) as total FROM stock s
+  inner join prod_st st on st.id=s.id
+  inner join prod_tp t on t.id=st.tp
+  group by tipo;")
 
-query.n.compra<- dbGetQuery(database,statement = "SELECT p.name as proveedor,count(p.name) as n_compra, sum(pc.total) as 'monto_total $' FROM puch_cost pc
-inner join prov p on p.id=pc.prov group by name order by n_compra desc limit 5;")
+  query.n.compra<- dbGetQuery(database,statement = "SELECT p.name as proveedor,count(p.name) as n_compra, sum(pc.total) as 'monto_total $' FROM puch_cost pc
+  inner join prov p on p.id=pc.prov group by name order by n_compra desc limit 5;")
 
-query.vnt<- dbGetQuery(database,statement = "SELECT prod_tp.name ,sum(q) as cantidad FROM duarcon.`vnt_tmp_` inner join prod_tp on vnt_tmp_.prd_tp = prod_tp.id WHERE name <> 'arriendo_vehiculo' group by prd_tp order by cantidad desc limit 10;")
 
-query.tipo<-dbGetQuery(database,statement = "SELECT * FROM prod_tp;")
+
+  query.tipo<-dbGetQuery(database, statement = "SELECT * FROM prod_tp;")
 
 #preparacion datos
 tip<- data.frame(query.tipo)
@@ -43,7 +45,7 @@ tip<- data.frame(query.tipo)
 # df----
 ## df vnt----
 
-df.vnt<-data.frame(query.vnt)
+
 
 este_mes<-format(Sys.time(), "%B %Y")
 
@@ -64,6 +66,17 @@ este_mes<-format(Sys.time(), "%B %Y")
 # ABC----
 query.vnt.abc<- dbGetQuery(database,statement = "SELECT prod_tp.id,prod_tp.name ,sum(q),sum(price),sum(q*price) as venta_total FROM duarcon.`vnt_tmp_` inner join prod_tp on vnt_tmp_.prd_tp = prod_tp.id where prod_tp.name <> 'arriendo_vehiculo' group by prod_tp.name order by venta_total desc;")
 
+query.vnt.abc
+
+
+cum_sales <- cumsum (query.vnt.abc$venta_total)
+
+cum_sales
+
+dist <- fdt(query.vnt.abc$venta_total,breaks="Sturges")
+
+dist
+
 df.vnt.abc.or<-data.frame(query.vnt.abc) 
 
 ee<-df.vnt.abc.or[order(-df.vnt.abc.or$venta_total),]
@@ -72,15 +85,19 @@ ee
 df.vnt.abc.or %>%
   mutate(acumulado= cumsum(venta_total))
 ### pareto----
-def<- c(df.vnt$cantidad)
-names(def) <- c(df.vnt$name)
+  query.vnt<- dbGetQuery(database,statement = "SELECT prod_tp.name ,sum(q) as cantidad FROM duarcon.`vnt_tmp_` inner join prod_tp on vnt_tmp_.prd_tp = prod_tp.id WHERE name <> 'arriendo_vehiculo' group by prd_tp order by cantidad desc limit 10;")
+  df.vnt<-data.frame(query.vnt)
 
-pare <- pareto.chart(def, xlab = "Categories",
-  ylab="Frequency",
-  col=heat.colors(length(def)),
-  cumperc = seq(0, 100, by = 10),
-  ylab2 = "Cumulative Percentage",
-  main = "Pareto")
+  def<- c(df.vnt$cantidad)
+  def
+  names(def) <- c(df.vnt$name)
+
+  pare <- pareto.chart(def, xlab = "Categories",
+    ylab="Frequency",
+    col=heat.colors(length(def)),
+    cumperc = seq(0, 100, by = 10),
+    ylab2 = "Cumulative Percentage",
+    main = "Pareto")
 
 ### covid----
 #query.covid<-dbGetQuery(database,statement = "SELECT Nacional.DATE_FORMAT(Fecha,'%y %b') as mes , Nacional.sum(TotalesNacionales_T.`Casos nuevos con sintomas`) FROM  Nacional.`TotalesNacionales_T` GROUP BY mes;")
