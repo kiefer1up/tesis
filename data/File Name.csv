@@ -1,0 +1,686 @@
+"id","name","tipo","total"
+2,"D_BRAKE","Accesorios",10
+3,"PF-63404-PM","Accesorios",1
+4,"PF-14406-GTX","Accesorios",2
+5,"D BRAKE","Accesorios",1
+6,"PF-DP-714-PM","Accesorios",3
+7,"D BRAKE","Accesorios",3
+8,"D BRAKE","Accesorios",1
+9,"D BRAKE","Accesorios",1
+10,"D BRAKE","Accesorios",3
+11,"D BRAKE","Accesorios",3
+12,"D BRAKE","Accesorios",3
+13,"D BRAKE","Accesorios",1
+14,"D BRAKE","Accesorios",4
+15,"D BRAKE","Accesorios",4
+16,"P BRAKE","Aceite",1
+17,"D BRAKE","Accesorios",1
+18,"P BRAKE","Aceite",1
+19,"P BRAKE","Aceite",1
+20,"P BRAKE","Aceite",3
+21,"P BRAKE","Aceite",2
+22,"P BRAKE","Aceite",2
+23,"P BRAKE","Aceite",1
+24,"P BRAKE","Aceite",1
+25,"P BRAKE","Aceite",1
+26,"P BRAKE","Aceite",2
+27,"P BRAKE","Aceite",1
+28,"P BRAKE","Aceite",2
+29,"P BRAKE","Aceite",25
+30,"P BRAKE","Aceite",1
+31,"P BRAKE","Aceite",8
+32,"P BRAKE","Aceite",4
+33,"P BRAKE","Aceite",2
+34,"P BRAKE","Aceite",1
+35,"P BRAKE","Aceite",8
+36,"P BRAKE","Aceite",17
+37,"P BRAKE","Aceite",2
+38,"P BRAKE","Aceite",2
+39,"P BRAKE","Aceite",7
+40,"P BRAKE","Aceite",6
+41,"P BRAKE","Aceite",4
+42,"P BRAKE","Aceite",3
+43,"P BRAKE","Aceite",2
+44,"P BRAKE","Aceite",4
+45,"P BRAKE","Aceite",2
+46,"P BRAKE","Aceite",1
+47,"P BRAKE","Aceite",5
+48,"P BRAKE","Aceite",3
+49,"P BRAKE","Aceite",3
+50,"P BRAKE","Aceite",5
+51,"P BRAKE","Aceite",1
+52,"P BRAKE","Aceite",5
+53,"P BRAKE","Aceite",3
+54,"P BRAKE","Aceite",1
+55,"P BRAKE","Aceite",1
+56,"P BRAKE","Aceite",1
+57,"P BRAKE","Aceite",7
+58,"P BRAKE","Aceite",1
+59,"P BRAKE","Aceite",6
+60,"P BRAKE","Aceite",4
+61,"P BRAKE","Aceite",2
+62,"P BRAKE","Aceite",1
+63,"P BRAKE","Aceite",1
+64,"P BRAKE","Aceite",1
+65,"P BRAKE","Aceite",2
+66,"P BRAKE","Aceite",4
+67,"P BRAKE","Aceite",2
+68,"P BRAKE","Aceite",1
+69,"P BRAKE","Aceite",1
+70,"P BRAKE","Aceite",1
+71,"P BRAKE","Aceite",1
+72,"P BRAKE","Aceite",1
+73,"P BRAKE","Aceite",2
+74,"P BRAKE","Aceite",6
+75,"P BRAKE","Aceite",1
+76,"P BRAKE","Aceite",6
+77,"P BRAKE","Aceite",3
+78,"P BRAKE","Aceite",2
+79,"P BRAKE","Aceite",9
+80,"P BRAKE","Aceite",1
+81,"P BRAKE","Aceite",1
+82,"P BRAKE","Aceite",1
+83,"P BRAKE","Aceite",1
+84,"P BRAKE","Aceite",4
+85,"P BRAKE","Aceite",1
+86,"P BRAKE","Aceite",2
+87,"P BRAKE","Aceite",1
+88,"P BRAKE","Aceite",5
+89,"P BRAKE","Aceite",1
+90,"P BRAKE","Aceite",1
+91,"P BRAKE","Aceite",6
+92,"P BRAKE","Aceite",6
+93,"P BRAKE","Aceite",2
+94,"P BRAKE","Aceite",2
+95,"P BRAKE","Aceite",3
+96,"P BRAKE","Aceite",2
+97,"P BRAKE","Aceite",4
+98,"P BRAKE","Aceite",1
+99,"P BRAKE","Aceite",1
+100,"P BRAKE","Aceite",5
+101,"P BRAKE","Aceite",2
+102,"P BRAKE","Aceite",1
+103,"P BRAKE","Aceite",4
+104,"P BRAKE","Aceite",2
+105,"P BRAKE","Aceite",2
+106,"P BRAKE","Aceite",3
+107,"P BRAKE","Aceite",3
+108,"P BRAKE","Aceite",1
+109,"P BRAKE","Aceite",3
+110,"P BRAKE","Aceite",6
+111,"P BRAKE","Aceite",3
+112,"P BRAKE","Aceite",1
+113,"P BRAKE","Aceite",2
+114,"P BRAKE","Aceite",3
+115,"P BRAKE","Aceite",3
+116,"P BRAKE","Aceite",1
+117,"P BRAKE","Aceite",4
+118,"P BRAKE","Aceite",3
+119,"P BRAKE","Aceite",5
+120,"P BRAKE","Aceite",1
+121,"P BRAKE","Aceite",2
+122,"P BRAKE","Aceite",2
+123,"P BRAKE","Aceite",2
+124,"P BRAKE","Aceite",4
+125,"P BRAKE","Aceite",1
+126,"P BRAKE","Aceite",2
+127,"P BRAKE","Aceite",11
+128,"P BRAKE","Aceite",4
+129,"P BRAKE","Aceite",1
+130,"P BRAKE","Aceite",3
+131,"P BRAKE","Aceite",4
+132,"P BRAKE","Aceite",3
+133,"P BRAKE","Aceite",2
+134,"P BRAKE","Aceite",2
+135,"P BRAKE","Aceite",1
+136,"P BRAKE","Aceite",1
+137,"P BRAKE","Aceite",1
+138,"P BRAKE","Aceite",3
+139,"P BRAKE","Aceite",2
+140,"P BRAKE","Aceite",3
+141,"P BRAKE","Aceite",3
+142,"P BRAKE","Aceite",9
+143,"P BRAKE","Aceite",3
+144,"P BRAKE","Aceite",5
+145,"P BRAKE","Aceite",3
+146,"P BRAKE","Aceite",2
+147,"P BRAKE","Aceite",5
+148,"P BRAKE","Aceite",2
+149,"P BRAKE","Aceite",3
+150,"P BRAKE","Aceite",4
+151,"P BRAKE","Aceite",3
+152,"P BRAKE","Aceite",2
+153,"P BRAKE","Aceite",3
+154,"P BRAKE","Aceite",3
+155,"P BRAKE","Aceite",5
+156,"P BRAKE","Aceite",3
+157,"P BRAKE","Aceite",1
+158,"P BRAKE","Aceite",4
+159,"P BRAKE","Aceite",3
+160,"P BRAKE","Aceite",4
+161,"P BRAKE","Aceite",2
+162,"P BRAKE","Aceite",6
+163,"P BRAKE","Aceite",2
+164,"P BRAKE","Aceite",3
+165,"P BRAKE","Aceite",5
+166,"P BRAKE","Aceite",4
+167,"P BRAKE","Aceite",1
+168,"P BRAKE","Aceite",1
+169,"P BRAKE","Aceite",3
+170,"P BRAKE","Aceite",4
+171,"P BRAKE","Aceite",1
+172,"P BRAKE","Aceite",1
+173,"P BRAKE","Aceite",2
+174,"P BRAKE","Aceite",1
+175,"P BRAKE","Aceite",2
+176,"P BRAKE","Aceite",3
+177,"P BRAKE","Aceite",2
+178,"P BRAKE","Aceite",8
+179,"P BRAKE","Aceite",4
+180,"P BRAKE","Aceite",1
+181,"P BRAKE","Aceite",1
+182,"P BRAKE","Aceite",1
+183,"P BRAKE","Aceite",2
+184,"P BRAKE","Aceite",9
+185,"P BRAKE","Aceite",7
+186,"P BRAKE","Aceite",4
+187,"P BRAKE","Aceite",2
+188,"P BRAKE","Aceite",3
+189,"P BRAKE","Aceite",2
+190,"P BRAKE","Aceite",1
+191,"P BRAKE","Aceite",1
+192,"P BRAKE","Aceite",3
+193,"P BRAKE","Aceite",5
+194,"P BRAKE","Aceite",5
+195,"P BRAKE","Aceite",2
+196,"P BRAKE","Aceite",5
+197,"P BRAKE","Aceite",1
+198,"P BRAKE","Aceite",2
+199,"P BRAKE","Aceite",4
+200,"P BRAKE","Aceite",2
+201,"P BRAKE","Aceite",14
+203,"P BRAKE","Aceite",5
+204,"P BRAKE","Aceite",1
+205,"P BRAKE","Aceite",1
+206,"P BRAKE","Aceite",1
+207,"P BRAKE","Aceite",2
+208,"P BRAKE","Aceite",3
+209,"P BRAKE","Aceite",2
+210,"P BRAKE","Aceite",2
+211,"P BRAKE","Aceite",5
+212,"P BRAKE","Aceite",2
+213,"P BRAKE","Aceite",6
+214,"P BRAKE","Aceite",1
+215,"P BRAKE","Aceite",1
+216,"P BRAKE","Aceite",2
+217,"P BRAKE","Aceite",5
+218,"P BRAKE","Aceite",2
+219,"P BRAKE","Aceite",2
+220,"P BRAKE","Aceite",2
+221,"P BRAKE","Aceite",3
+222,"P BRAKE","Aceite",2
+223,"P BRAKE","Aceite",3
+224,"P BRAKE","Aceite",2
+225,"P BRAKE","Aceite",2
+226,"P BRAKE","Aceite",3
+227,"P BRAKE","Aceite",1
+228,"P BRAKE","Aceite",3
+229,"P BRAKE","Aceite",7
+230,"P BRAKE","Aceite",2
+231,"P BRAKE","Aceite",6
+232,"P BRAKE","Aceite",8
+233,"P BRAKE","Aceite",1
+234,"P BRAKE","Aceite",3
+235,"P BRAKE","Aceite",2
+236,"P BRAKE","Aceite",1
+237,"P BRAKE","Aceite",3
+238,"P BRAKE","Aceite",10
+239,"P BRAKE","Aceite",3
+240,"P BRAKE","Aceite",4
+241,"P BRAKE","Aceite",9
+242,"P BRAKE","Aceite",1
+243,"P BRAKE","Aceite",2
+244,"P BRAKE","Aceite",9
+245,"P BRAKE","Aceite",2
+246,"P BRAKE","Aceite",3
+247,"P BRAKE","Aceite",2
+248,"P BRAKE","Aceite",1
+249,"P BRAKE","Aceite",2
+250,"P BRAKE","Aceite",1
+251,"P BRAKE","Aceite",1
+252,"P BRAKE","Aceite",1
+253,"P BRAKE","Aceite",1
+254,"P BRAKE","Aceite",1
+255,"P BRAKE","Aceite",1
+256,"P BRAKE","Aceite",3
+257,"P BRAKE","Aceite",5
+258,"P BRAKE","Aceite",5
+259,"P BRAKE","Aceite",2
+260,"P BRAKE","Aceite",2
+261,"P BRAKE","Aceite",5
+262,"BOMBA ENCENDIDO CHEV N300 MAX 1.2","aceite_elemento",2
+264,"KIA RIO 2","Ampolletas",6
+265,"F AIRE KA MORNING 1.1","Ampolletas",4
+266,"F OIL W 713/34 D-MA","Anticongelante",5
+267,"F FUEL OIL COMBUSTIBLE HYUNDAI / H1","Baterias",9
+268,"F FUEL COMBUSTIBLE MAZDA B2500","Baterias",1
+269,"F AIRE SUBARU","Ampolletas",2
+270,"F AIRE CHEVROLET SPARK 1.0 ANTIGUO","Ampolletas",4
+271,"F AIRE NISSAN TIIDA","Ampolletas",13
+272,"F OIL HK W920/25 MAHINDRA","Anticongelante",12
+273,"F OIL HK 920/48 NAVARA","Anticongelante",14
+274,"KIA GRAND CARNIVAL","Ampolletas",1
+275,"F AIRE HYUNDAI ELANTRA","Ampolletas",3
+276,"F AIRE HYUNDAI H1","Ampolletas",9
+277,"F AIRE TOYATA HILUX","Ampolletas",15
+278,"F FUEL WK 940/6 NISSAN N","Baterias",8
+279,"F OIL REXTON/ACTYON","Anticongelante",24
+280,"F FUEL WK 940/6 NISSAN D-","Baterias",4
+281,"F FUEL TOYOTA PETROLEO","Baterias",13
+282,"F AIRE HYUNDAI NEW ACCENT","Ampolletas",7
+283,"F AIRE SUZUKI APV C-3220","Ampolletas",16
+284,"F AIRE MITSUBISHI","Ampolletas",11
+285,"F IRE HYUNDAI FORTER","Ampolletas",1
+286,"F AIRE HYUNDA FRONTIER","Ampolletas",2
+287,"F AIRE HYUNDAI","Ampolletas",11
+288,"F OIL W712/12","Anticongelante",5
+289,"F OIL GM OPEL","Anticongelante",11
+290,"F OIL GM OPEL","Anticongelante",5
+291,"F FUEL COMBUSTIBLE CHEV CAPTIVA 2.0","Baterias",19
+292,"F OIL W924/10 MAHINDRA DI","Anticongelante",6
+293,"F OIL ACEITE W68/85 CHEV SPARK","Anticongelante",71
+294,"F OIL WP920/80 CHEV ISUZU","Anticongelante",6
+295,"F OIL W940/18 NISSAN T","Anticongelante",3
+296,"F AIRE CHANGAN","Ampolletas",3
+297,"F AIRE SSANGYONG 2.0 ACTYON","Ampolletas",12
+298,"F AIRE HYUNDAI","Ampolletas",6
+299,"F AIRE KIA","Ampolletas",3
+300,"F POLEN KIA/HYUNDAI","Bobinas",2
+301,"F AIRE HYUNDAI NEW ACCENT RB","Ampolletas",14
+302,"F OIL KIA BESTA","Anticongelante",19
+303,"F AIRE POLEN KIA/HYUNDAI","Ampolletas",12
+304,"F POLEN SUZUKI","Bobinas",2
+305,"F POLEN MAZDA","Bobinas",2
+306,"F AIRE CHEVROLET","Ampolletas",8
+307,"F POLEN OPEL SUZUKI SWIFT 1.2 K12","Bobinas",5
+308,"F AIRE CHEVROLET ORLANDO CRUZE","Ampolletas",8
+309,"F AIRE CHEVROLET SPARK GT 1.2","Ampolletas",6
+310,"F AIRE FIAT FIORINO 1.3","Ampolletas",18
+311,"F POLEN CHEVROLET AVEO 1.4","Bobinas",2
+312,"F AIRE HYUNDAI I-10 1.1 8V 08 TUCSON 2.0","Ampolletas",10
+313,"F AIRE HYUNDAI NEW TUCSON 2.0","Ampolletas",14
+314,"F AIRE KIA SOUL 1.6 16V 08","Ampolletas",2
+315,"F POLEN KIA CERATO 1.6 07","Bobinas",7
+316,"F POLEN HYUNDAI ACCENT RB 1.","Bobinas",4
+317,"F AIRE SUZUKI CELERIO","Ampolletas",2
+318,"F AIRE SUZUKI SX4 1.6 (MANN","Ampolletas",2
+319,"F FUEL GASOLINA HYUNDAI I10 1.1","Baterias",1
+320,"F POLEN TOYOTA AURIS 1.6/YAR","Bobinas",17
+321,"F AIRE CHEVRLOT SAIL 1.4 16V","Ampolletas",7
+322,"F AIRE CHEVROLET D-MAX","Ampolletas",4
+323,"F OIL CHEVROLET SAIL 1.4","Anticongelante",10
+324,"F AIRE RENAULT MEGANE 1.6 16V","Ampolletas",6
+325,"F AIRE CHEVROLET SONIC","Ampolletas",3
+326,"F OIL","Anticongelante",22
+327,"F FUEL COMBUSTIBLE PEUGEOT BOXER 2.0 HDI PU723X-BF70","Baterias",15
+328,"F POLEN CHEVOLET OPTRA DAEWOO","Bobinas",9
+329,"F AIRE DODGE","Ampolletas",1
+330,"F AIRE SUZUKI CELERIO","Ampolletas",9
+331,"F POLEN NISSAN","Bobinas",2
+332,"F AIRE ISUZU","Ampolletas",5
+333,"F POLEN HYUNDAI","Bobinas",4
+334,"F AIRE NISSA","Ampolletas",3
+335,"F AIRE SUZUKI","Ampolletas",12
+336,"F OIL TOYOTA COROLLA","Anticongelante",2
+337,"F OIL W 8018 CHEV .D-MAAX 2","Anticongelante",10
+338,"F FUEL KIA SORENTO 2.5 CRDI","Baterias",8
+339,"F FUEL CITROEN/PEUGEOT 1.6 H","Baterias",6
+340,"F FUEL CITROEN C1 1.4","Baterias",2
+341,"F AIRE PEUGEOT","Ampolletas",3
+342,"F AIRE TOYOTA","Ampolletas",3
+343,"F FUEL COMBUSTIBLE FIAT CHEVROLET","Baterias",4
+344,"F AIRE MAHINDRA UK-8900","Ampolletas",4
+345,"F OIL HU712/7X CHEV","Anticongelante",12
+346,"F OIL W920/82","Anticongelante",5
+347,"F OIL CHEVROLET CAMARO 6.2 10-","Anticongelante",22
+348,"F OIL FORD ESCAPE 3.0 W92","Anticongelante",9
+349,"F AIRE PEUGEOT CITROEN C.3 1.4","Ampolletas",5
+350,"F AIRE PEUGEOT","Ampolletas",13
+351,"F AIRE HYUNDAI I-10","Ampolletas",8
+352,"F AIREPEUGEOT 607 2.0","Ampolletas",2
+353,"F AIRE PEUGEOT 2008 1.6 16V 2009","Ampolletas",1
+354,"F AIRE VW AMAROK","Ampolletas",4
+355,"KIA MORNING 1.2","Ampolletas",3
+356,"F AIRE CITROEN C5 2.0","Ampolletas",2
+357,"KIA MORNING 1.2 2001","Ampolletas",8
+358,"F AIRE NISSAN PATHFINDER 2.5 2006","Ampolletas",3
+359,"F POLEN HYUNDAI 1.1 2008","Bobinas",13
+360,"F POLEN VW","Bobinas",6
+361,"F POLEN 200XD I SSANGYONG ACTYON","Bobinas",5
+362,"F OIL MG3 1.5 12 W713/","Anticongelante",6
+363,"F FUEL NISSAN NAVARA 2.5 WK9","Baterias",10
+364,"F FUEL SSANGYONG ACTYON","Baterias",7
+365,"F POLEN PEUGEOT 3008","Bobinas",2
+366,"F POLEN NISSAN X-TRAIL","Bobinas",3
+367,"F OIL 93745801 HU714/5 HYUNDAI","Anticongelante",5
+368,"F AIRE GM CHEVROLET CRUZE","Ampolletas",7
+369,"F AIRE CHERY ARRIZO 5 1.5 20","Ampolletas",2
+370,"F FUEL PETROLEO VW TIGUAN 2.0 20","Baterias",2
+371,"F AIRE NSSAN KICKS 1.6 2016","Ampolletas",5
+372,"F POLEN SUZUKI DZIRE 1.2 201 2016","Bobinas",5
+373,"F POLEN SUZIKI SWIFT 1.2 201","Bobinas",4
+374,"F AIRE SUZUKI ALTO K10","Ampolletas",5
+375,"F AIRE HYUNDAI SANTA FE 2. 2 CRDI/KIA SORENTO 2.2 CRDI 2011-2014","Ampolletas",6
+376,"F AIRE HYUNDAI KIA","Ampolletas",8
+377,"F FUEL ELEMENTO ACEITE TOYOTA RAV 4 2,400 CC 2013-2014","Baterias",18
+378,"F OIL SSANG YOUNG ACTION SPORT 2.0 DIESEL 2007-2014","Anticongelante",12
+379,"F FUEL MITSUBISHI . FUSO CANTER 6.5 E/7.5T HLUX","Baterias",7
+380,"F AIRE FORD HILUT","Ampolletas",3
+381,"F AIRE NISSAN MARCH 1.6 2013","Ampolletas",14
+382,"F AIRE SUZUKI SWIFT 1.4 K14","Ampolletas",10
+383,"F FUEL NISSAN NAVARA PFF50216","Baterias",7
+384,"F OIL HK HU7008Z AMAROK","Anticongelante",11
+385,"F OIL HK HU822/5X","Anticongelante",6
+386,"F AIRE CHERRY TIGGO","Ampolletas",1
+387,"F FUEL PU-9001X CHEVROLET","Baterias",17
+388,"F AIRE TOYOTA.OLD NEW YARIS 1.5","Ampolletas",3
+389,"F AIRE CHEVROLET TRACKER 1.8 13/15","Ampolletas",3
+390,"F AIRE CHERY FUL WIN 1.5","Ampolletas",1
+391,"F AIRE KIA RIO 3/KIA RIO 4","Ampolletas",9
+392,"F AIRE HYUNDAI/KIA SORENTO 2.2 DREJES","Ampolletas",1
+393,"F AIRE HYUNDAI STA FE","Ampolletas",4
+394,"F POLEN HYUNDAI KIA SONATA 2.0","Bobinas",7
+395,"F AIRE MERCEDEZ DITO","Ampolletas",3
+396,"F FUEL COMBUSTIBLE NISSAN NAVARA 2.5","Baterias",4
+397,"F FUEL PETROLEO 1906E6 PEUGEOT 301 HD","Baterias",13
+398,"F FUEL COMBUSTIBLE CITROEN NEMO 1.3 HDI","Baterias",11
+399,"F AIRE FIAT CITY NEMO CITRON","Ampolletas",27
+400,"F AIRE TOYOTA","Ampolletas",2
+401,"F AIRE RENAULT MEGANE III 2.0 GASOLINA","Ampolletas",1
+402,"F AIRE SSANGYONG ACTYON 2.0 DIESEL 2013","Ampolletas",7
+403,"SSANGYOUNG ACTION 2.0","Ampolletas",7
+404,"F OIL HU718/1X MER","Anticongelante",9
+405,"F OIL HU724/5 HYUNDAI V","Anticongelante",10
+406,"F AIRE GREAT WALL H0","Ampolletas",1
+407,"F AIRE MAHINDRA XU","Ampolletas",7
+408,"F POLEN CHEVROLET","Bobinas",3
+409,"F OIL CITROEN","Anticongelante",62
+410,"F OIL ISUZU","Anticongelante",21
+411,"F AIRE PEUGEOT","Ampolletas",3
+412,"F OIL HYUNDAI","Anticongelante",5
+413,"F AIRE RENAULT","Ampolletas",4
+414,"F AIRE VW","Ampolletas",3
+415,"F POLEN CHEVROLET SAIL 1.4 2011-2016","Bobinas",6
+416,"F POLEN CHEVOLET ORLANDO","Bobinas",2
+417,"F AIRE NEW TOYOTA HILUX 2.4 2.8 DIESEL","Ampolletas",10
+418,"F AIRE TOYOTA H 3.0","Ampolletas",23
+419,"F AIRE NISSAN","Ampolletas",1
+420,"F OIL NISSAN NP-300 YS HU618X RENAULT","Anticongelante",2
+421,"F POLEN TOYOTA HILOX 2.4/2.8","Bobinas",12
+422,"F AIRE MITSUBISHI L-200 2.4 NUEVA","Ampolletas",16
+423,"F FUEL P.BOXER 2.2 HDI WK85","Baterias",5
+424,"F FUEL WK-920/1 KIA FORD","Baterias",13
+425,"F FUEL PETR HK NISSAN WK932/80","Baterias",6
+426,"F FUEL DECANT. HK NISSA WK 850/1","Baterias",5
+427,"F POLEN FIAT","Bobinas",6
+428,"FILTRO AIRE POLEN PEUGEOT","Ampolletas",4
+429,"F POLEN","Bobinas",3
+430,"F POLEN PSA CITROEN BERLINGO 1.6","Bobinas",2
+431,"F FUEL FILTRO ACEITE MAZDA","Baterias",10
+432,"F AIRE GM CHEVROLET SAIL NUEVO","Ampolletas",10
+433,"F AIRE HYUNDAI GRAND I10 C-3","Ampolletas",6
+434,"F AIRE HYUNDAI","Ampolletas",8
+435,"F AIRE MAZDA","Ampolletas",3
+436,"F AIRE SUZUKI","Ampolletas",1
+437,"F AIRE M BENZ","Ampolletas",3
+438,"F AIRE HINO","Ampolletas",1
+439,"F AIRE HINO","Ampolletas",7
+440,"F AIRE RENO","Ampolletas",13
+441,"F AIRE SUZUKI","Ampolletas",6
+442,"F AIRE CITROEN PEUGEOT 2008 1.4(2014-2016)","Ampolletas",1
+443,"F AIRE HYUNDAI","Ampolletas",11
+444,"F FUEL OPEL","Baterias",6
+445,"F FUEL COMBUSTIBLE","Baterias",2
+446,"F OIL FUEL MAZDA PETROLEO","Anticongelante",10
+447,"F FUEL HYUNDAI H-1 WK824/1","Baterias",2
+448,"F FUEL PEUGEOT","Baterias",3
+449,"F AIRE MAZDA CX-5 2.0/2.5 20","Ampolletas",6
+450,"F OIL HINO XZU413/423 W1135/11","Anticongelante",13
+451,"F OIL HINO FB4J W1250/1","Anticongelante",6
+452,"F OIL ME088532","Anticongelante",2
+453,"F OIL NISSAN NP-300 YS HU618X RENAULT","Anticongelante",5
+454,"F POLEN CU 3540 M BENZ","Bobinas",3
+455,"F POLEN MAZDA BT50 3.2/ FORD","Bobinas",7
+456,"F AIRE MAHINDRA 2018","Ampolletas",8
+457,"F AIRE FIAT CITY","Ampolletas",8
+458,"F AIRE","Ampolletas",3
+459,"F POLEN","Bobinas",1
+460,"F AIRE MG ROBER CONFORTPLUS 1..5","Ampolletas",11
+461,"F POLEN MEG CONFORT PLUS 1","Bobinas",3
+462,"F OIL CHERY TIGGO 1.6","Anticongelante",5
+463,"F FUEL WK820/18 M BENZ","Baterias",1
+464,"F FUEL PETROLEO VW AMAROK 2.0 TDI","Baterias",3
+465,"F FUEL NISSAN NP-300","Baterias",15
+466,"F OIL W811/80 HYUNDAI/KIA/FORD","Anticongelante",4
+467,"F OIL INFINITI Q30-Q50","Anticongelante",3
+468,"F AIRE RENAULT DOKKER","Ampolletas",7
+469,"F FUEL COMBUSTIBLE FORD TRANSIT 2.2","Baterias",4
+470,"F POLEN FORD EDGE 2.0/3.5","Bobinas",4
+471,"F AIRE FORD F150","Ampolletas",5
+472,"F AIRE FORD ECOSPORT 1.5","Ampolletas",5
+473,"F AIRE SSANGYONG 2.0 NUEVO/2.2","Ampolletas",11
+474,"F AIRE CHERRY TIGGO","Ampolletas",2
+475,"F AIRE TOYOTA","Ampolletas",11
+476,"F AIRE PEUGEOT EXPENT 2.0","Ampolletas",9
+477,"F AIRE MAXUS V80","Ampolletas",5
+478,"F AIRE KIA","Ampolletas",5
+479,"F POLEN TOYOTA","Bobinas",6
+480,"F POLEN VW TIGUAN 1.4 16V","Bobinas",6
+481,"F AIRE KIA CARNIVAL 2015","Ampolletas",3
+482,"F AIRE HYUNDAI ELANTRA 2016","Ampolletas",2
+483,"F AIRE HYUNDAI GRNAD I10 1.2","Ampolletas",5
+484,"F OIL FORD TRANSIT 2.2","Anticongelante",5
+485,"F FUEL PETROLEO AMAROK 2.0 TD 180CV","Baterias",12
+486,"F AIRE HYUNDAI","Ampolletas",3
+487,"F OIL BMW","Anticongelante",6
+488,"F OIL PEUGEOT","Anticongelante",6
+489,"F FUEL PETROLEO CAPTIVA","Baterias",8
+490,"F AIRE KIA SORENTO 2.2 2016","Ampolletas",3
+491,"F AIRE ELEM PETROLEO C-ELYSEE 1-6 H","Ampolletas",4
+492,"F AIRE G.WALL WINGLE 2.2 201","Ampolletas",3
+493,"F AIRE HYUNDAI D3300 TUCSON 2.0 20","Ampolletas",7
+494,"F AIRE HYUNDAI","Ampolletas",3
+495,"KIA RIO ANTIGUO","Ampolletas",2
+496,"F AIRE CHERVROLET S10/BLAZER","Ampolletas",1
+497,"F AIRE CHEVROLET","Ampolletas",2
+498,"F AIRE GM CHEVROLET LUV","Ampolletas",4
+499,"F AIRE NISSAN","Ampolletas",4
+500,"F AIRE MITSUBISHI","Ampolletas",6
+501,"F AIRE TOYOTA L-2546 C2513 (UK-7257)","Ampolletas",10
+502,"F FUEL LUV D LK-714/1","Baterias",5
+503,"F OIL KIA BESTA","Anticongelante",5
+504,"F FUEL COMBUSTIBLE KIA BESTA","Baterias",12
+505,"F OIL NISSAN D-21","Anticongelante",9
+506,"F FUEL NISSAN LK932/80","Baterias",5
+507,"F OIL FORD PARTNER 1.9","Anticongelante",2
+508,"F FUEL CHEVROLT LUV 2.3","Baterias",3
+509,"F OIL ACEITE L14459 W818/8 HK","Anticongelante",60
+510,"F OIL ACEITE L10111 712/22","Anticongelante",33
+511,"F OIL L24457 713/1","Anticongelante",17
+512,"F OIL L10241 712/55","Anticongelante",14
+513,"F OIL L14612 67/80","Anticongelante",2
+514,"F OIL ACEITE L14476 W68/80","Anticongelante",31
+515,"F OIL L1 14477 610/80","Anticongelante",17
+516,"F OIL L1 4610 610/82","Anticongelante",36
+517,"F OIL W-719/15 L1019","Anticongelante",15
+518,"F OIL L20195 719/27","Anticongelante",13
+519,"F OIL HK HU - 612 HYUNDAI","Anticongelante",7
+520,"F AIRE HYUNDAI","Ampolletas",15
+521,"F OIL HU819/1X D2","Anticongelante",8
+522,"F AIRE MAZDA 3 1.6 04","Ampolletas",6
+523,"F AIRE PEUGEOT L-3087","Ampolletas",2
+524,"F AIRE OPEL COMBO","Ampolletas",5
+525,"F AIRE CITROEN L-3485/1","Ampolletas",4
+526,"F AIRE ECOSPORT 1.6 04","Ampolletas",7
+527,"F AIRE PEUGEOT L-17278","Ampolletas",12
+528,"F OIL HU-711/51X","Anticongelante",9
+529,"F OIL L17696 W75/2","Anticongelante",7
+530,"F OIL L18071 67/81","Anticongelante",37
+531,"F AIRE PEUGEOT PARTNER","Ampolletas",6
+532,"F AIRE HYUNDAI L -2631","Ampolletas",6
+533,"F AIRE POLEN HYUNDAI","Ampolletas",3
+534,"F AIRE MITSUBISHI","Ampolletas",5
+535,"FILTRO GASOLINA NISSAN BENCINA","Baterias",1
+536,"F AIRE HYUNDAI NEW ACCENT","Ampolletas",5
+537,"F OIL H-100 D. WP 928/81 MITSUBISHI","Anticongelante",26
+538,"F OIL LUV DIESEL","Anticongelante",2
+539,"F OIL FUEL CHEVROLET SPARK GT 1.2","Anticongelante",4
+540,"F AIRE HRYSLER CHEROKEE 2.5","Ampolletas",4
+541,"F AIRE NISSA","Ampolletas",3
+542,"F AIRE SUZUKI ALTO C-1517","Ampolletas",3
+543,"F AIRE SUZUKI GRAND NOMADE","Ampolletas",4
+544,"F AIRE CHEVROLET VIVANT VW","Ampolletas",11
+545,"F AIRE CITROEN L-3282","Ampolletas",4
+546,"F AIRE SSANGYONG REXXTON 2.7/ MAGINGRA","Ampolletas",13
+547,"F OIL HK HU- 716/2X PEUGEOT 1.6 ANTIGUO","Anticongelante",54
+548,"F OIL HK L 713/16 FIAT","Anticongelante",13
+549,"F AIRE TOYOTA NEW YARIS","Ampolletas",3
+550,"F OIL HK L 912/8 HYUNDAI","Anticongelante",10
+551,"BOBINA DE ENCENDIDO TOYOTA YARIS TODOS","aceite_elemento",1
+552,"F AIRE DAEWOO MUSSO GSL","Ampolletas",3
+553,"F AIRE TOYOTA HIACE 3.0 2011","Ampolletas",3
+554,"F POLEN HYUNDAI N.TUCSON2.0","Bobinas",4
+555,"F AIRE UK-8562 CHERY TIGGO 3","Ampolletas",6
+556,"F AIRE UK-8140 MG GS5 1.6","Ampolletas",1
+557,"F AIRE HYUNDAI TUCSON 2.0","Ampolletas",3
+559,"F OIL ACEITE L14476 W68/80","Anticongelante",1
+562,"A BRAKE WAGNER 21B L1","Cables de Bujia",13
+563,"A FORD MOTORCRAFT SAE 10W-40 L1","Cables de Bujia",5
+564,"A FEDERAL PLATINUM 10W-40 BEND SYNTHETIC 3,8L","Cables de Bujia",6
+565,"A FEDERAL PLATINUM 10W-40 BEND SYNTHETIC API SN PLUS 3,8L","Cables de Bujia",10
+566,"A FEDERAL SUPER 20W-50 3,8L","Cables de Bujia",4
+568,"A LUBRAX 10W40 4L","Cables de Bujia",7
+569,"A LUBRAX 20W-50 4L","Cables de Bujia",12
+570,"A MOBIL SUPER 2000 10W-40 SEMI-SYNTHETIC 4L","Cables de Bujia",29
+571,"A PETRONA 10W40 4L SEMI SYNTHETIC","Cables de Bujia",2
+572,"A PETRONA 15W40 4L","Cables de Bujia",65
+573,"A PETRONA 20W-50 MINERAL 4L","Cables de Bujia",1
+574,"A PETRONA 5W30 4L FULL SYNTHETIC","Cables de Bujia",43
+575,"A MANUAL TRANSMISSION 75W-80 1L","Cables de Bujia",8
+576,"A ROYAL SYNTHETIC 5W-30 FULLY SYNTHETIC 3,8L","Cables de Bujia",12
+577,"A REPSOL 10W-40 FULLY SYNTHETIQUE 1L","Cables de Bujia",20
+578,"A REPSOL 10W-40 ELITE MULTIVALVULA FULLY SYNTHETIQUE 4L","Cables de Bujia",16
+579,"A REPSOL 10W-40 FULLY SYNTHETIQUE 1L","Cables de Bujia",6
+580,"A REPSOL 10W-40 FULLY SYNTHETIQUE 1L","Cables de Bujia",4
+581,"A REPSOL 5W-40 ELITE EVOLUTION FULLY SYNTHETIQUE 5L","Cables de Bujia",4
+582,"A REPSOL 3W-30 FULLY SYNTHETIQUE 4L","Cables de Bujia",28
+583,"A REPSOL 5W-40 ELITE EVOLUTION FULLY SYNTHETIQUE 5L","Cables de Bujia",4
+584,"A SHIELD CHOICE 10W-40 BLEND SYNTHETIQUE","Cables de Bujia",23
+585,"A SHIELD CHOICE 10W-40 BLEND SYNTHETIQUE","Cables de Bujia",10
+586,"A SHELL HELIX ULTRA 10W-40 FULLY SYNTHETIC 4L","Cables de Bujia",10
+587,"A SHELL HELIX ULTRA 5W-30 FULLY SYNTHETIC 5L","Cables de Bujia",9
+588,"A TOTAL QUARZ 7000 10W-40 SYNTHETIC TECHNOLOGY","Cables de Bujia",18
+589,"A TOTAL QUARZ 7000 10W-40 SYNTHETIC TECHNOLOGY","Cables de Bujia",17
+590,"A TOTAL QUARZ INEO MC3 5W-30 SYNTHETIC TECHNOLOGY","Cables de Bujia",15
+591,"A MOTOR XCEL SUPER TURBO 10W-40 3,8L","Cables de Bujia",11
+592,"F AIRE CORSA","Ampolletas",9
+593,"D BRAKE NISSAN D 2.1 2.4","Accesorios",2
+594,"D BRAKE","Accesorios",3
+595,"D BRAKE","Accesorios",2
+596,"D BRAKE PARTNER 206 BERLINGO 307","Accesorios",8
+597,"D BRAKE FRONTIER 2.7","Accesorios",2
+598,"D BRAKE","Accesorios",1
+599,"D BRAKE CHEVROLET CRUZE","Accesorios",2
+600,"D BRAKE PEUGEOT 206 TAMBOR","Accesorios",3
+601,"D BRAKE FIAT CITY","Accesorios",4
+602,"D BRAKE RENO","Accesorios",2
+603,"D BRAKE CHEVROLET ASTRA","Accesorios",4
+604,"D BRAKE H-100","Accesorios",2
+605,"D BRAKE SSANGYONG ACTION KYRON REXTON","Accesorios",6
+606,"D BRAKE SAMSUNG","Accesorios",4
+607,"D BRAKE NEW ASEN DIESEL KIA RIO 2","Accesorios",2
+608,"D BRAKE PEUGEOT","Accesorios",3
+609,"D BRAKE","Accesorios",4
+610,"D BRAKE BETO","Accesorios",2
+611,"D BRAKE DITO TA","Accesorios",2
+612,"D BRAKE L-200","Accesorios",4
+613,"D BRAKE ESPORT","Accesorios",2
+614,"D BRAKE TOYOTA HILOX VYGO 3.0","Accesorios",2
+615,"D BRAKE","Accesorios",2
+616,"D BRAKE NISSAN TIDA","Accesorios",4
+617,"D BRAKE DOBLO 1.6","Accesorios",8
+618,"D BRAKE","Accesorios",2
+619,"D BRAKE VW","Accesorios",4
+620,"D BRAKE NEW HYUNDAI","Accesorios",12
+621,"D BRAKE APV","Accesorios",2
+622,"D BRAKE SPARK","Accesorios",2
+623,"D BRAKE NISSAN NAVARA","Accesorios",2
+624,"D BRAKE","Accesorios",2
+625,"D BRAKE FIAT DOBLO","Accesorios",3
+626,"D BRAKE KIA FRONTIER","Accesorios",6
+627,"D BRAKE NEW YARIS","Accesorios",4
+628,"D BRAKE KIA FRONTIER","Accesorios",2
+629,"D BRAKE RV HYUNDAI","Accesorios",2
+630,"D BRAKE RENAULT BOREK","Accesorios",2
+631,"D BRAKE GT SAIL AVEO","Accesorios",10
+632,"D BRAKE MONZA OPEL CORSA DAEWOO","Accesorios",4
+633,"D BRAKE","Accesorios",2
+634,"D BRAKE","Accesorios",2
+635,"BRAKE SHOES BALATA APACHE 510","Bujias",1
+636,"BRAKE SHOES BALATA","Bujias",5
+637,"BRAKE SHOES BALATA KIA SPOTAJE 2006","Bujias",1
+638,"BRAKE SHOES BALATA","Bujias",3
+639,"BRAKE SHOES BALATA","Bujias",1
+640,"BRAKE SHOES BALATA FIAT ADVENTURA","Bujias",2
+641,"BRAKE SHOES BALATA SAMSUNG","Bujias",1
+642,"BRAKE SHOES BALATA NV350","Bujias",2
+643,"BRAKE SHOES BALATA","Bujias",1
+644,"BRAKE SHOES BALATA SANG YONG","Bujias",1
+645,"BRAKE SHOES BALATA KIA","Bujias",2
+646,"BRAKE SHOES BALATA AVEO","Bujias",4
+647,"BRAKE SHOES BALATA CHEVROLET SAIL","Bujias",2
+648,"BRAKE SHOES BALATA","Bujias",2
+649,"BRAKE SHOES BALATA","Bujias",2
+650,"BRAKE SHOES BALATA SPOTAGE 2006-2007","Bujias",1
+651,"BRAKE SHOES BALATA","Bujias",1
+652,"BRAKE SHOES BALATA","Bujias",1
+653,"BRAKE SHOES BALATA HYUNDAI PORTER KIA FRONTIER","Bujias",5
+654,"BRAKE SHOES BALATA","Bujias",1
+655,"BRAKE SHOES BALATA TOYOTA HILUX","Bujias",4
+656,"BRAKE SHOES BALATA H1 DIMAX 4X4","Bujias",2
+657,"BRAKE SHOES BALATA","Bujias",1
+658,"BRAKE SHOES BALATA","Bujias",1
+659,"BRAKE SHOES BALATA DIMAX H GREAT WALL","Bujias",2
+660,"BRAKE SHOES BALATA L 200","Bujias",1
+661,"BRAKE SHOES BALATA ACCENT HYUNDAI","Bujias",1
+662,"BRAKE SHOES BALATA","Bujias",6
+663,"BRAKE SHOES BALATA NEW ACCENT","Bujias",4
+664,"BRAKE SHOES BALATA TUCSON 2009","Bujias",1
+665,"BRAKE SHOES BALATA NAVARA","Bujias",1
+666,"BRAKE SHOES BALATA FIAT DOBLO","Bujias",8
+667,"BRAKE SHOES BALATA","Bujias",2
+668,"BRAKE SHOES BALATA N300","Bujias",2
+669,"BRAKE SHOES BALATA","Bujias",3
+670,"BRAKE SHOES BALATA","Bujias",1
+671,"BRAKE SHOES BALATA H1","Bujias",4
+672,"BRAKE SHOES BALATA","Bujias",1
+673,"BRAKE SHOES BALATA","Bujias",2
+674,"BRAKE SHOES BALATA NISSAN TIIDA","Bujias",2
+675,"BRAKE SHOES BALATA","Bujias",1
+676,"BRAKE SHOES BALATA TOYOTA YARIS SSANG YONG","Bujias",8
+677,"P BRAKE","Aceite",1
+679,"P BRAKE","Aceite",1
+680,"P BRAKE","Aceite",4
+681,"P BRAKE","Aceite",1
+683,"F AIRE HYUNDAI SANTA FE","Ampolletas",1
+684,"P BRAKE","Aceite",1
+685,"P BRAKE","Aceite",1
+686,"D BRAKE","Accesorios",1
+687,"D BRAKE PEUGEOT BIPPER","Accesorios",4
+688,"D BRAKE","Accesorios",2
+689,"D BRAKE NEW YARIS","Accesorios",8
+690,"D BRAKE TAMBOR SAIL","Accesorios",2
+691,"D BRAKE CORSA","Accesorios",2
+692,"F AIRE CORSA","Ampolletas",11
+693,"F AUXILIAR KIA","Cables de Bujia",20
+694,"F AIRE MASDA 3 1.6 2006","Ampolletas",3

@@ -1,0 +1,30 @@
+"id","name","sum(q)","sum(price)","venta_total"
+36,"kit_embriague",2,2635000,2635000
+24,"hm",14,1583100,1583100
+2,"Aceite",21,752500,840000
+25,"freno_disco",4,475000,475000
+23,"freno_pastilla",9,445000,445000
+16,"Filtro Petroleo",6,275000,275000
+13,"filtro_aire",10,211000,211000
+26,"chip_llave_cambio",1,185000,185000
+31,"motor_partida",1,180000,180000
+45,"mantencion",1,155000,155000
+30,"neumatico",2,75000,150000
+12,"filtro_aceite",5,137000,137000
+5,"Baterias",1,130000,130000
+27,"motor_radiador",1,125000,125000
+37,"aceite_caja",2,1e+05,1e+05
+35,"rt_preparar",1,70000,70000
+38,"aceite_diferencial",1,45000,45000
+17,"Filtro Polen",1,45000,45000
+34,"foco",1,45000,45000
+39,"bieleta",1,40000,40000
+32,"disco_rectificado",2,20000,40000
+3,"Ampolletas",4,28450,28450
+29,"filtro_petroleo_decantador",1,28000,28000
+41,"elemento_aire",1,25000,25000
+10,"aceite_elemento",2,22100,22100
+33,"alineacion",1,18000,18000
+44,"mangera agua",1,15000,15000
+28,"cooler",2,7000,14000
+40,"luces_revisar",2,950,1900

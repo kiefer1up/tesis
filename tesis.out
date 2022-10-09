@@ -1,0 +1,123 @@
+\BOOKMARK [1][-]{section.1}{Propuesta de mejora de proceso de gesti\363n de inventario, mediante la implementaci\363n de WMS para el caso de \341rea de almac\351n del taller de servicio mec\341nico integral y electricidad automotriz DUARCON}{}% 1
+\BOOKMARK [1][-]{section.2}{Trabajo de titulaci\363n presentado en conformidad a los requisitos para obtener el Titulo de Ingueniero Civil Industrial TESIS PARA TITULO PARA LA OBTENCI\323N DEL TITULO INGENIERO CIVIL INDUSTRIAL"}{}% 2
+\BOOKMARK [1][-]{section.3}{Felipe Kiefer Guenupan}{}% 3
+\BOOKMARK [1][-]{section.4}{Introducci\363n}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Antecedentes, situaci\363n actual mercado autom\363vil}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Descripci\363n general de la organizicion}{section.4}% 6
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Descripci\363n de la organizaci\363n: historia, productos y mercados principales, estructura organizacional, tama\361o, etc. \(\277Qui\351n soy?\)}{subsection.4.2}% 7
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Descripci\363n del medio en el cual se encuentra la organizaci\363n: caracter\355sticas de la industria, de la econom\355a, etc. \(\277D\363nde estoy?\)}{subsection.4.2}% 8
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Servicios que brinda}{subsection.4.2}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Antecedentes, situaci\363n actual mercado autom\363vil}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Descripci\363n de la estrategia, para saber cu\341l es la direcci\363n en que camina la empresa. \(\277Qu\351 quiero?\)}{subsection.4.3}% 11
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Descripci\363n del \341mbito de trabajo: prop\363sito, personas, procesos, estructura, tecnolog\355a, etc.}{subsection.4.3}% 12
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Descripci\363n del entorno inmediato y relaciones: ubicaci\363n del \341mbito de trabajo: relaciones con otras \341reas, qu\351 y a qui\351nes provee, de qui\351nes recibe qu\351, etc.}{subsection.4.3}% 13
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Descripci\363n cuantitativa de las situaciones en que se trabajar\341:}{subsection.4.3}% 14
+\BOOKMARK [1][-]{section.5}{Capitulo I: Definici\363n del Problema}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Problema y Preguntas de Investigaci\363n}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Justificaci\363n de la Investigaci\363n. - Breve Resumen Capitular.}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{porque es importante este proyecto}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.4}{cual es la problem\341tica que intenta solucionar}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.5}{por que este proyecto y no otro}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.6}{Formulaci\363n de hip\363tesis.}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Hip\363tesis general}{subsection.5.6}% 22
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Hip\363tesis espec\355ficas}{subsection.5.6}% 23
+\BOOKMARK [2][-]{subsection.5.7}{Objetivos de la Investigaci\363n.}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Objetivo general:}{subsection.5.7}% 25
+\BOOKMARK [3][-]{subsubsection.5.7.2}{Objetivos espec\355ficos:}{subsection.5.7}% 26
+\BOOKMARK [3][-]{subsubsection.5.7.3}{Variables Independientes Intangible}{subsection.5.7}% 27
+\BOOKMARK [3][-]{subsubsection.5.7.4}{Variables Independientes tangibles}{subsection.5.7}% 28
+\BOOKMARK [3][-]{subsubsection.5.7.5}{Variables Intervinientes}{subsection.5.7}% 29
+\BOOKMARK [2][-]{subsection.5.8}{Alcance de la investigacion}{section.5}% 30
+\BOOKMARK [1][-]{section.6}{Cap\355tulo II: MARCO TE\323RICO}{}% 31
+\BOOKMARK [2][-]{subsection.6.1}{Marco referente a Logistica}{section.6}% 32
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Administraci\363n de inventario}{subsection.6.1}% 33
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Warehouse}{subsection.6.1}% 34
+\BOOKMARK [2][-]{subsection.6.2}{Marco referente a redise\361o de procesos}{section.6}% 35
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Definici\363n Macroprocesos}{subsection.6.2}% 36
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Modelamiento de procesos}{subsection.6.2}% 37
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Metodolog\355a de redise\361o mediante el uso de patrones}{subsection.6.2}% 38
+\BOOKMARK [2][-]{subsection.6.3}{Marco referente a m\351todos, filosofias, herramientas.}{section.6}% 39
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Industria 4.0}{subsection.6.3}% 40
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Filosof\355a Lean Manufacturing}{subsection.6.3}% 41
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Herramientas basicas}{subsection.6.3}% 42
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Herramienta de calidad}{subsection.6.3}% 43
+\BOOKMARK [2][-]{subsection.6.4}{Marco al proceso de desarrollo del software}{section.6}% 44
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Tipo de programa}{subsection.6.4}% 45
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Modelo de desarrollo}{subsection.6.4}% 46
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Metodolog\355as para desarrollo de software}{subsection.6.4}% 47
+\BOOKMARK [3][-]{subsubsection.6.4.4}{Back}{subsection.6.4}% 48
+\BOOKMARK [3][-]{subsubsection.6.4.5}{End}{subsection.6.4}% 49
+\BOOKMARK [3][-]{subsubsection.6.4.6}{html}{subsection.6.4}% 50
+\BOOKMARK [3][-]{subsubsection.6.4.7}{css}{subsection.6.4}% 51
+\BOOKMARK [1][-]{section.7}{Cap\355tulo III: DISE\321O METODOL\323GICO}{}% 52
+\BOOKMARK [2][-]{subsection.7.1}{Enfoque}{section.7}% 53
+\BOOKMARK [2][-]{subsection.7.2}{Dise\361o.}{section.7}% 54
+\BOOKMARK [2][-]{subsection.7.3}{Contexto}{section.7}% 55
+\BOOKMARK [2][-]{subsection.7.4}{Operacionalizaci\363n de las variables.}{section.7}% 56
+\BOOKMARK [3][-]{subsubsection.7.4.1}{Variable dependiente:}{subsection.7.4}% 57
+\BOOKMARK [3][-]{subsubsection.7.4.2}{Variables Independientes Intangible}{subsection.7.4}% 58
+\BOOKMARK [3][-]{subsubsection.7.4.3}{Variables Independientes tangibles}{subsection.7.4}% 59
+\BOOKMARK [2][-]{subsection.7.5}{Poblaci\363n y Muestra.}{section.7}% 60
+\BOOKMARK [2][-]{subsection.7.6}{Recolecci\363n de datos.}{section.7}% 61
+\BOOKMARK [2][-]{subsection.7.7}{Plan de an\341lisis.}{section.7}% 62
+\BOOKMARK [2][-]{subsection.7.8}{Definir proyecto}{section.7}% 63
+\BOOKMARK [3][-]{subsubsection.7.8.1}{Establecer objetivo del redise\361o}{subsection.7.8}% 64
+\BOOKMARK [3][-]{subsubsection.7.8.2}{definir \341mbito de proceso a redise\361ar}{subsection.7.8}% 65
+\BOOKMARK [3][-]{subsubsection.7.8.3}{Ambiente de Ingenier\355a de Software}{subsection.7.8}% 66
+\BOOKMARK [3][-]{subsubsection.7.8.4}{Establecer si hacer estudio situaci\363n actual}{subsection.7.8}% 67
+\BOOKMARK [2][-]{subsection.7.9}{Entender situaci\363n actual}{section.7}% 68
+\BOOKMARK [3][-]{subsubsection.7.9.1}{Modelar la situaci\363n actual}{subsection.7.9}% 69
+\BOOKMARK [3][-]{subsubsection.7.9.2}{Validar y medir}{subsection.7.9}% 70
+\BOOKMARK [2][-]{subsection.7.10}{Redise\361o}{section.7}% 71
+\BOOKMARK [3][-]{subsubsection.7.10.1}{Establecer direcci\363n del cambio}{subsection.7.10}% 72
+\BOOKMARK [3][-]{subsubsection.7.10.2}{Seleccionar tecnolog\355as habilitantes}{subsection.7.10}% 73
+\BOOKMARK [3][-]{subsubsection.7.10.3}{Modelar evaluar redise\361o}{subsection.7.10}% 74
+\BOOKMARK [3][-]{subsubsection.7.10.4}{Detallar y probar redise\361o}{subsection.7.10}% 75
+\BOOKMARK [2][-]{subsection.7.11}{Implementar}{section.7}% 76
+\BOOKMARK [3][-]{subsubsection.7.11.1}{Construir software}{subsection.7.11}% 77
+\BOOKMARK [3][-]{subsubsection.7.11.2}{implementar software}{subsection.7.11}% 78
+\BOOKMARK [3][-]{subsubsection.7.11.3}{Implementar procesos}{subsection.7.11}% 79
+\BOOKMARK [1][-]{section.8}{Resultados Esperados}{}% 80
+\BOOKMARK [1][-]{section.9}{Cap\355tulo IV: Desarrollo}{}% 81
+\BOOKMARK [2][-]{subsection.9.1}{Definir proyecto}{section.9}% 82
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Establecer objetivo del redise\361o}{subsection.9.1}% 83
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Definir \341mbito de proceso a redise\361a}{subsection.9.1}% 84
+\BOOKMARK [3][-]{subsubsection.9.1.3}{Ambiente de Ingenier\355a de Software \(segun figuero romero\)}{subsection.9.1}% 85
+\BOOKMARK [3][-]{subsubsection.9.1.4}{Establecer si hacer estudio situaci\363n actual}{subsection.9.1}% 86
+\BOOKMARK [2][-]{subsection.9.2}{Analisis de la situcion actual}{section.9}% 87
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Inventarios}{subsection.9.2}% 88
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Demanda}{subsection.9.2}% 89
+\BOOKMARK [3][-]{subsubsection.9.2.3}{Recepci\363n}{subsection.9.2}% 90
+\BOOKMARK [3][-]{subsubsection.9.2.4}{Despacho}{subsection.9.2}% 91
+\BOOKMARK [2][-]{subsection.9.3}{Redisenar}{section.9}% 92
+\BOOKMARK [3][-]{subsubsection.9.3.1}{Preparacion de almacen}{subsection.9.3}% 93
+\BOOKMARK [3][-]{subsubsection.9.3.2}{Control mediante KPI}{subsection.9.3}% 94
+\BOOKMARK [3][-]{subsubsection.9.3.3}{Hardware}{subsection.9.3}% 95
+\BOOKMARK [3][-]{subsubsection.9.3.4}{Software}{subsection.9.3}% 96
+\BOOKMARK [3][-]{subsubsection.9.3.5}{Direcciones de cambio}{subsection.9.3}% 97
+\BOOKMARK [3][-]{subsubsection.9.3.6}{Tecnolog\355as Habilitantes}{subsection.9.3}% 98
+\BOOKMARK [3][-]{subsubsection.9.3.7}{Modelamiento del Redise\361o}{subsection.9.3}% 99
+\BOOKMARK [2][-]{subsection.9.4}{Implementar}{section.9}% 100
+\BOOKMARK [3][-]{subsubsection.9.4.1}{Construir software}{subsection.9.4}% 101
+\BOOKMARK [3][-]{subsubsection.9.4.2}{Implementar software}{subsection.9.4}% 102
+\BOOKMARK [3][-]{subsubsection.9.4.3}{Implementar procesos}{subsection.9.4}% 103
+\BOOKMARK [2][-]{subsection.9.5}{Definir proyecto}{section.9}% 104
+\BOOKMARK [2][-]{subsection.9.6}{Entender situacion actual}{section.9}% 105
+\BOOKMARK [3][-]{subsubsection.9.6.1}{Analisis de niveles de inventario}{subsection.9.6}% 106
+\BOOKMARK [3][-]{subsubsection.9.6.2}{Analisis ABC de inventarios}{subsection.9.6}% 107
+\BOOKMARK [2][-]{subsection.9.7}{Rediseno}{section.9}% 108
+\BOOKMARK [3][-]{subsubsection.9.7.1}{Procedimiento para la gesti\363n de inventarios}{subsection.9.7}% 109
+\BOOKMARK [1][-]{section.10}{Cap\355tulo V: EVALUACI\323N ECON\323MICA}{}% 110
+\BOOKMARK [2][-]{subsection.10.1}{Factibilidad}{section.10}% 111
+\BOOKMARK [3][-]{subsubsection.10.1.1}{Factibilidad t\351cnica}{subsection.10.1}% 112
+\BOOKMARK [3][-]{subsubsection.10.1.2}{Factibilidad operativa}{subsection.10.1}% 113
+\BOOKMARK [2][-]{subsection.10.2}{Beneficios Tangibles}{section.10}% 114
+\BOOKMARK [2][-]{subsection.10.3}{Beneficios Intangibles:}{section.10}% 115
+\BOOKMARK [2][-]{subsection.10.4}{Costos:}{section.10}% 116
+\BOOKMARK [3][-]{subsubsection.10.4.1}{C\341lculo del VAN}{subsection.10.4}% 117
+\BOOKMARK [2][-]{subsection.10.5}{Conclusi\363n de la factibilidad}{section.10}% 118
+\BOOKMARK [1][-]{section.11}{Cap\355tulo IV: PRESENTACI\323N RESULTADOS}{}% 119
+\BOOKMARK [2][-]{subsection.11.1}{Procesamiento de los datos.}{section.11}% 120
+\BOOKMARK [2][-]{subsection.11.2}{Resultados}{section.11}% 121
+\BOOKMARK [1][-]{section.12}{Cap\355tulo V: CONCLUSIONES}{}% 122
+\BOOKMARK [2][-]{subsection.12.1}{Discusi\363n}{section.12}% 123

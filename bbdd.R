@@ -27,11 +27,18 @@ library(fdth)
   inner join prod_tp t on t.id=st.tp
   group by id order by s.id;")
 
+query
+
+  write.csv(query.vnt,"//home//kiefer//proyectos//tesis//data//queryvnt.csv", row.names = FALSE)
+  
+  
   query.q.tipo<- dbGetQuery(database,statement = "SELECT t.name as tipo, sum(q) as total FROM stock s
   inner join prod_st st on st.id=s.id
   inner join prod_tp t on t.id=st.tp
   group by tipo;")
 
+  
+  
   query.n.compra<- dbGetQuery(database,statement = "SELECT p.name as proveedor,count(p.name) as n_compra, sum(pc.total) as 'monto_total $' FROM puch_cost pc
   inner join prov p on p.id=pc.prov group by name order by n_compra desc limit 5;")
 
