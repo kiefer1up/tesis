@@ -1,5 +1,8 @@
+import lib.database as db
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 from matplotlib.ticker import PercentFormatter
 
 def hola():
@@ -49,5 +52,60 @@ def pareto():
     ax2.tick_params(axis="y", colors="C1")
 
     ax.set_xticklabels(frec_df.index,rotation=90)
+
+    plt.show()
+    
+def abc():
+    prd_tp = pd.read_csv('data/prod_tp.csv')
+    prd_tp_df= pd.DataFrame(prd_tp)
+
+    vnt = pd.read_csv('data/vnt_tmp_.csv')
+    vnt_df= pd.DataFrame(vnt)
+
+    pareto_df=pd.merge(vnt_df,prd_tp_df,left_on='prd_tp',right_on='1')
+
+    o= pareto_df[['Accesorios','q','total']]
+    frec= o.groupby(['Accesorios']).sum()
+    frec_df=pd.DataFrame(frec)
+    frec_df=frec_df.sort_values(by='total', ascending=False)
+    frec_df.index.name= None
+    frec_df.index.name= 'prd_tp'
+    frec_df.reset_index(inplace=True)
+
+    frec_df["Frec_abs"]= frec_df['total']
+    frec_df["Frec_rel_%"]=100*frec_df["Frec_abs"]/frec_df['total'].sum()
+    Frec_rel_val= frec_df["Frec_rel_%"].values
+    acum=[]
+    valor_acum= 0
+    for i in Frec_rel_val:
+        valor_acum = valor_acum + i
+        acum.append(valor_acum)
+
+    frec_df["Frec_rel_%_acum"]= acum
+#frec_df["Frec_rel_%_acum"]=frec_df["Frec_rel_%_acum"].round(3)
+
+    condition= [(frec_df["Frec_rel_%_acum"]<=80),(frec_df["Frec_rel_%_acum"]>90)]
+    choice= ['a','c']
+    frec_df['choise']= np.select(condition, choice, default= "b")
+
+    result = frec_df.groupby('choise').agg({'Frec_rel_%_acum': ['max']})
+#result.iloc[0,0]
+
+    fig = plt.figure()
+    ax= fig.add_subplot(1,1,1)
+    ax.set_title('Analisis ABC')
+    ax.bar(frec_df.index, frec_df["Frec_abs"], color="C0")
+
+    ax2= ax.twinx()
+    ax2.plot(frec_df.index,frec_df["Frec_rel_%_acum"],color="C1", marker= "D", ms=5)
+    ax2.yaxis.set_major_formatter(PercentFormatter())
+
+    ax.tick_params(axis="y", colors="C0")
+    ax2.tick_params(axis="y", colors="C1")
+
+
+    ax.set_xticklabels(frec_df['Frec_rel_%_acum'].round(0),rotation=90)
+    ax.axvline(x = 1)
+    ax.axvline(x=10)
 
     plt.show()
