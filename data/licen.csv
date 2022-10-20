@@ -1,0 +1,41 @@
+date,tipo_licencia,clase,nueva,renovada
+2020,Profesionales,A1,257,8 555
+2020,Profesionales,A2,8 095,31 875
+2020,Profesionales,A3,3 037,10 402
+2020,Profesionales,A4,9 318,21 959
+2020,Profesionales,A5,4 214,7 362
+2020,No profesionales,B,124 522,307 229
+2020,No profesionales,C,16 053,28 849
+2020,Especiales,D,13 549,36 356
+2020,Especiales,E,28,216
+2020,Especiales,F,1 989,4 795
+2019,Profesionales,A1,936,48 087
+2019,Profesionales,A2,15 670,119 004
+2019,Profesionales,A3,6 113,30 434
+2019,Profesionales,A4,15 923,53 270
+2019,Profesionales,A5,5 280,18 146
+2019,No profesionales,B,196 266,742 959
+2019,No profesionales,C,23 411,71 495
+2019,Especiales,D,27 210,94 846
+2019,Especiales,E,56,587
+2019,Especiales,F,3 900,12 412
+2018,Profesionales,A1,770,47 496
+2018,Profesionales,A2,14 938,117 713
+2018,Profesionales,A3,6 715,30 408
+2018,Profesionales,A4,15 659,51 713
+2018,Profesionales,A5,4 880,18 010
+2018,No profesionales,B,194 253,777 449
+2018,No profesionales,C,24 007,71 889
+2018,Especiales,D,27 181,96 020
+2018,Especiales,E,50,658
+2018,Especiales,F,3 560,12 814
+2017,Profesionales,A1,300,16 138
+2017,Profesionales,A2,15 171,65 017
+2017,Profesionales,A3,7 507,27 313
+2017,Profesionales,A4,15 099,48 251
+2017,Profesionales,A5,4 597,16 688
+2017,No profesionales,B,181 005,694 702
+2017,No profesionales,C,23 155,59 704
+2017,Especiales,D,26 443,76 013
+2017,Especiales,E,57,482
+2017,Especiales,F,2 990,10 836

@@ -1,19 +1,42 @@
-import lib.database as db
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from matplotlib.ticker import PercentFormatter
 
-def hola():
-    print("hola mundo")
+def licen():
+    plt.ioff()
+    df = pd.read_csv('data/licencia_conducir_2020_2017.csv',index_col=0, parse_dates=True)
+    dfB = df[(df['clase'] == "B")]
+    plt.plot(dfB.index,dfB.iloc[:,2] , label = "nueva")
+    plt.plot(dfB.index,dfB.iloc[:,3] , label = "renovada")
+    plt.title('Licencias de Clase B')
+    plt.legend()
+    plt.xticks(rotation=90)
+    plt.savefig('fig/licen.png')
+def petroleo():
+    plt.ioff()
+    df = pd.read_csv('data/a/petroleo_WIT.csv',index_col=0, parse_dates=True)
+    df.plot(ylabel="WIT Petroleo")
+    plt.xticks(rotation=90)
+    plt.savefig('fig/WIT.png')
+
+def dolar():
+    plt.ioff()
+    df = pd.read_csv('data/dolar2010_2022.csv',index_col=0 , parse_dates=True)
+    df.index = pd.to_datetime(df.index)
+    df.plot(ylabel="Dolar observado")
+    plt.xticks(rotation=90)
+    plt.savefig('fig/dolar2010_2022.png')
 
 def anac_df():
+    plt.ioff()
     anac_df = pd.read_csv('data/df_anac.csv', index_col=0, parse_dates=True)
     anac_df_vnt = anac_df['nvnt']
-    anac_df_vnt.plot(title="Ventas mensuales a publico del mercado de livianos y medianos",ylabel="ventas de vehiculos")
+    anac_df_vnt.plot(ylabel="ventas de vehiculos")
     plt.xticks(rotation=90)
-    
+    plt.savefig('fig/anac.png')
+
 def pareto():
     prd_tp = pd.read_csv('data/prod_tp.csv', index_col=0)
     prd_tp_df= pd.DataFrame(prd_tp)
@@ -39,6 +62,7 @@ def pareto():
     
     frec_df["Frec_rel_%_acum"]= acum
 # plot
+    plt.ioff()
     fig = plt.figure()
     ax= fig.add_subplot(1,1,1)
     ax.set_title('Diagrama de Pareto')
@@ -91,6 +115,7 @@ def abc():
     result = frec_df.groupby('choise').agg({'Frec_rel_%_acum': ['max']})
 #result.iloc[0,0]
 
+    plt.ioff()
     fig = plt.figure()
     ax= fig.add_subplot(1,1,1)
     ax.set_title('Analisis ABC')

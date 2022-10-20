@@ -19,17 +19,17 @@ area.nam<- c("Almacen A","Almacen B","Duarcon")
 df.area<- data.frame(area.nam,area.medida)
 colnames(df.area)<- c('Sector','Area feet^2')
 
-area.tbl<- kable(df.area, caption = "Calculo de areas por sector")
+#area.tbl<- kable(df.area, caption = "Calculo de areas por sector")
 
-q.tipo.tbl<- kbl(query.n.compra, caption = "5 mayores numeros de recepcion, por provedor, desde Enero hasta Mayo 2021") %>% 
-  kable_paper(full_width = F) %>%
-  row_spec(0, bold = TRUE) %>% 
-  row_spec(1, background = '#C1FA95') %>%
-  row_spec(5, background = '#C1FA95') %>%
-  column_spec(1) %>%
-  column_spec(2) %>%
-  column_spec(3) %>%
-  kable_styling(latex_options = "HOLD_position")
+#q.tipo.tbl<- kbl(query.n.compra, caption = "5 mayores numeros de recepcion, por provedor, desde Enero hasta Mayo 2021") %>% 
+#  kable_paper(full_width = F) %>%
+#  row_spec(0, bold = TRUE) %>% 
+#  row_spec(1, background = '#C1FA95') %>%
+#  row_spec(5, background = '#C1FA95') %>%
+#  column_spec(1) %>%
+#  column_spec(2) %>%
+#  column_spec(3) %>%
+#  kable_styling(latex_options = "HOLD_position")
 
 # datos taller
 nam <- "Duarcon LTDA."
@@ -48,4 +48,6 @@ l.osc<- "Oscar Barros"
 ## cap
 tesis.ant<- "antecedentes: situación actual mercado automóvil"
 vehiculo<- "wolkswagen 32321"
+k.mlm<- "mercado automotor de livianos y medianos"
+k.lm<- "livianos y medianos"
 ## formulas

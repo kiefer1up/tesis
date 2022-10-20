@@ -1,0 +1,25 @@
+---
+  title: "Propuesta de mejora de proceso de gestión de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON"
+
+  subtitle: "Trabajo de titulación presentado en conformidad a los requisitos para obtener el Titulo de Ingueniero Civil Industrial TESIS PARA TITULO PARA LA OBTENCIÓN DEL TITULO INGENIERO CIVIL INDUSTRIAL"
+  author: "Felipe Kiefer Guenupan"
+  date: \today
+  output:
+    pdf_document
+---
+
+
+```{r setup, include=FALSE}
+library(reticulate)
+use_python("/usr/bin/python3")
+```
+
+```{python}
+import pandas as pd
+
+anac_df = pd.read_csv('data/df_anac.csv', index_col=0, parse_dates=True)
+anac_df.head()
+print(anac_df.to_markdown())
+```
+
+# Introduccion

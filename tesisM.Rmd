@@ -1,0 +1,26 @@
+---
+title: "HTML example"
+output:
+  pdf_document:
+    keep_tex: yes
+---
+
+```{r setup}
+use_python("/usr/local/lib/python3.9.2/site-packages")
+```
+
+
+
+
+# Introducion
+
+aeouaoteuaou
+
+uoaneuaeonuhaeou
+
+uaoeueoauoeuaeouae
+
+df = pd.DataFrame(
+    data={"animal_1": ["elk", "pig"], "animal_2": ["dog", "quetzal"]}
+)
+print(df.to_markdown())

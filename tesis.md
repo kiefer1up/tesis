@@ -1,137 +1,184 @@
-# Propuesta de mejora de proceso de gestión de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON Propuesta de mejora de tiempo en el proceso de despacho de repuesto, optimizando inventario, medieante el uso de WMS para el área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON
-
-## Trabajo de titulación presentado en conformidad a los requisitos para obtener el Titulo de Ingueniero Civil Industrial TESIS PARA TITULO PARA LA OBTENCIÓN DEL TITULO INGENIERO CIVIL INDUSTRIAL"
-
-"Felipe Kiefer"
-
-\today
-
-\newpage
-
-```{r setup, include=FALSE}
-  source('~/R/tesis/bbdd.R')
-  source('~/R/tesis/atajos.R')
-```
-\newpage
-
 # Introducción
 
 ## Antecedentes, situación actual mercado automóvil
 
-El inicio de la pandemia del COVID-19 a afectado la venta de automóvil, el primer semestre del año 2020 hubo una reducción en la compra de vehículos livianos y medianos. la figura \@ref(fig:vauto) presenta las ventas del mercado automotor de livianos y medianos, realizado por Asociación Nacional Automotriz de Chile (ANAC).
+El `r mlm` desde el ultimo triestre del ano 2019 hasta segundo semestre del 2022 ma sufrido un aumento en la volatilidad en la ventas de `r k.lm`. La cuarta y quinta semanas del mes de actubre de 2019, las ventas fueron de 7.199 unidades, lo que se traduce en una baja de 50% en comparación con las mismas semanas de 2018. El inicio de la pandemia del COVID-19 a afectado reduciendo la venta de automóvil, el primer semestre del año 2020.
 
-```{r vauto, echo=FALSE, fig.cap='Ventas mensuales a publico del mercado de livianos y medianos'}
-  ptl1
-```
+La figura \@ref(fig:vauto) presenta las ventas del mercado automotor de livianos y medianos, realizado por Asociación Nacional Automotriz de Chile (ANAC) desde enero 2019 hasta aguosto 2022.
 
-Se puede observar un aumento en el consumo desde el segundo semestre del 2020, ademas el parque de automotriz se acelera y rozará los 5,5 millones de unidades este año. Esto en un contexto de mayor liquidez por los retiros del 10% de las AFP y también del uso de vehículos para actividades laborales como las de reparto y servicios de movilización privada [@mercu]. En consecuencia se espera un aumento en la demanda de los servicios de mantenimiento y reparación automotriz.
+![Ventas mensuales a publico del mercado de livianos y medianos, ANAC](fig/anac.png)
+
+En primera instancia en el gráfico se puede observar un valle debido a "principalmente, por el deterioro de las condiciones económicas a nivel internacional que han afectado a distintos mercados, no solo el automotriz, las cuales se han visto acrecentadas por las circunstancias políticas y económicas a nivel local"[^22], posterior debido al desconfinamiento progresivo a nivel nacional de ciertas comunas debida a la implementación del programa estatatal denominado **Paso a Paso**, Adicionalmente, el factor del retiro del 10% de las AFP ha demostrado un nivel de incidencia certero en la adquisición de bienes durables como los automóviles, lo que se sumaría a la recuperación del sector [^23]. Meses posteriores este mercado a visto una normalizacion en ventas con respecto al año movil. En consecuencia se espera un aumento en la demanda de los servicios de mantenimiento y reparación automotriz.
+
+Para analisar el comportamiento del mercado automotor que este ultimo periodo fue afectado por las restricciones debido a las condiciones sanitarias de la Pandemia, no debemos solo limitarnos a la pandemia, otras variables que influyen en el mercado automotor y en los distintos mercados existento, el **dolar** y el **petroleo**, a continuacion se presenta el comportamiento del dolar observado como tambien del precio del petroleo (WIT).
+
+
+![Wit Petroleo](fig/WIT.png)
+![Wit Petroleo](fig/dolar2010_2022.png)
+
+El comportamiento del consumidor tambien lo pedodemos ver reflejado en la obtencion de licencias de conducion, para este caso es relevante la clase B debido a que el cliente objetivo de `r nam`  
+
+
+el  son  en la decicion de compra las medidas antes mencionadas del impacto de l
+
+![Wit Petroleo](fig/licen.png)
+
 
 ## Descripción general de la organizicion
 
 ### Descripción de la organización: historia, productos y mercados principales, estructura organizacional, tamaño, etc. (¿Quién soy?)
 
-```{r estruc, include=TRUE, cache=FALSE, echo=FALSE, fig.align='center', fig.cap='Estructura organizacional', fig.pos='H', out.width='50%'}
-  knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/organigrama.png")
-```
+`r nam` es una pequeña empresa[^7] dedicada al servicio de mantenimiento, reparación mecánica y eléctrica automotriz de vehículos `r k.lm `[^1], tambien dispone de venta de repuestos e insumos para vehiculo (detallados en la figura x). Cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos (ver figura \@ref(fig:estruc)).
+
+Iniciada en el ano `r yearsince`, ha entregado sus servicios a la comunidad cercana, su demanda constante del servicio impulso expandir la plaza de servicio, comenzando con `r area.tll.old` ft^2^ hasta llegar a `r area` ft^2^, tambien se inverte en la adquiciosion de distintas herramientas, tecnicas de trabajos destacando la eliminacion de **pozo de reparacion**.
+
+Debido a la demanda del servicio el `r nam` asigna un area de `r area.wh.old` para almacen, con el propósito de alojar repuestos necesarios en el servicio de reparación y mantenimiento, en el segundo semestre de 2021 `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos, construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén (vease \@ref(fig:layout)).
+
+![plan](fig/plan.png)
 
 ### Descripción del medio en el cual se encuentra la organización: características de la industria, de la economía, etc. (¿Dónde estoy?)
+ubicada en `r dire`,
+
+FODA
+
+Fortalezas
+entrega de nuevos servicios
+Oportunidades
+definir procesos
+
+
+Debilidades
+estandarizar prestación
+Amenazas
+competencia 
+
+### Servicios que brinda
+
+La empresa brinda servicios automotrices tanto en el aspecto mecánico, electrónico y
+de latonería. A continuación se desglosan todos los servicios que se ofrecen.
+
+Aspecto mecánico automotriz liviano-mediano.
+
+* ABC de Motor.
+* VABC de Frenos.
+* Suspensión.
+
+Embrague.
+Reparación de motores.
+Mantenimiento Predictivo/Preventivo/Correctivo.
+Cambios de aceite al instante.
+Cambios de Filtros de aire.
+Cambios de Filtros de polen.
+Reparación de cajas automáticas con garantía.
+Reparación del sistema eléctrico del vehículo.
+Controles de calidad.
+Limpieza de inyectores.
+Limpieza por ultrasonido.
+Laboratorio de comprobación de inyectores.
+Filtros y o’rings de inyector (Comercialización).
+
+Diagnóstico computarizado.
+Diagnóstico para toda marca de vehículos.
+Escáneres actualizados al 2010 (SPC, OTC).
+Frenos ABS.
+Sistema de Airbag.
+OBD II.
 
 ### Descripción de la estrategia, para saber cuál es la dirección en que camina la empresa. (¿Qué quiero?)
 
+
+
 ### Descripción del ámbito de trabajo: propósito, personas, procesos, estructura, tecnología, etc.
+
+
+El lugar de trabajo esta clasificado en área de servicio, area de almacen, area compresor, servicio higene, casino.
+
+![plan](fig/plan.png)
+
 
 ### Descripción del entorno inmediato y relaciones: ubicación del ámbito de trabajo: relaciones con otras áreas, qué y a quiénes provee, de quiénes recibe qué, etc.
 
-```{r macro,echo=FALSE, fig.pos='H',fig.cap='Macroproceso Gestión, Producción y Provisión Bien o Servicio', fig.align='center',out.width = '50%'}
-  knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/Macro.png")
-```
+`r nam`  proveedores
 
-### Descripción cuantitativa de las situaciones en que se trabajará: identificación, descripción breve, estimación de costos, nivel de urgencia por cambiar, ¿qué riesgos tiene mantener la situación actual?, etc.
+![Macro](fig/Macro.png)
 
-`r nam` es una pequeña empresa[\^7] dedicada la reparación mecánica y eléctrica automotriz de vehículos livianos[\^1], ubicada en `r dire`, cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos, detallado en la figura \@ref(fig:estruc)). Creada en el ano `r yearsince`, ha entregado sus servicios a la comunidad cercana, su demanda constante del servicio impulso expandir la plaza de servicio, desde `r area.tll.old` ft^2^ a `r area` ft^2^. Debido a la demanda del servicio el año `r yearwh`, `r nam` a incorpora a su taller un almacén con un área de `r area.viejo`, con el propósito de alojar repuestos necesarios en el servicio de reparación, en el segundo semestre del presente ano `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos se construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén tal como muestra la figura \@ref(fig:layout)
 
-```{r layout,echo=FALSE, fig.pos='H' ,fig.cap='layout taller',fig.align='center',out.width = '50%'}
-  knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/plan.png")
-```
+### Descripción cuantitativa de las situaciones en que se trabajará:
+identificación, descripción breve, estimación de costos, nivel de urgencia por cambiar, ¿qué riesgos tiene mantener la situación actual?, etc.
 
-```{r are, echo=FALSE,fig.pos='H'}
-  knitr::kable(df.area, caption = "Calculo de areas por sector")
-```
+  `r nam` es una pequeña empresa[^7] dedicada la reparación mecánica y eléctrica automotriz de vehículos livianos[^1], ubicada en `r dire`, cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos, detallado en la figura \@ref(fig:estruc)). Creada en el ano `r yearsince`, ha entregado sus servicios a la comunidad cercana, su demanda constante del servicio impulso expandir la plaza de servicio, desde `r area.tll.old` ft^2^ a `r area` ft^2^. Debido a la demanda del servicio el año `r yearwh`, `r nam` a incorpora a su taller un almacén con un área de `r area.viejo`, con el propósito de alojar repuestos necesarios en el servicio de reparación, en el segundo semestre del presente ano `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos se construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén (vease \@ref(fig:layout)).
 
-Para realizar el servicio de reparación automotriz, el mecánico dispone de repuestos los cuales son solicitados a almacén, el administrador se encarga en la preparación del repuesto según los siguiente requisitos.
+  **Label aparte con simbologia**
 
--   Tipo repuesto
--   Modelo de vehículo
--   Cantidad requerida
+![plan](fig/plan.png)
 
-Lo siguiente es ubicar en el los distintos rack el repuesto requerido y realizar picking[\^2], para posterior entregar al mecánico y así continuar con la reparación del vehículo. tal como detalla la figura \@ref(fig:bpmnout).
+  Para realizar el servicio de reparación automotriz, el mecánico dispone de repuestos los cuales son solicitados a almacén, el administrador se encarga en la preparación del repuesto según los siguiente requisitos.
 
-El proceso mencionado anteriormente **carese de integridad en la información**[\^3] por el procedimiento con el que se realiza la ubicación del repuesto, debido a que no existe registro de su ubicación, esto tiene relación con el procedimiento al almacenar recepción, el cual se agrupa según marca de vehículo y se rotular el packing el producto por modelo, tal como detalla la figura \@ref(fig:bpmnin).
+  * Tipo repuesto
+  * Modelo de vehículo
+  * Cantidad requerida
+
+  Lo siguiente es ubicar en el los distintos rack el repuesto requerido y realizar picking[^2], para posterior entregar al mecánico y así continuar con la reparación del vehículo. tal como detalla la figura \@ref(fig:bpmnout).
+
+  El proceso mencionado anteriormente **carese de integridad en la información**[^3] por el procedimiento con el que se realiza la ubicación del repuesto, debido a que no existe registro de su ubicación, esto tiene relación con el procedimiento al almacenar recepción, el cual se agrupa según marca de vehículo y se rotular el packing el producto por modelo, tal como detalla la figura \@ref(fig:bpmnin).
+
 
 # Capitulo I: Definición del Problema
-
 ## Problema y Preguntas de Investigación
 
-El tema abordado en esta memoria nace de un problema presentado de forma directa por `r nam` que es el desconocimiento del stock, desde esta base se ha podido hallar otro problema del proceso de gestión de inventario, como el mencionado anteriormente que es la ubicación del stock en recepción. Analizaremos el inventario existente, clasificado según el tipo de repuesto con un costo de \$`r cst.stock` pesos, la variedad de producto es de `r lng.ttl.prod` y una cantidad total de stock de `r sm.total.in`. Para resumir el stock existente la figura \@ref(fig:inventario) se presenta la distribución de frecuencia de cantidad agrupado según su clasificación
+  El tema abordado en esta memoria nace de un problema presentado de forma directa por `r nam` que es el desconocimiento del stock, desde esta base se ha podido hallar otro problema del proceso de gestión de inventario, como el mencionado anteriormente que es la ubicación del stock en recepción. Analizaremos el inventario existente, clasificado según el tipo de repuesto con un costo de $`r cst.stock` pesos, la variedad de producto es de r lng.ttl.prod y una cantidad total de stock de r sm.total.in. Para resumir el stock existente la figura \@ref(fig:inventario) se presenta la distribución de frecuencia de cantidad agrupado según su clasificación
 
-```{r inventario, echo=FALSE,fig.cap="Histograma, resumen de existencias",out.width = '100%',  fig.align='center'}
-plt.rsmn.prd
-```
-Se puede observar la existencia de sobre stock ejemplo de ello es la categoría `r "**categoria**"` el cual presta un producto con un stock superior a `r "**stock max 60**"` unidades
+
+  Se puede observar la existencia de sobre stock ejemplo de ello es la categoría `r "**categoria**"` el cual presta un producto con un stock superior a `r "**stock max 60**"` unidades
 
 ## Justificación de la Investigación. - Breve Resumen Capitular.
 
-**Pendiente cuantificar costoss**
+  **Pendiente cuantificar costoss **
 
 ## porque es importante este proyecto
-
-Para entender la importancia del inventario, y por que de enfocarse en ello, se señala que "el inventario es uno de los activos más costosos de muchas compañías, llega a representar hasta un 50% del capital total invertido.[...] Por un lado, una empresa puede reducir sus costos al disminuir el inventario" [@heizer, pp. 484], ademas "la sola permanencia de este inventario está generando un sin número de costos asociados" [@salas2009inventarios, pp. XVI].
+  Para entender la importancia del inventario, y por que de enfocarse en ello, se señala que "el inventario es uno de los activos más costosos de muchas compañías, llega a representar hasta un 50% del capital total invertido.[...] Por un lado, una empresa puede reducir sus costos al disminuir el inventario" [@heizer, pp. 484], ademas "la sola permanencia de este inventario está generando un sin número de costos asociados" [@salas2009inventarios, pp. XVI].
 
 ## cual es la problemática que intenta solucionar
 
-Obtenidos los datos y como se generan, se puede señalar que la problemática es de tipo metodológico (que implican un método o proceso estricto para ser solucionados), e involucra al proceso completo desde la entrada hasta la salida de stock, evidenciando la falta de control del inventario.
+  Obtenidos los datos y como se generan, se puede señalar que la problemática es de tipo metodológico (que implican un método o proceso estricto para ser solucionados), e involucra al proceso completo desde la entrada hasta la salida de stock, evidenciando la falta de control del inventario.
 
-"Las buenas políticas de inventarios pierden sentido si la administración no sabe qué hay disponible en su inventario" [@heizer, pp. 486]. En consecuencia este sera la problemática a solucionar. Para la presente proyecto el objetivo es **mejorar** la gestión de inventario actual de Duarcon con respecto a la rapidez de y solides de la información, para ello se propone implementar una herramienta tecnológica en especifico un software, capas de registrar, controlar y entregar métodos, técnicas que otorguen al administrador capacidad de tomar decisiones concretas acerca de pedidos.
+  "Las buenas políticas de inventarios pierden sentido si la administración no sabe qué hay disponible en su inventario" [@heizer, pp. 486]. En consecuencia este sera la problemática a solucionar. Para la presente proyecto el objetivo es **mejorar** la gestión de inventario actual de Duarcon con respecto a la rapidez de y solides de la información, para ello se propone implementar una herramienta tecnológica en especifico un software, capas de registrar, controlar y entregar métodos, técnicas que otorguen al administrador capacidad de tomar decisiones concretas acerca de pedidos.
 
 ## por que este proyecto y no otro
 
-La realización de este proyecto es importante debido a que "Sólo cuando la organización puede determinar con exactitud qué está disponible es capaz de tomar decisiones concretas acerca de pedidos, programación y embarque", "La exactitud de los registros permite a las organizaciones enfocarse en aquellos artículos que son más necesarios, en vez de tener la seguridad de que "algo de todo" está en inventario" [@heizer, pp. 486], ademas agregar que el proceso de inventario no agrega valor al servicio. Se puede inferir que de haber existido un sistema gestión de inventario, correcto con exactitud en los registros, habría desechado el **costo de oportunidad** de realizar de la ampliación de almacén por utilizar ese espacio en otra estación de reparación.
+  La realización de este proyecto es importante debido a que "Sólo cuando la organización puede determinar con exactitud qué está disponible es capaz de tomar decisiones concretas acerca de pedidos, programación y embarque", "La exactitud de los registros permite a las organizaciones enfocarse en aquellos artículos que son más necesarios, en vez de tener la seguridad de que “algo de todo” está en inventario" [@heizer, pp. 486], ademas agregar que el proceso de inventario no agrega valor al servicio. Se puede inferir que de haber existido un sistema gestión de inventario, correcto con exactitud en los registros, habría desechado el **costo de oportunidad** de realizar de la ampliación de almacén por utilizar ese espacio en otra estación de reparación.
 
 ## Formulación de hipótesis.
-
 ### Hipótesis general
 
-La utilización de un sistema tecnológico de manejo y control en la gestión de inventario herramienta permitirá reducir el espacio necesario de almacenamiento.
+  La utilización de un sistema tecnológico de manejo y control en la gestión de inventario herramienta permitirá reducir el espacio necesario de almacenamiento.
 
 ### Hipótesis específicas
 
--   Aplicar 5's facilitara la implementación de nuevas mejoras.
--   Cuantificar, clasificar el inventario y comparar con la demanda visibilizara sobrestock.
--   Cuantificar el costo de inventario incentivara el análisis y una posterior optimización.
--   La implementación de indicadores de gestión permitirá mejora en decisiones rápidas en operaciones del almacén.
--   La implementación de procedimientos generará una comunicación eficaz entre las áreas internas.
+  * Aplicar 5's facilitara la implementación de nuevas mejoras.
+  * Cuantificar, clasificar el inventario y comparar con la demanda visibilizara sobrestock.
+  * Cuantificar el costo de inventario incentivara el análisis y una posterior optimización.
+  * La implementación de indicadores de gestión permitirá mejora en decisiones rápidas en operaciones del almacén.
+  * La implementación de procedimientos generará una comunicación eficaz entre las áreas internas.
 
-Para la solución del proceso de gestión de inventario, es necesario mejorar la metodología en la gestión del almacén, contemplando distribución, lenguaje iconico [\^5], involucrando métodos y herramientas logísticas, ademas alineado en la **industria 4.0** se implementara una herramienta tecnológica que simplifique la utilización de los métodos y herramientas.
+  Para la solución del proceso de gestión de inventario, es necesario mejorar la metodología en la gestión del almacén, contemplando distribución, lenguaje iconico [^5], involucrando métodos y herramientas logísticas, ademas alineado en la **industria 4.0** se implementara una herramienta tecnológica que simplifique la utilización de los métodos y herramientas.
 
 ## Objetivos de la Investigación.
-
 ### Objetivo general:
 
-Mejora de método, herramientas y técnicas que contribuyan en la gestión y control de inventario del almacén con el fin de proporcionar al operador de almacén información suficiente para una solida toma de decisiones y con ello la optimizacion de inventario.
+  Mejora de método, herramientas y técnicas que contribuyan en la gestión y control de inventario del almacén con el fin de proporcionar al operador de almacén información suficiente para una solida toma de decisiones y con ello la optimizacion de inventario.
 
 ### Objetivos específicos:
 
--   Identificar y analizar, la situación actual de la gestión y control del inventario.
--   Evaluar la factibilidad de la propuesta de mejora.
--   Rediseñar el subproceso de entrada y salida.
--   Integrar al rediseño herramienta tecnológica que facilite la ejecución del proceso.
--   Evaluar los resultados contrastando con la situación actual.
-
-## Variables de Estudio[\^4].
-
+  * Identificar y analizar, la situación actual de la gestión y control del inventario.
+  * Evaluar la factibilidad de la propuesta de mejora.
+  * Rediseñar el subproceso de entrada y salida.
+  * Integrar al rediseño herramienta tecnológica que facilite la ejecución del proceso.
+  * Evaluar los resultados contrastando con la situación actual.
+## Variables de Estudio[^4].
 ### Variables Dependientes
 
--   Servicio almacén
+  * Servicio almacén
 
 ### Variables Independientes Intangible
 
@@ -141,7 +188,62 @@ Mejora de método, herramientas y técnicas que contribuyan en la gestión y con
 
 ## Alcance de la investigacion
 
+no se tiene acceso a repuestos despachados 
+
 # Capítulo II: MARCO TEÓRICO
+
+## Marco referente a Logistica
+
+La logística es un proceso relacionado con la administración efectiva del flujo de bienes y servicios. Su operatividad afecta el desenvolvimiento de muchas áreas de la organización; es por ello que se puede mencionar de un sistema logístico que mediante la sincronización de sus componentes, permite lograr el flujo necesario para responder de manera efectiva a una demanda cambiante y cada vez más exigentes.
+
+Etapas de la logística:
+
+1. Logística de entrada: Planificación, gestión de materiales, alianza con los proveedores, negociación, compras y abastecimiento.
+2. Logística del proceso: Planificación y manejo de recursos.
+3. Logística de salida: Distribución física y servicio al cliente.
+4. Supply Chain Management: Gestión de la cadena de valor.
+5. Logística inversa: Manejo de devoluciones, atención al cliente.
+
+### Administración de inventario
+El objetivo de la administración de inventarios es encontrar un equilibrio entre la inversión en el inventario y el servicio al cliente. Sin un inventario bien administrado nunca se podrá lograr una estrategia de bajo costo [@heizer, pp. 484] lo cual esta ligado principios del lean manufacturing.
+
+El inventario puede dar servicio a varias funciones que agregan flexibilidad a las operaciones de una empresa. Las cuatro funciones del inventario son:
+
+1. "Desunir" o separar varias partes del proceso de producción. Por ejemplo, si los suministros de una empresa fluctúan, quizá sea necesario un inventario adicional para desunir los procesos de producción de los proveedores.
+2. Separar a la empresa de las fluctuaciones en la demanda y proporcionar un inventario de bienes que ofrezca variedad a los clientes. Tales inventarios son típicos de los establecimientos minoristas.
+3. Tomar ventaja de los descuentos por cantidad, porque las compras en grandes cantidades pueden reducir el costo de los bienes y su entrega.
+4. Protegerse contra la inflación y los cambios a la alza en los precios.
+
+#### Sistema ABC de la clasificación de inventarios
+
+El análisis ABC divide el inventario disponible en tres clases con base en su volumen anual en dinero, la figura \@ref(fig:ABC) representa este análisis. El análisis ABC es una aplicación a los inventarios de lo que se conoce como principio de Pareto. El principio de Pareto establece que hay "pocos artículos cruciales y muchos triviales"[^13]. La idea es esablecer políticas de inventarios que centren sus recursos en las pocas partes cruciales del inventario y no en las muchas partes triviales. No es realista monitorear los artículos baratos con la misma intensidad que a los artículos costosos [@heizer, pp. 485]. Ademas se afirma que "si se aplican en forma selectiva políticas de inventarios a estos diferentes grupos, pueden lograrse, con niveles más bajos de inventarios, los objetivos del servicio de inventarios, en vez de una política aplicada colectivamente a todos los productos" [@logist, pp. 376].
+
+![abcteo](fig/abcteo.png)
+
+#### Conteo cíclico o "inventario"
+
+Aunque una organización haya realizado esfuerzos sustanciales para registrar con precisión su inventario, los registros deben verificarse mediante una auditoría continua. El conteo cíclico usa la clasificación del inventario desarrollada en el análisis ABC. Con los procedimientos de conteo cíclico, se cuentan los artículos, se verifican los registros, y se documentan las imprecisiones de manera periódica. Se rastrea la causa de las imprecisiones y se toman las acciones correctivas apropiadas para asegurar la integridad del sistema de inventario. La frecuencia de conteo depende del tipo de producto de mayor a menor los artículos, A,B,C respectivamente [@heizer, pp. 487]
+
+### Warehouse
+
+Un almacén controla el ingreso y salida de materiales, por lo tanto es importante tener codificados todos los productos, definir correctamente las unidades y clasificar los ítems. Según Cachay (2010) es definido “Proceso de la función logística que trata la recepción, almacenamiento y movimiento dentro de un mismo almacén hasta el punto de consumo de cualquier material, así como el tratamiento e información de los datos generados”.
+
+El proceso de planificación, organización y gestión de almacenes está a cargo de la gerencia o jefatura, alcanza las actividades de carácter estratégico y táctico. Estas actividades contempla:
+
+1. Diseño de la red de distribución y almacenamiento
+
+2. Responsabilidades de la gestión de almacenes: 
+
+3. Ubicación de los almacenes: Las decisiones sobre ubicación implican de determinar el número, ubicación y tamaño de las instalaciones que se utilizarán.
+
+4. Diseño y Layout de los almacenes: Corresponde a la disposición de los elementos dentro del almacén.
+
+5. Modelo de organización física de los almacenes:
+    + Determinar las ubicaciones de existencias y establecer el sistema de almacenamiento.
+    + Establecer el sistema de manejo de materiales.
+    + Mantener un sistema de control de inventarios.
+    + Establecer procedimientos para tramitar los pedidos.
+    + Seleccionar el medio de transporte.
 
 Como primicia, la propuesta de esta investigación es la implementación de un métodos de control en la gestión de inventario mediante un software WMS, por lo que respecta a la construcción del software se analizara de forma general sin caer en demasiado tecnicismos, se incluirá información acerca de su funcionamiento, debido a que es un proyecto para el titulo de la carrera ingeniero civil industrial.
 
@@ -169,9 +271,8 @@ Contiene el conjunto de actividades que tienen como propósito ejecutar el ciclo
 ### Modelamiento de procesos
 La interacción entre los macroprocesos se da a través de flujos que representan como un macroproceso se alimenta y requiere servicios de los otros macroprocesos. Para el modelamiento de procesos se propone la utilizacion de los diagramas de flujos y patrones conocida como IDEFO (Integration Definition for Function Modeling) [@proce, pp. 34] la figura \@ref.
 
-```{r echo=FALSE,fig.cap='Metodología rediseño', fig.id='metoredi', out.width = '80%',fig.align='center', fig.pos='H'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/modelamientoestructurado.png")
-```
+![modelamientoestructurado](fig/modelamientoestructurado.png)
+
 
 ### Metodología de rediseño mediante el uso de patrones
 
@@ -184,7 +285,7 @@ Barros propone dos metodologías para realizar reingeniería o rediseño de proc
 de lo anterior adapta la metodología propuestas en el libro Reingeniería de Procesas de Negocios [@proce, pp. 97], que se presenta resumido en la figura \@ref(fig:metoredi)
 
 ```{r echo=FALSE,fig.cap='Metodología rediseño', fig.id='metoredi', out.width = '80%',fig.align='center', fig.pos='H'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/diagramas/metologia_rediseno.png")
+knitr::include_graphics("marco teorico/diagramas/metologia_rediseno.png")
 ```
 
 ## Marco referente a métodos, filosofias, herramientas.
@@ -211,7 +312,7 @@ El término industria 4.0 se refiere a un nuevo modelo de organización y de con
 Falta de estos tópicos del éxito tiene como consecuencia en la productividad [@leanmanu, pp. 26]. Lean manufacturing visibiliza las limitantes de la productividad, los ingenieros japoneses han clasificado estas limitantes en tres grupos a los que llamaron las 3 "Mu", debido a que todas inician con la silaba mu:
 
 ```{r echo=FALSE, fig.align='center', fig.cap='Tres limitantes de la productividad', fig.id='leanmu', out.width='50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-02 00-44-42.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-02 00-44-42.png")
 ```
 
 #### Principios en los que se basa la filosofía Lean Manufacturing:
@@ -228,7 +329,7 @@ knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021
 Las 5's constituyen una disciplina para lograr mejoras en la productividad del lugar de trabajo mediante la estandarización de hábitos de orden y limpieza. Representa una de las piedras que enmarcan el inicio de cualquier herramienta o sistema de mejora. Por ello, se dice que un buen evento de mejora es aquel que se inicia con las 5’s. Esto se logra implementando cambios en los procesos en cinco etapas, cada una de las cuales servirá de Fundamento a la siguiente, para así mantener sus beneficios en el largo plazo [@leanmanu, pp. 147] \@ref(tab:5s)
 
 ```{r 5s, echo=FALSE,  fig.pos='H'} 
-s5.tbl
+  #s5.tbl
 ```
 
 Se dice que si en una empresa no ha funcionado la implementación de las 5’s, cualquier otro sistema de mejoramiento de los procesos esté destinado a fracasar. Esto se debe a que no se requiere tecnología ni conocimientos especiales para implementarlas, solo **disciplina y autocontrol** por parte de cada uno de los miembros de la organización.
@@ -240,7 +341,7 @@ El trabajo se relaciona con simples señales visuales y de audio que se identifi
 Andon es un elemento del principio Jidoka[^11] que, mediante ingeniosos mecanismos, detecta cuando ocurre una Falla y entonces, con una señal generalmente visual, avisa al operador que se ha generado un problema, Andon es una señal que incorpora elementos visuales, auditivos y de texto que sirven para notificar problemas de calidad o paros por ciertos motivos. Proporciona información en tiempo real y retroalimentación del estado de un proceso,
 
 ```{r echo=FALSE, fig.align='center', fig.cap='concepto de andon es medir pfocesos y no personas, La Comunicaclén visual genera acutudes hacia las responsabilidades, no contra los individuos', out.width='50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-02 17-19-42.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-02 17-19-42.png")
 ```
 
 ### Herramienta de calidad
@@ -269,68 +370,12 @@ Las siguientes son algunas de las utilidades de implementar Poka Yoke:
 * Libera la mente del trabajador y le permite desarrollar su creatividad
 * Generalmente los Sistemas Poka Yoke son baratos y sencillos.
 
-
-## Marco referente a Logistica
-
-La logística es un proceso relacionado con la administración efectiva del flujo de bienes y servicios. Su operatividad afecta el desenvolvimiento de muchas áreas de la organización; es por ello que se puede mencionar de un sistema logístico que mediante la sincronización de sus componentes, permite lograr el flujo necesario para responder de manera efectiva a una demanda cambiante y cada vez más exigentes.
-
-Etapas de la logística:
-
-1. Logística de entrada: Planificación, gestión de materiales, alianza con los proveedores, negociación, compras y abastecimiento.
-2. Logística del proceso: Planificación y manejo de recursos.
-3. Logística de salida: Distribución física y servicio al cliente.
-4. Supply Chain Management: Gestión de la cadena de valor.
-5. Logística inversa: Manejo de devoluciones, atención al cliente.
-
-### Administración de inventario
-El objetivo de la administración de inventarios es encontrar un equilibrio entre la inversión en el inventario y el servicio al cliente. Sin un inventario bien administrado nunca se podrá lograr una estrategia de bajo costo [@heizer, pp. 484] lo cual esta ligado principios del lean manufacturing.
-
-El inventario puede dar servicio a varias funciones que agregan flexibilidad a las operaciones de una empresa. Las cuatro funciones del inventario son:
-
-1. "Desunir" o separar varias partes del proceso de producción. Por ejemplo, si los suministros de una empresa fluctúan, quizá sea necesario un inventario adicional para desunir los procesos de producción de los proveedores.
-2. Separar a la empresa de las fluctuaciones en la demanda y proporcionar un inventario de bienes que ofrezca variedad a los clientes. Tales inventarios son típicos de los establecimientos minoristas.
-3. Tomar ventaja de los descuentos por cantidad, porque las compras en grandes cantidades pueden reducir el costo de los bienes y su entrega.
-4. Protegerse contra la inflación y los cambios a la alza en los precios.
-
-#### Sistema ABC de la clasificación de inventarios
-
-El análisis ABC divide el inventario disponible en tres clases con base en su volumen anual en dinero, la figura \@ref(fig:ABC) representa este análisis. El análisis ABC es una aplicación a los inventarios de lo que se conoce como principio de Pareto. El principio de Pareto establece que hay "pocos artículos cruciales y muchos triviales"[^13]. La idea es establecer políticas de inventarios que centren sus recursos en las pocas partes cruciales del inventario y no en las muchas partes triviales. No es realista monitorear los artículos baratos con la misma intensidad que a los artículos costosos [@heizer, pp. 485]. Ademas se afirma que "si se aplican en forma selectiva políticas de inventarios a estos diferentes grupos, pueden lograrse, con niveles más bajos de inventarios, los objetivos del servicio de inventarios, en vez de una política aplicada colectivamente a todos los productos" [@logist, pp. 376].
-
-```{r echo=FALSE,fig.pos='H',fig.align='center', fig.cap='Ejemplo, representación gráfica del análisis ABC', fig.id='ABC', out.width='50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/abcteo.png")
-```
-
-#### Conteo cíclico o "inventario"
-
-Aunque una organización haya realizado esfuerzos sustanciales para registrar con precisión su inventario, los registros deben verificarse mediante una auditoría continua. El conteo cíclico usa la clasificación del inventario desarrollada en el análisis ABC. Con los procedimientos de conteo cíclico, se cuentan los artículos, se verifican los registros, y se documentan las imprecisiones de manera periódica. Se rastrea la causa de las imprecisiones y se toman las acciones correctivas apropiadas para asegurar la integridad del sistema de inventario. La frecuencia de conteo depende del tipo de producto de mayor a menor los artículos, A,B,C respectivamente [@heizer, pp. 487]
-
-### Warehouse
-
-Un almacén controla el ingreso y salida de materiales, por lo tanto es importante tener codificados todos los productos, definir correctamente las unidades y clasificar los ítems. Según Cachay (2010) es definido “Proceso de la función logística que trata la recepción, almacenamiento y movimiento dentro de un mismo almacén hasta el punto de consumo de cualquier material, así como el tratamiento e información de los datos generados”.
-
-El proceso de planificación, organización y gestión de almacenes está a cargo de la gerencia o jefatura, alcanza las actividades de carácter estratégico y táctico. Estas actividades contempla:
-
-1. Diseño de la red de distribución y almacenamiento
-
-2. Responsabilidades de la gestión de almacenes: 
-
-3. Ubicación de los almacenes: Las decisiones sobre ubicación implican de determinar el número, ubicación y tamaño de las instalaciones que se utilizarán.
-
-4. Diseño y Layout de los almacenes: Corresponde a la disposición de los elementos dentro del almacén.
-
-5. Modelo de organización física de los almacenes:
-    + Determinar las ubicaciones de existencias y establecer el sistema de almacenamiento.
-    + Establecer el sistema de manejo de materiales.
-    + Mantener un sistema de control de inventarios.
-    + Establecer procedimientos para tramitar los pedidos.
-    + Seleccionar el medio de transporte.
-
 ## Marco al proceso de desarrollo del software
 
 Un proceso de desarrollo de software tiene como propósito la producción eficaz y eficiente de un producto software que reúna los requisitos del cliente. Dicho proceso, en términos globales se muestra en la Figura \@ref(fig:soft_proc) [^8]. Este proceso es intensamente intelectual, afectado por la creatividad y juicio de las personas involucradas[^9]. Aunque un proyecto de desarrollo de software es equiparable en muchos aspectos a cualquier otro proyecto de ingeniería, en el desarrollo de software hay una serie de desafíos adicionales, relativos esencialmente a la naturaleza del producto obtenido. [^18]
 
 ```{r echo=FALSE, fig.align='center', fig.cap='Proceso de desarrollo de software', fig.id='soft_proc', out.width='50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-09 04-03-10.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-09 04-03-10.png")
 ```
 
 El proceso de desarrollo de software no es único. No existe un proceso de software universal que sea efectivo para todos los contextos de proyectos de desarrollo. Debido a esta diversidad, es difícil automatizar todo un proceso de desarrollo de software. A pesar de la variedad de propuestas de proceso de software, existe un conjunto de actividades fundamentales que se encuentran presentes en todos ellos [^9]:
@@ -344,15 +389,21 @@ El proceso de desarrollo de software no es único. No existe un proceso de softw
 A través de los años, la logística ha sufrido importantes transformaciones no sólo en términos conceptuales sino también cómo ha evolucionado a lo que conocemos hoy día como e-logística, con lo cual se incorpora la utilización de una herramienta fundamental como es Internet. Debido a este avance, las organizaciones han determinado un cambio en su manejo de inventarios, almacenes y cadena de suministro. Dando esto como resultado las implementaciones de ciertos sistemas de apoyo como WMS, SCM, ERP y CRM.
 
 ```{r echo=FALSE}
-tec.tbl
+#tec.tbl
 ```
 
 ### Modelo de desarrollo
 
-Desarrollo evolutivo La idea detrás de este modelo es el desarrollo de una implantación del sistema inicial, exponerla a los comentarios del usuario, refinar en N versiones hasta que se desarrolle el sistema adecuado. En la Figura 6 se observa cómo las actividades concurrentes: especificación, desarrollo y validación, se realizan durante el desarrollo de las versiones hasta llegar al producto final. Una ventaja de este modelo es que se obtiene una rápida realimentación del usuario, ya que las actividades de especificación, desarrollo y pruebas se ejecutan en cada iteración. \@ref(fig:sftproc)
+Desarrollo evolutivo
+La idea detrás de este modelo es el desarrollo de una implantación del sistema inicial, exponerla a los
+comentarios del usuario, refinar en N versiones hasta que se desarrolle el sistema adecuado. En la Figura
+6 se observa cómo las actividades concurrentes: especificación, desarrollo y validación, se realizan durante
+el desarrollo de las versiones hasta llegar al producto final.
+Una ventaja de este modelo es que se obtiene una rápida realimentación del usuario, ya que las actividades
+de especificación, desarrollo y pruebas se ejecutan en cada iteración. \@ref(fig:sftproc)
 
 ```{r echo=FALSE, fig.align='center', fig.cap='Modelo desarrollo evolutivo de software', fig.id='sftproc', out.width='50%'}
-  knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-09 04-24-09.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-09 04-24-09.png")
 ```
 
 Existen dos tipos de desarrollo evolutivo:
@@ -364,16 +415,24 @@ Este modelo es efectivo en proyectos pequeños (menos de 100.000 líneas de cód
 
 ### Metodologías para desarrollo de software
 
-Metodologías ágiles Un proceso es ágil cuando el desarrollo de software es incremental (entregas pequeñas de software, con ciclos rápidos), cooperativo (cliente y desarrolladores trabajan juntos constantemente con una cercana comunicación), sencillo (el método en sí mismo es fácil de aprender y modificar, bien documentado), y adaptable (permite realizar cambios de último momento).
+Metodologías ágiles
+Un proceso es ágil cuando el desarrollo de software es incremental (entregas pequeñas de software, con
+ciclos rápidos), cooperativo (cliente y desarrolladores trabajan juntos constantemente con una cercana
+comunicación), sencillo (el método en sí mismo es fácil de aprender y modificar, bien documentado), y
+adaptable (permite realizar cambios de último momento).
 
 ### Back
 #### phpMyAdmin
 #### Base de datos, modelo relacional
 
-MySQL es un sistema de gestión de base de datos relacional, multihilo y multiusuario; incluye todos los elementos necesarios para instalar el programa, preparar diferentes niveles de acceso de usuario, administrar el sistema y proteger los datos, puede desarrollar sus propias aplicaciones de bases de datos en la mayor parte de lenguajes de programación
-utilizados en la actualidad y ejecutarlos en casi todos los sistemas operativos. MySQL es una base de datos robusta que puede ser comparada con una base de datos comercial, compite con sistemas RDBMS propietarios como Oracle, SQL Server y DB2, disponiendo de procesamiento de transacciones a través del motor de almacenamiento
-InnoDb compatible con ACID y, que dispone de procedimientos almacenados, triggers, y vistas. MySQL es lo suficientemente flexible para trabajar en entornos con gran demanda, tales como aplicaciones web; al mismo tiempo, puede impulsar aplicaciones empotradas,
-almacenes de datos, indexación de contenidos, sistemas de mensajería, sistemas redundantes de alta disponibilidad, procesamiento de transacciones en línea (OLTP), y mucho más.
+MySQL es un sistema de gestión de base de datos relacional, multihilo y multiusuario; incluye todos los elementos necesarios para instalar el programa, preparar diferentes niveles
+de acceso de usuario, administrar el sistema y proteger los datos, puede desarrollar sus propias aplicaciones de bases de datos en la mayor parte de lenguajes de programación
+utilizados en la actualidad y ejecutarlos en casi todos los sistemas operativos. MySQL es una base de datos robusta que puede ser comparada con una base de datos
+comercial, compite con sistemas RDBMS propietarios como Oracle, SQL Server y DB2, disponiendo de procesamiento de transacciones a través del motor de almacenamiento
+InnoDb compatible con ACID y, que dispone de procedimientos almacenados, triggers, y vistas.    
+MySQL es lo suficientemente flexible para trabajar en entornos con gran demanda, tales como aplicaciones web; al mismo tiempo, puede impulsar aplicaciones empotradas,
+almacenes de datos, indexación de contenidos, sistemas de mensajería, sistemas redundantes de alta disponibilidad, procesamiento de transacciones en línea (OLTP), y
+mucho más.
 
 #### R[^12]
 
@@ -382,13 +441,30 @@ de Desarrollo de R.
 
 #### php
 
-PHP, cuyas siglas responden a un acrónimo recursivo (PHP: hypertext preprocessor), es un lenguaje sencillo, de sintaxis cómoda y similar a la de otros lenguajes como Perl, C y C++. Es rápido, interpretado, orientado a objetos y multiplataforma. Para él se encuentra disponible una multitud de librerías. PHP es un lenguaje ideal tanto para Desarrollo de aplicaciones web aprender a desarrollar aplicaciones web como para desarrollar aplicaciones web complejas. PHP añade a todo eso la ventaja de que el intérprete de PHP, los diversos módulos y gran cantidad de librerías desarrolladas para PHP son de código libre, con lo que el programador de PHP dispone de un impresionante arsenal de herramientas libres para desarrollar aplicaciones. PHP suele ser utilizado conjuntamente con Perl, Apache, MySQL o PostgreSQL en sistemas Linux, formando una combinación barata (todos los componentes son de código libre), potente y versátil. Tal ha sido la expansión de esta combinación que incluso ha merecido conocerse con un nombre propio LAMP (formado por las iniciales de los diversos productos)
+PHP, cuyas siglas responden a un acrónimo recursivo (PHP: hypertext
+preprocessor), es un lenguaje sencillo, de sintaxis cómoda y similar a
+la de otros lenguajes como Perl, C y C++. Es rápido, interpretado,
+orientado a objetos y multiplataforma. Para él se encuentra disponi-
+ble una multitud de librerías. PHP es un lenguaje ideal tanto para Desarrollo de aplicaciones web aprender a desarrollar aplicaciones web como para desarrollar apli-
+caciones web complejas. PHP añade a todo eso la ventaja de que el
+intérprete de PHP, los diversos módulos y gran cantidad de librerías
+desarrolladas para PHP son de código libre, con lo que el programa-
+dor de PHP dispone de un impresionante arsenal de herramientas li-
+bres para desarrollar aplicaciones.
+PHP suele ser utilizado conjuntamente con Perl, Apache, MySQL o
+PostgreSQL en sistemas Linux, formando una combinación barata
+(todos los componentes son de código libre), potente y versátil. Tal
+ha sido la expansión de esta combinación que incluso ha merecido
+conocerse con un nombre propio LAMP (formado por las iniciales de
+los diversos productos)
 
 ### End
 
 #### js
 
-Javascript es un lenguaje de programación interpretado (un lenguaje de tipo script). A pesar de que existen intérpretes no dependientes de ningún navegador, es un lenguaje de script que suele encontrarse vinculado a páginas web, es utilizado para hacer 
+Javascript es un lenguaje de programación interpretado (un lenguaje
+de tipo script). A pesar de que existen intérpretes no dependientes de
+ningún navegador, es un lenguaje de script que suele encontrarse vinculado a páginas web, es utilizado para hacer 
 
 ### html
 
@@ -408,7 +484,7 @@ El debido a la naturaleza de la propuesta de rediseño de proceso se puede estab
 Para realizar la propuesta de mejora en el proceso de gestión de almacén se utilizara la teoría de `r l.osc` añadiendo la filosofía de lean manufacturing. Como principio se utilizara para este caso   especifico la variante metodológica de rediseño, que contempla como referencia la situación actual, por tanto la propuesta del diseno de la metodología en general contara con las etapas que describe la figura \@ref(fig:metoredi).
 
 ```{r echo=FALSE,fig.cap='Metodología general', fig.id='metores', out.width = '50%',fig.align='center'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/diagramas/metodo_resu.png")
+knitr::include_graphics("marco teorico/diagramas/metodo_resu.png")
 ```
 
 ## Contexto
@@ -464,7 +540,7 @@ El objetivo general de la etapa es entregar información suficiente para decidir
 Para una mejor comprensión de esta actividad, la figura \@ref(fig:meto1obj) presenta la estructura a seguir.
 
 ```{r echo=FALSE,fig.cap='Derivación de los objetivos y atributos de los procesos', fig.id='meto1obj', out.width = '30%',fig.align='center'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/diagramas/METO derivarivacion de objetivos.png")
+knitr::include_graphics("marco teorico/diagramas/METO derivarivacion de objetivos.png")
 ```
 
 Primero se debe tener claro el planteamiento estratégico de la organización [@proce, pp. 102], para ello se establece cual la estrategia de negocio, con respecto a esto Porter identifica dos estrategias: estrategia de menor costo, estrategia de diferenciación [@nego, pp. 145], para escoger una de ellas, se considerara lo expuesto en `r tesis.ant` del presente proyecto, y para ilustrar análisis ambiental[^16] actual se utilizara la herramienta **matriz FODA** [@nego, pp. 144]. Se diseñara la visión estratégica de los procesos que es una especialización de la estrategia de negocios que entrega una expresión precisa de lo que se espera de los procesos, lo que permitirá establecer lo siguiente:
@@ -537,7 +613,6 @@ Se detalla el funcionamiento del proceso en conjunto al software.
 
 
 # Resultados Esperados
-\newpage
 # Capítulo IV: Desarrollo
 
 ## Definir proyecto
@@ -555,9 +630,7 @@ Se detalla el funcionamiento del proceso en conjunto al software.
 #### Analisis de niveles de inventario
 
 **Arreglar porcentaje**
-```{r echo=FALSE,fig.pos='H', fig.align='center', fig.cap='Grafico pie stock por categoria', fig.id='pie', out.width='100%',fig.pos='H'}
-pie.q.tipo
-```
+
 #### Analisis ABC de inventarios
 MODELOS DE INVENTARIO
 
@@ -573,7 +646,7 @@ levanta, diagnosti, control
 La recepción es una etapa primordial debido a que la eliminación de errores al momento de ingresar repuestos al inventario, condiciona el despacho a incurrir en un error (descartando movimiento de inventario entre recepción y despacho). el proceso actual carece de un sistema tecnológico de información por tanto es propenso a la generación de errores. La figura \@ref(fig:bpmnin) muestra de el flujo de proceso de recepeción
 
 ```{r echo=FALSE, fig.pos='H', fig.cap='BPMN proceso recepción', fig.id='bpmnin', out.width='50%', fig.align='center'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Almacenaje.png")
+knitr::include_graphics("marco teorico/Almacenaje.png")
 ```
 
 #### Costo 
@@ -581,20 +654,22 @@ knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Almacenaje.png")
 El análisis de facturas de compra permite el análisis de costos asociados a recepción, se considera el numero de compras al mes y el monto a pagar también es importante el proveedor debido a que en el inventario existente se mantiene productos de solo 2 proveedores (Autotec, Ital frenos), la figura \@ref(table: mayores numeros de recepcion)
 
 ```{r echo=FALSE , fig.pos='H'}
-q.tipo.tbl
+#q.tipo.tbl
 ```
 
 Con esta información se puede realizar un análisis del costo de orden con respecto a las compras en sucursal del distribuidor, el costo se considera monetario como también tiempo utilizado del operador logístico que incurre en su ausencia del almacén, la figura \@ref(fig:camino) muestra la distancia que debe recorrer el operador para adquirir repuestos.
 
 ```{r echo=FALSE, fig.pos='H',fig.cap='Trayecto para adquirir repuestos', fig.id='camino', fig.align='center', out.width= '100%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/caminoabaste.png")
+knitr::include_graphics("marco teorico/image/caminoabaste.png")
 ```
 
 Para adquirir repuestos, el operador debe ir a la Av. 10 de Julio Huamachuco, en donde se encuentran los principales  distribuidores de repuestos, la distancia recorrer es de 34 km ida y vuelta para realizar esta operación el operador indica que toma entre 90 min a 2 horas aproximadamente dependiendo del trafico. Otro costo asociado es el costo de bencina, el vehículo utilizado es un `r vehiculo` la tabla \@ref(fig:caractrans) presenta las características del vehículo. Otro costo a considerar es el uso de la autopista, este costo se presenta cada vez que el vehículo atraviesa el pórtico de la autopista. 
 
 ```{r echo=FALSE, fig.pos='H',fig.cap='Caracteristicas del vehiculo de transporte', fig.id='camino', fig.align='center', out.width= '20%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/caminoabaste.png")
+knitr::include_graphics("marco teorico/image/caminoabaste.png")
 ```
+![caminoabaste](fig/caminoabaste.png)
+
 
 Con la presente información se puede realizar estimar los costos asociado a orden de producto
 
@@ -605,7 +680,7 @@ El costo de orden (**suma el costo de ir a comprar, count date**) del stock que 
 ### Despacho
 
 ```{r echo=FALSE, fig.pos='H',fig.cap='BPMN de servicio reparación', fig.id='bpmnout', fig.align='center', out.width= '50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/D_servicio.png")
+knitr::include_graphics("marco teorico/D_servicio.png")
 ```
 
 tiempo
@@ -617,10 +692,10 @@ error
 #### 
 #### Ubicaciones
 
-Para identificar las distintas posiciones que tendrá el stock, se implementara una clasificación que según sector (véase figura \@ref(fig:codbar)), columna y fila
+Para identificar las distintas posiciones que tendrá el stock, se implementara una clasificación que según sector (véase figura \@ref(fig:layoutinvnt)), columna y fila
 
-```{r codbar, echo=FALSE,fig.pos='H',fig.cap='Intrepretación codigo de barras ubicacion', out.width = '50%',fig.align='center'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/barEstruc.png")
+```{r echo=FALSE,fig.pos='H',fig.cap='Intrepretación codigo de barras ubicacion', fig.id='lecbar', out.width = '50%',fig.align='center'}
+knitr::include_graphics("marco teorico/image/barEstruc.png")
 ```
 
 ADMINISTRACIÓN DE INVENTARIOS
@@ -643,8 +718,8 @@ MODELOS PROBABILÍSTICOS E INVENTARIO DE SEGURIDAD
 
 Para garantizar velocidad en el ingreso de información se utilizara un lector de barras, este se prevee su uso en la lectura de código de los productos y en la lectura de ubicación.
 
-```{r lecbar ,echo=FALSE,fig.pos='H',fig.cap='Lector de barras', out.width = '20%',fig.align='center'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/image/lectorbar.png")
+```{r echo=FALSE,fig.pos='H',fig.cap='Lector de barras', fig.id='lecbar', out.width = '20%',fig.align='center'}
+knitr::include_graphics("marco teorico/image/lectorbar.png")
 ```
 
 ### Software
@@ -654,7 +729,7 @@ Se construlle la estructura básica de la base de datos
 * MariaDB
 
 ```{r echo=FALSE,fig.pos='H',fig.cap='Estructura base de datos relacional', fig.id='bdest', out.width = '100%',fig.align='center'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-01 20-35-27.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-01 20-35-27.png")
 ```
 
 ### Direcciones de cambio
@@ -700,11 +775,11 @@ estudio de tiempo
 ## Discusión
 
 ```{r echo=FALSE, fig.align='center', fig.cap='Tecnologías Básicas en que se sustenta la industria 4.0', fig.id='str_proc', out.width='50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-01 14-03-25.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-01 14-03-25.png")
 ```
 
 ```{r echo=FALSE, fig.align='center', fig.cap='Implicacion al éxito', fig.id='exito', out.width='50%'}
-knitr::include_graphics("/home/kiefer/R/tesis/marco teorico/Screenshot from 2021-11-02 17-24-54.png")
+knitr::include_graphics("marco teorico/Screenshot from 2021-11-02 17-24-54.png")
 ```
 
 estrategia de diferenciación
@@ -731,3 +806,6 @@ externo e interno hasta el personal clave de la corporación
 [^18]: https://revistas.utp.ac.pa/index.php/ric/article/view/1252/html
 [^19]: https://www.linio.cl/p/lector-de-co-digo-de-barras-ala-mbrico-negro-tq61ha?qid=7524b1b59ef014118f15e1b43dcb91a7&oid=GE657OS0J8562LACL&position=10&sku=GE657OS0J8562LACL
 [^20]: https://markainvestigacion.wordpress.com/2019/01/07/que-son-las-variables-independientesdependientes-e-intervinientes/
+[^21]: https://www.cnnchile.com/coronavirus/hitos-claves-covid-19-chile-mundo-cronologia_20200505/ 25/09/22 21:51
+[^22]: ANAC Informe Mercado Automotor Febrero 2020
+[^23]: ANAC Informe Mercado Automotor Septiembre 2020

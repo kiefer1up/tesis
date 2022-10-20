@@ -1,6 +1,5 @@
 ---
-  title: "Propuesta de mejora de proceso de gestión de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON Propuesta de mejora de tiempo en el proceso de despacho de repuesto, optimizando inventario, medieante el uso de WMS para el área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON"
-
+  title: "Propuesta de mejora de proceso de gestión de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON"  
   subtitle: "Trabajo de titulación presentado en conformidad a los requisitos para obtener el Titulo de Ingueniero Civil Industrial TESIS PARA TITULO PARA LA OBTENCIÓN DEL TITULO INGENIERO CIVIL INDUSTRIAL"
   author: "Felipe Kiefer Guenupan"
   date: \today
@@ -10,8 +9,8 @@
   \newpage
 ```{r setup, include=FALSE}
   knitr::opts_chunk$set(echo = TRUE, fig.cap = TRUE)
-  source('bbdd.R')
-  source('atajos.R')
+  #source('bbdd.R')
+  #source('atajos.R')
 ```
 \newpage
 <style>
@@ -24,9 +23,6 @@
 
   El inicio de la pandemia del COVID-19 a afectado la venta de automóvil, el primer semestre del año 2020 hubo una reducción en la compra de vehículos livianos y medianos. la figura \@ref(fig:vauto) presenta las ventas del mercado automotor de livianos y medianos, realizado por Asociación Nacional Automotriz de Chile (ANAC).
 
-```{r vauto, echo=FALSE, fig.cap='Ventas mensuales a publico del mercado de livianos y medianos'}
- anac
-```
 
 En primera instancia en el gráfico se puede observar un valle debido a "principalmente, por el deterioro de las condiciones económicas a nivel internacional que han afectado a distintos mercados, no solo el automotriz, las cuales se han visto acrecentadas por las circunstancias políticas y económicas a nivel local"[^22], posterior debido al desconfinamiento progresivo a nivel nacional de ciertas comunas por la implementación del programa Paso a Paso, Adicionalmente, el factor del retiro del 10% de las AFP ha demostrado un nivel de incidencia certero en la adquisición de bienes durables como los automóviles, lo que se sumaría a la recuperación del sector [^23]. Meses posteriores este mercado automotriz a visto una disminucion en la variacion de ventas conrespecto al año movil. En consecuencia se espera un aumento en la demanda de los servicios de mantenimiento y reparación automotriz.
 
@@ -37,14 +33,6 @@ En primera instancia en el gráfico se puede observar un valle debido a "princip
 ### Descripción de la organización: historia, productos y mercados principales, estructura organizacional, tamaño, etc. (¿Quién soy?)
 
 Iniciada en `r yearsince` entregaba el servicio de reparación electrica complementario a un taller a vecino posterior incursiono en servicio de mantencion para finalmente entregar servicio de mecanico integral a perdurado en rubro de la reparación automotriz brindado a la comuna de Quilicura el servicio de reparación electica 
-
-```{r organi, include=TRUE, cache=FALSE, echo=FALSE, fig.align='center', fig.cap='Estructura organizacional',fig.id='estruc', fig.pos='H', out.width='50%'}
-  knitr::include_graphics("marco teorico/organigrama.png")
-```
-
-```{r ubicacion, include=TRUE, cache=FALSE, echo=FALSE , fig.align='center', fig.cap='Estructura organizacional',fig.id='estruc', fig.pos='H', out.width='50%'}
-knitr::include_graphics("marco teorico/image/ubicacion.png")
-```
 
 ### Descripción del medio en el cual se encuentra la organización: características de la industria, de la economía, etc. (¿Dónde estoy?)
 
