@@ -1,91 +1,84 @@
+---
+title: "Propuesta de mejora de proceso de gestión de inventario, mediante la implementación de WMS para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON"  
+subtitle: "Trabajo de titulación presentado en conformidad a los requisitos para obtener el Titulo de Ingueniero Civil Industrial TESIS PARA TITULO PARA LA OBTENCIÓN DEL TITULO INGENIERO CIVIL INDUSTRIAL"
+author: "Felipe Kiefer Guenupan"
+date: \today
+bibliography: biblio.bib
+toc: true
+geometry: margin=1in
+metadata:
+  bibliography: biblio.bib
+
+---
+
 # Introducción
 
 ## Antecedentes, situación actual mercado automóvil
 
 El `r mlm` desde el ultimo triestre del ano 2019 hasta segundo semestre del 2022 ma sufrido un aumento en la volatilidad en la ventas de `r k.lm`. La cuarta y quinta semanas del mes de actubre de 2019, las ventas fueron de 7.199 unidades, lo que se traduce en una baja de 50% en comparación con las mismas semanas de 2018. El inicio de la pandemia del COVID-19 a afectado reduciendo la venta de automóvil, el primer semestre del año 2020.
 
-La figura \@ref(fig:vauto) presenta las ventas del mercado automotor de livianos y medianos, realizado por Asociación Nacional Automotriz de Chile (ANAC) desde enero 2019 hasta aguosto 2022.
+La figura \ref{anac} presenta las ventas del mercado automotor de livianos y medianos, realizado por Asociación Nacional Automotriz de Chile (ANAC) desde enero 2019 hasta aguosto 2022.
 
-![Ventas mensuales a publico del mercado de livianos y medianos, ANAC](fig/anac.png)
+![Ventas mensuales a publico del mercado de livianos y medianos, ANAC\label{anac}](fig/anac.png)
 
 En primera instancia en el gráfico se puede observar un valle debido a "principalmente, por el deterioro de las condiciones económicas a nivel internacional que han afectado a distintos mercados, no solo el automotriz, las cuales se han visto acrecentadas por las circunstancias políticas y económicas a nivel local"[^22], posterior debido al desconfinamiento progresivo a nivel nacional de ciertas comunas debida a la implementación del programa estatatal denominado **Paso a Paso**, Adicionalmente, el factor del retiro del 10% de las AFP ha demostrado un nivel de incidencia certero en la adquisición de bienes durables como los automóviles, lo que se sumaría a la recuperación del sector [^23]. Meses posteriores este mercado a visto una normalizacion en ventas con respecto al año movil. En consecuencia se espera un aumento en la demanda de los servicios de mantenimiento y reparación automotriz.
 
-Para analisar el comportamiento del mercado automotor que este ultimo periodo fue afectado por las restricciones debido a las condiciones sanitarias de la Pandemia, no debemos solo limitarnos a la pandemia, otras variables que influyen en el mercado automotor y en los distintos mercados existento, el **dolar** y el **petroleo**, a continuacion se presenta el comportamiento del dolar observado como tambien del precio del petroleo (WIT).
+Para analisar el comportamiento del mercado automotor que este ultimo periodo fue afectado por las restricciones debido a las condiciones sanitarias de la Pandemia, no debemos solo limitarnos a la pandemia, otras variables que influyen en el mercado automotor y en los distintos mercados existento, el **dolar** y el **petroleo**, a continuacion se presenta el comportamiento del dolar observado como tambien del precio del petroleo (WIT). See figure \ref{dolar} y \ref{wit}.
 
+![Petroleo\label{wit}](fig/WIT.png)
 
-![Wit Petroleo](fig/WIT.png)
-![Wit Petroleo](fig/dolar2010_2022.png)
+![Dolar\label{dolar}](fig/dolar2010_2022.png)
 
-El comportamiento del consumidor tambien lo pedodemos ver reflejado en la obtencion de licencias de conducion, para este caso es relevante la clase B debido a que el cliente objetivo de `r nam`  
-
-
-el  son  en la decicion de compra las medidas antes mencionadas del impacto de l
-
-![Wit Petroleo](fig/licen.png)
-
-
-## Descripción general de la organizicion
+## Descripción general de la organizacion
 
 ### Descripción de la organización: historia, productos y mercados principales, estructura organizacional, tamaño, etc. (¿Quién soy?)
 
 `r nam` es una pequeña empresa[^7] dedicada al servicio de mantenimiento, reparación mecánica y eléctrica automotriz de vehículos `r k.lm `[^1], tambien dispone de venta de repuestos e insumos para vehiculo (detallados en la figura x). Cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos (ver figura \@ref(fig:estruc)).
 
-Iniciada en el ano `r yearsince`, ha entregado sus servicios a la comunidad cercana, su demanda constante del servicio impulso expandir la plaza de servicio, comenzando con `r area.tll.old` ft^2^ hasta llegar a `r area` ft^2^, tambien se inverte en la adquiciosion de distintas herramientas, tecnicas de trabajos destacando la eliminacion de **pozo de reparacion**.
+Iniciada en el ano `r yearsince` al lado de un taller mecanico ya establecido, comienza como un servicio electrico automotriz que el taller competidor no contaba. Pasado el tiempo el taller competencia cierra y es cueando `r nam`, ve una oportunidad de crecer.
 
-Debido a la demanda del servicio el `r nam` asigna un area de `r area.wh.old` para almacen, con el propósito de alojar repuestos necesarios en el servicio de reparación y mantenimiento, en el segundo semestre de 2021 `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos, construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén (vease \@ref(fig:layout)).
+`r nam` ha entregado sus servicios a la comunidad cercana de Quilicura norte, su demanda constante del servicio impulso expandir la plaza de servicio, comenzando con `r area.tll.old` ft^2^ hasta llegar a `r area` ft^2^, tambien se inverte en la adquiciosion de distintas herramientas, tecnicas de trabajos destacando la eliminacion de **pozo de reparacion**.
 
-![plan](fig/plan.png)
+A la necesidad de repuestos inmediatos `r nam` asigna un area de `r area.wh.old` para almacen, con el propósito de alojar repuestos necesarios en el servicio de reparación y mantenimiento,ademas de reducir los viajes para abastecimiente. en el segundo semestre de 2021 `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos, construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén y centro de venta, por ultimo se construye un area para la espera del cliente. \ref{layout}.
+
+![layout\label{layout}](fig/lay_out_duarcon.png){width=50%}
 
 ### Descripción del medio en el cual se encuentra la organización: características de la industria, de la economía, etc. (¿Dónde estoy?)
-ubicada en `r dire`,
 
-FODA
+`r nam` se depende de La industria de `r k.lm` por ende los antecedentes de la primera seccion son relevantes en la demanda del servicio de `r nam`.
 
-Fortalezas
-entrega de nuevos servicios
-Oportunidades
-definir procesos
+El comportamiento de la demanda `r k.lm` puede ser determinada por la cantidad de licencias de conducion entregadas, debido a la restriccion de movilidad esta manifiesta un una baja en la entrega de documento, para este caso es relevante la **clase B** debido a que el cliente objetivo de `r nam`. La entrega de licencia no ha estado ajeno a la restriccion de movilidad, como tambien la operacion de la institucion ha visto restringida a su funcionamiento.
 
-
-Debilidades
-estandarizar prestación
-Amenazas
-competencia 
-
-### Servicios que brinda
-
-La empresa brinda servicios automotrices tanto en el aspecto mecánico, electrónico y
-de latonería. A continuación se desglosan todos los servicios que se ofrecen.
-
-Aspecto mecánico automotriz liviano-mediano.
-
-* ABC de Motor.
-* VABC de Frenos.
-* Suspensión.
-
-Embrague.
-Reparación de motores.
-Mantenimiento Predictivo/Preventivo/Correctivo.
-Cambios de aceite al instante.
-Cambios de Filtros de aire.
-Cambios de Filtros de polen.
-Reparación de cajas automáticas con garantía.
-Reparación del sistema eléctrico del vehículo.
-Controles de calidad.
-Limpieza de inyectores.
-Limpieza por ultrasonido.
-Laboratorio de comprobación de inyectores.
-Filtros y o’rings de inyector (Comercialización).
-
-Diagnóstico computarizado.
-Diagnóstico para toda marca de vehículos.
-Escáneres actualizados al 2010 (SPC, OTC).
-Frenos ABS.
-Sistema de Airbag.
-OBD II.
+![Licencias clace B](fig/licen.png)
 
 ### Descripción de la estrategia, para saber cuál es la dirección en que camina la empresa. (¿Qué quiero?)
 
+Con lo anterior expuesto podemos obcervar como poco a poco Duarcon, de iniciar con un pequeno taller orientado a la reparacion electrica, evoluciona hasta un la entrega de servicios de ventas de repuestos por tanto abarcar mas servicios es el objetivo claro, debido a la falta de competencia especializada cercana.
+
+Para entender la situcion actual de `r nam` se presenta el siguiente analisis **FODA**
+
+**Fortalezas**
+variedad de servicios
+entrega de nuevos servicios
+abierto a inversion
+baja competencia
+
+**Oportunidades**
+definir procesos
+participacion en otros mercados
+
+
+**Debilidades**
+Administracion
+Nulo registro en inventario, administracion
+Estandarizar prestación
+Orden
+Registro
+
+**Amenazas**
+nueva crisis internacional sanitaria o conflictos armado
+competencia
+Auto electrico
 
 
 ### Descripción del ámbito de trabajo: propósito, personas, procesos, estructura, tecnología, etc.
@@ -93,15 +86,96 @@ OBD II.
 
 El lugar de trabajo esta clasificado en área de servicio, area de almacen, area compresor, servicio higene, casino.
 
-![plan](fig/plan.png)
+
+#### proposito
+
+#### personas
+
+`r nam` esta conformado de los siguientes cargos:
+
+1. administrativo
+2. Mecanico
+3. Contador 
+
+estos roles son eje
+1. dueno
+2. mecanico
+3. Apoyo taller
+
+#### estructura
+
+![organigrama](fig/organigrama.png)
+
+El taller tiene la siguiente distribucion:
+
+![Lay out Duarcon](fig/lay_out_duarcon.png)
+
+#### procesos
+
+El proceso de trabajo esta disenado de la siguiente forma
+
+![diagrama de flujo](fig/df_grl.png)
+
+
+![Macro](fig/Macro.png)
+
+#### tecnologia
 
 
 ### Descripción del entorno inmediato y relaciones: ubicación del ámbito de trabajo: relaciones con otras áreas, qué y a quiénes provee, de quiénes recibe qué, etc.
 
-`r nam`  proveedores
+servicios que entrega son
 
-![Macro](fig/Macro.png)
+man
+mec
+llanta
+rectifi
 
+De los proveedores se recepciona los siguientes productos.
+
+!(productos por proveedores)[fig]
+
+accesorios,articulos aseo
+accesorios,articulos electricos
+correas,alternador
+correas,distribuidor
+encendido,bujias
+encendido,cable bujias
+filtro,aceite
+filtro,petroleo
+filtro,bencina
+filtro,polen
+filtro,aire
+freno,pastilla
+freno,disco
+freno,balata
+iluminacion,Ampolleta
+Lubricantes,Aceites
+Lubricantes,Refrigerantes
+
+
+Ubicado en `r ubi` competencia mas cercana ,,, tal como muestra la figura \ref{ubi}
+
+![Ubicacion de la empresa\label{ubi}](fig/caminoabaste.png)
+
+En la cadena de suministro `r nam` es la conexion entre el mayorista y el consumidor final,
+
+Sus proveedores se pueden agrupar en dos grupos, proveedores de repuestos existentes y proveedores de repuestos segun necesidad de reparacion.
+
+1. Proveedores de respueston necesarion (proactivos):
+sus prinsipales proveedores  son **ital frenos**. **Auto=tec** los que suministran principalmente repuestos ligados a filtros y frenos respectivamente los que corresponden al % de stock del almacen.
+
+2. Proveedores de repuestos sugun necesidad (reactivos):
+proveedores variados ubicados principalmente en `r 10julio` destacan **proveedores**, estos representan un % de demanda para la reparacion de vehicualar.
+
+
+Los clientes se clasifican en dos grupos: 
+1. personas naturales
+2. empresas que con las que mantiene convenios exclusivos. 
+
+Los servicios de `r nam` se enfocan en el mercado de `r k.lm` para lo cual disponen de variados servicios, estos son:
+
+![servicios](fig/servicios.png)
 
 ### Descripción cuantitativa de las situaciones en que se trabajará:
 identificación, descripción breve, estimación de costos, nivel de urgencia por cambiar, ¿qué riesgos tiene mantener la situación actual?, etc.
@@ -122,21 +196,38 @@ identificación, descripción breve, estimación de costos, nivel de urgencia po
 
   El proceso mencionado anteriormente **carese de integridad en la información**[^3] por el procedimiento con el que se realiza la ubicación del repuesto, debido a que no existe registro de su ubicación, esto tiene relación con el procedimiento al almacenar recepción, el cual se agrupa según marca de vehículo y se rotular el packing el producto por modelo, tal como detalla la figura \@ref(fig:bpmnin).
 
+\newpage
 
 # Capitulo I: Definición del Problema
+
 ## Problema y Preguntas de Investigación
 
-  El tema abordado en esta memoria nace de un problema presentado de forma directa por `r nam` que es el desconocimiento del stock, desde esta base se ha podido hallar otro problema del proceso de gestión de inventario, como el mencionado anteriormente que es la ubicación del stock en recepción. Analizaremos el inventario existente, clasificado según el tipo de repuesto con un costo de $`r cst.stock` pesos, la variedad de producto es de r lng.ttl.prod y una cantidad total de stock de r sm.total.in. Para resumir el stock existente la figura \@ref(fig:inventario) se presenta la distribución de frecuencia de cantidad agrupado según su clasificación
+El tema abordado en esta memoria nace de un problema presentado de forma directa por `r nam` que es el desconocimiento del stock, desde esta base se ha podido hallar otro problema del proceso de gestión de inventario, como el mencionado anteriormente que es la ubicación del stock en recepción. Analizaremos el inventario existente, clasificado según el tipo de repuesto con un costo de $`r cst.stock` pesos, la variedad de producto es de r lng.ttl.prod y una cantidad total de stock de r sm.total.in. Para resumir el stock existente la figura \@ref(fig:inventario) se presenta la distribución de frecuencia de cantidad agrupado según su clasificación
 
 
-  Se puede observar la existencia de sobre stock ejemplo de ello es la categoría `r "**categoria**"` el cual presta un producto con un stock superior a `r "**stock max 60**"` unidades
+Se puede observar la existencia de sobre stock ejemplo de ello es la categoría `r "**categoria**"` el cual presta un producto con un stock superior a `r "**stock max 60**"` unidades
 
+:::columns
+
+![P2](fig/IMG-20210629-WA0012.jpg){width=50%}
+![P3](fig/IMG-20210629-WA0013.jpg){width=50%}
+![P4](fig/IMG-20210629-WA0014.jpg){width=50%}
+![P5](fig/IMG-20210629-WA0015.jpg){width=50%}
+![P6](fig/IMG-20210629-WA0016.jpg){width=50%}
+![P7](fig/IMG-20210629-WA0017.jpg){width=50%}
+![P8](fig/IMG-20210629-WA0018.jpg){width=50%}
+![P9](fig/IMG-20210629-WA0019.jpg){width=50%}
+![P10](fig/IMG-20210629-WA0020.jpg){width=50%}
+![P11](fig/IMG-20210629-WA0021.jpg){width=50%}
+
+:::
 ## Justificación de la Investigación. - Breve Resumen Capitular.
 
-  **Pendiente cuantificar costoss **
+  **Pendiente cuantificar costoss**
 
-## porque es importante este proyecto
-  Para entender la importancia del inventario, y por que de enfocarse en ello, se señala que "el inventario es uno de los activos más costosos de muchas compañías, llega a representar hasta un 50% del capital total invertido.[...] Por un lado, una empresa puede reducir sus costos al disminuir el inventario" [@heizer, pp. 484], ademas "la sola permanencia de este inventario está generando un sin número de costos asociados" [@salas2009inventarios, pp. XVI].
+## Porque es importante este proyecto
+
+Para entender la importancia del inventario, y por que de enfocarse en ello, se señala que "el inventario es uno de los activos más costosos de muchas compañías, llega a representar hasta un 50% del capital total invertido.[...] Por un lado, una empresa puede reducir sus costos al disminuir el inventario" [@heizer, pp. 484], ademas "la sola permanencia de este inventario está generando un sin número de costos asociados" [@salas2009inventarios, pp. XVI].
 
 ## cual es la problemática que intenta solucionar
 
@@ -170,25 +261,37 @@ identificación, descripción breve, estimación de costos, nivel de urgencia po
 
 ### Objetivos específicos:
 
-  * Identificar y analizar, la situación actual de la gestión y control del inventario.
-  * Evaluar la factibilidad de la propuesta de mejora.
-  * Rediseñar el subproceso de entrada y salida.
-  * Integrar al rediseño herramienta tecnológica que facilite la ejecución del proceso.
-  * Evaluar los resultados contrastando con la situación actual.
+* Identificar y analizar, la situación actual de la gestión y control del inventario.
+* Evaluar la factibilidad de la propuesta de mejora.
+* Rediseñar el subproceso de entrada y salida.
+* Integrar al rediseño herramienta tecnológica que facilite la ejecución del proceso.
+* Evaluar los resultados contrastando con la situación actual.
+
 ## Variables de Estudio[^4].
 ### Variables Dependientes
 
-  * Servicio almacén
+* Servicio almacén
 
 ### Variables Independientes Intangible
 
+* tiempo
+
 ### Variables Independientes tangibles
+
+* repuesto
 
 ### Variables Intervinientes
 
+* orden
+* clasificar
+* limpiza
+* senalizar
+
 ## Alcance de la investigacion
 
-no se tiene acceso a repuestos despachados 
+Este proyecto pretende intervenir en el area almacen del taller por lo cual dispone de la autorizacion del dueno a realizar cambios fisicos tales como la dispocicion del inventario como en la crecion de senaleticas y crear sistema que facilite el mantenimiento del inventario, por ultimo en la tutoria del personal de almacen en el uso de mejoras propuestas.
+
+\newpage
 
 # Capítulo II: MARCO TEÓRICO
 
@@ -612,7 +715,8 @@ Se detalla el funcionamiento del proceso en conjunto al software.
 
 
 
-# Resultados Esperados
+## Resultados Esperados
+
 # Capítulo IV: Desarrollo
 
 ## Definir proyecto
@@ -755,17 +859,22 @@ estudio de tiempo
 ### Procedimiento para la gestión de inventarios
 
 # Capítulo V: EVALUACIÓN ECONÓMICA
+
 ## Factibilidad
+
 ### Factibilidad técnica
 ### Factibilidad operativa
+
 ## Beneficios Tangibles
 ## Beneficios Intangibles:
+
 ## Costos:
+
 ### Cálculo del VAN
+
 ## Conclusión de la factibilidad
+
 # Capítulo IV: PRESENTACIÓN RESULTADOS
-
-
 
 ## Procesamiento de los datos.
 ## Resultados
@@ -783,7 +892,8 @@ knitr::include_graphics("marco teorico/Screenshot from 2021-11-02 17-24-54.png")
 ```
 
 estrategia de diferenciación
-## Referencia
+
+# Referencia
 
 [^1]: Según definición ANAC
 [^2]: Sacar el produuuu oe

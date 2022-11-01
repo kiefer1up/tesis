@@ -8,11 +8,12 @@ def licen():
     plt.ioff()
     df = pd.read_csv('data/licencia_conducir_2020_2017.csv',index_col=0, parse_dates=True)
     dfB = df[(df['clase'] == "B")]
-    plt.plot(dfB.index,dfB.iloc[:,2] , label = "nueva")
-    plt.plot(dfB.index,dfB.iloc[:,3] , label = "renovada")
+    dfBn= dfB['nueva']
+    dfBr= dfB['renovada']
+    dfBn.plot(ylabel = "cantidad de licencias")
+    dfBr.plot()
     plt.title('Licencias de Clase B')
     plt.legend()
-    plt.xticks(rotation=90)
     plt.savefig('fig/licen.png')
 def petroleo():
     plt.ioff()
