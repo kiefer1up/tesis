@@ -5,7 +5,8 @@ author: "Felipe Kiefer Guenupan"
 date: \today
 bibliography: biblio.bib
 toc: true
-geometry: margin=1in
+fontsize: 11pt
+geometry: "left=4cm,right=2cm,top=2cm,bottom=2.5cm"
 metadata:
   bibliography: biblio.bib
 
@@ -33,19 +34,21 @@ Para analisar el comportamiento del mercado automotor que este ultimo periodo fu
 
 ### Descripción de la organización: historia, productos y mercados principales, estructura organizacional, tamaño, etc. (¿Quién soy?)
 
-`r nam` es una pequeña empresa[^7] dedicada al servicio de mantenimiento, reparación mecánica y eléctrica automotriz de vehículos `r k.lm `[^1], tambien dispone de venta de repuestos e insumos para vehiculo (detallados en la figura x). Cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos (ver figura \@ref(fig:estruc)).
-
-Iniciada en el ano `r yearsince` al lado de un taller mecanico ya establecido, comienza como un servicio electrico automotriz que el taller competidor no contaba. Pasado el tiempo el taller competencia cierra y es cueando `r nam`, ve una oportunidad de crecer.
+`r nam` es una pequeña empresa[^7] dedicada al servicio de mantenimiento, reparación mecánica y eléctrica automotriz de vehículos `r k.lm `[^1], tambien dispone de venta de repuestos e insumos para vehiculo (detallados en la figura x). Iniciada en el ano `r yearsince` al lado de un taller mecanico ya establecido, comienza como un servicio electrico automotriz que el taller competidor no contaba. Pasado el tiempo el taller competencia cierra y es cueando `r nam`, ve una oportunidad de crecer.
 
 `r nam` ha entregado sus servicios a la comunidad cercana de Quilicura norte, su demanda constante del servicio impulso expandir la plaza de servicio, comenzando con `r area.tll.old` ft^2^ hasta llegar a `r area` ft^2^, tambien se inverte en la adquiciosion de distintas herramientas, tecnicas de trabajos destacando la eliminacion de **pozo de reparacion**.
 
-A la necesidad de repuestos inmediatos `r nam` asigna un area de `r area.wh.old` para almacen, con el propósito de alojar repuestos necesarios en el servicio de reparación y mantenimiento,ademas de reducir los viajes para abastecimiente. en el segundo semestre de 2021 `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos, construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén y centro de venta, por ultimo se construye un area para la espera del cliente. \ref{layout}.
+A la necesidad de repuestos inmediatos `r nam` asigna un area de `r area.wh.old` para almacen, con el propósito de alojar repuestos necesarios en el servicio de reparación y mantenimiento,ademas de reducir los viajes para abastecimiento. en el segundo semestre de 2021 `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos, construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén y centro de venta, seguido se construye un area confortable de espera para el cliente. \ref{layout}.
 
 ![layout\label{layout}](fig/lay_out_duarcon.png){width=50%}
 
+La figura \ref{orga} estructura organizacional  se reprecenta de la siguiente
+
+![organigrama\label{orga}](fig/organigrama.png){width=70%}
+
 ### Descripción del medio en el cual se encuentra la organización: características de la industria, de la economía, etc. (¿Dónde estoy?)
 
-`r nam` se depende de La industria de `r k.lm` por ende los antecedentes de la primera seccion son relevantes en la demanda del servicio de `r nam`.
+`r nam` se depende de La industria de `r k.lm` por ende los antecedentes de la primera seccion son relevantes, por su incidencia en el costo de compra y uso de un vehiculo lo que influye en la demanda en los servicios entregados por `r nam`.
 
 El comportamiento de la demanda `r k.lm` puede ser determinada por la cantidad de licencias de conducion entregadas, debido a la restriccion de movilidad esta manifiesta un una baja en la entrega de documento, para este caso es relevante la **clase B** debido a que el cliente objetivo de `r nam`. La entrega de licencia no ha estado ajeno a la restriccion de movilidad, como tambien la operacion de la institucion ha visto restringida a su funcionamiento.
 
@@ -57,72 +60,99 @@ Con lo anterior expuesto podemos obcervar como poco a poco Duarcon, de iniciar c
 
 Para entender la situcion actual de `r nam` se presenta el siguiente analisis **FODA**
 
-**Fortalezas**
++----+-----------------------------+---------------------------------+---------------------------------------------+-------------------------------------------------------------------------------+
+|    | Fortalezas                  | Oportunidades                   | Debilidades                                 | Amenazas                                                                      |
++====+=============================+=================================+=============================================+===============================================================================+
+|  0 | variedad de servicios       | definir procesos                | Administracion                              | nueva crisis internacional sanitaria o conflictos armado                      |
++----+-----------------------------+---------------------------------+---------------------------------------------+-------------------------------------------------------------------------------+
+|  1 | entrega de nuevos servicios | participacion en otros mercados | Nulo registro en inventario, administracion | competencia                                                                   |
++----+-----------------------------+---------------------------------+---------------------------------------------+-------------------------------------------------------------------------------+
+|  2 | abierto a inversion         | nan                             | Estandarizar prestacion                    | Auto electrico                                                                |
++----+-----------------------------+---------------------------------+---------------------------------------------+-------------------------------------------------------------------------------+
+|  3 | baja competencia            | nan                             | Orden                                       | encarecimiento de compra o uso de vehiculo, uso de otros medios de transporte |
++----+-----------------------------+---------------------------------+---------------------------------------------+-------------------------------------------------------------------------------+
+|  4 | nan                         | nan                             | Registro                                    | nan                                                                           |
++----+-----------------------------+---------------------------------+---------------------------------------------+-------------------------------------------------------------------------------+
+
+
+**Fortalezas:**
 variedad de servicios
 entrega de nuevos servicios
 abierto a inversion
 baja competencia
 
-**Oportunidades**
+**Oportunidades:**
 definir procesos
 participacion en otros mercados
 
-
-**Debilidades**
+**Debilidades:**
 Administracion
 Nulo registro en inventario, administracion
 Estandarizar prestación
 Orden
 Registro
 
-**Amenazas**
+**Amenazas:**
 nueva crisis internacional sanitaria o conflictos armado
 competencia
 Auto electrico
+encarecimiento de compra o uso de vehiculo, uso de otros medios de transporte
 
+Se puede esperar que para futuro se realicen inversion en la adquicision de nuevas herramientas, para nuevos mercados emergenttes tales como los autos electricos.
 
 ### Descripción del ámbito de trabajo: propósito, personas, procesos, estructura, tecnología, etc.
 
-
 El lugar de trabajo esta clasificado en área de servicio, area de almacen, area compresor, servicio higene, casino.
-
 
 #### proposito
 
+el propocito esta en la reparacion mantenimento de vehiculos asegurando al cliente que del taller se ira con el problema resuelto, para resolver los requerimientos del cliente, el taller dispone de distintas areas y personal especializado, ademas existe un area de espora que cuenta con comodidades para hacer confortable la espera de reparacion. 
+
+**fotos TALLER y area sillones**
+
 #### personas
 
-`r nam` esta conformado de los siguientes cargos:
+`r nam` se lo integra la siguiente clasificacion de personal:
 
-1. administrativo
-2. Mecanico
-3. Contador 
-
-estos roles son eje
-1. dueno
-2. mecanico
-3. Apoyo taller
+1. jefe de taller: su labor esta enfocada a la recepcion de clientes, identificar la nececidad de este y delegar a el trabajo a un mecanico. Tambien es reponsable del abastecimiento del almacen como en la entrega de repuestos a los mecanicos segun necesidad.
+2. Mecanico: encargado de la reparacion, mantenimiento del vehiculo.
+3. Contador: personal externo a la planta
 
 #### estructura
 
-![organigrama](fig/organigrama.png)
 
 El taller tiene la siguiente distribucion:
 
-![Lay out Duarcon](fig/lay_out_duarcon.png)
+![Lay out Duarcon](fig/lay_out_duarcon.png){width=70%}
 
 #### procesos
 
-El proceso de trabajo esta disenado de la siguiente forma
+El proceso de trabajo esta disenado como muestra la figura \ref{dfg} tambien se disena desde otra perspectiva de macrprocesos como muestra la figura \ref{mrg}
 
-![diagrama de flujo](fig/df_grl.png)
+![diagrama de flujo\label{dfg}](fig/df_grl.png)
 
+![diagrama de proceso de servicio de reparacion\label{dfgr}](fig/df_grl_reparacion.png)
 
-![Macro](fig/Macro.png)
+![Macro Proceso\label{mrg}](fig/Macro.png)
 
 #### tecnologia
 
 
 ### Descripción del entorno inmediato y relaciones: ubicación del ámbito de trabajo: relaciones con otras áreas, qué y a quiénes provee, de quiénes recibe qué, etc.
+
+En las areas de trabajo se encuentra:
+
+rectificador
+
+desmontador
+
+grua
+
+la figura \ref{plan} muestra la dispocion de estas areas
+
+![layout\label{plan}](fig/plan.png)
+
+de estas areas de servicios se entregan los siguientes servicios:
 
 servicios que entrega son
 
@@ -131,7 +161,20 @@ mec
 llanta
 rectifi
 
-De los proveedores se recepciona los siguientes productos.
+![servicios](fig/servicios.png)
+
+En la cadena de suministro `r nam` es la conexion entre el mayorista y el consumidor final,
+
+Sus proveedores se pueden agrupar en dos grupos, proveedores de repuestos existentes y proveedores de repuestos segun necesidad de reparacion.
+
+1. Proveedores de respueston necesarion (proactivos):
+sus prinsipales proveedores  son **ital frenos**. **Auto=tec** los que suministran principalmente repuestos ligados a filtros y frenos respectivamente los que corresponden al % de stock del almacen.
+
+2. Proveedores de repuestos sugun necesidad (reactivos):
+proveedores variados ubicados principalmente en `r 10julio` destacan **proveedores**, estos representan un % de demanda para la reparacion de vehicualar.
+
+
+De los proveedores se destaca los siguientes productos.
 
 !(productos por proveedores)[fig]
 
@@ -153,57 +196,48 @@ iluminacion,Ampolleta
 Lubricantes,Aceites
 Lubricantes,Refrigerantes
 
+Los clientes se clasifican en dos grupos:
+
+1. personas naturales
+2. empresas que con las que mantiene convenios exclusivos. 
 
 Ubicado en `r ubi` competencia mas cercana ,,, tal como muestra la figura \ref{ubi}
 
 ![Ubicacion de la empresa\label{ubi}](fig/caminoabaste.png)
 
-En la cadena de suministro `r nam` es la conexion entre el mayorista y el consumidor final,
-
-Sus proveedores se pueden agrupar en dos grupos, proveedores de repuestos existentes y proveedores de repuestos segun necesidad de reparacion.
-
-1. Proveedores de respueston necesarion (proactivos):
-sus prinsipales proveedores  son **ital frenos**. **Auto=tec** los que suministran principalmente repuestos ligados a filtros y frenos respectivamente los que corresponden al % de stock del almacen.
-
-2. Proveedores de repuestos sugun necesidad (reactivos):
-proveedores variados ubicados principalmente en `r 10julio` destacan **proveedores**, estos representan un % de demanda para la reparacion de vehicualar.
-
-
-Los clientes se clasifican en dos grupos: 
-1. personas naturales
-2. empresas que con las que mantiene convenios exclusivos. 
-
-Los servicios de `r nam` se enfocan en el mercado de `r k.lm` para lo cual disponen de variados servicios, estos son:
-
-![servicios](fig/servicios.png)
 
 ### Descripción cuantitativa de las situaciones en que se trabajará:
+
 identificación, descripción breve, estimación de costos, nivel de urgencia por cambiar, ¿qué riesgos tiene mantener la situación actual?, etc.
 
-  `r nam` es una pequeña empresa[^7] dedicada la reparación mecánica y eléctrica automotriz de vehículos livianos[^1], ubicada en `r dire`, cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos, detallado en la figura \@ref(fig:estruc)). Creada en el ano `r yearsince`, ha entregado sus servicios a la comunidad cercana, su demanda constante del servicio impulso expandir la plaza de servicio, desde `r area.tll.old` ft^2^ a `r area` ft^2^. Debido a la demanda del servicio el año `r yearwh`, `r nam` a incorpora a su taller un almacén con un área de `r area.viejo`, con el propósito de alojar repuestos necesarios en el servicio de reparación, en el segundo semestre del presente ano `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos se construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén (vease \@ref(fig:layout)).
+`r nam` es una pequeña empresa[^7] dedicada la reparación mecánica y eléctrica automotriz de vehículos livianos[^1], ubicada en `r dire`, cuenta con una plantilla de `r trb.ttl` trabajadores (`r adm` administrador y `r mec.ttl` mecánicos, detallado en la figura \@ref(fig:estruc)). Creada en el ano `r yearsince`, ha entregado sus servicios a la comunidad cercana, su demanda constante del servicio impulso expandir la plaza de servicio, desde `r area.tll.old` ft^2^ a `r area` ft^2^. Debido a la demanda del servicio el año `r yearwh`, `r nam` a incorpora a su taller un almacén con un área de `r area.viejo`, con el propósito de alojar repuestos necesarios en el servicio de reparación, en el segundo semestre del presente ano `r nam`, con el fin agregar a su linea de negocio la venta de neumáticos se construye otro almacén con un área de `r area.nuevo` ft^2^, lo que da un total de `r area.total.almacen` ft^2^ de plaza para almacén (vease \@ref(fig:layout)).
 
-  **Label aparte con simbologia**
+**Label aparte con simbologia**
 
 ![plan](fig/plan.png)
 
-  Para realizar el servicio de reparación automotriz, el mecánico dispone de repuestos los cuales son solicitados a almacén, el administrador se encarga en la preparación del repuesto según los siguiente requisitos.
+Para realizar el servicio de reparación automotriz, el mecánico dispone de repuestos los cuales son solicitados a almacén, el administrador se encarga en la preparación del repuesto según los siguiente requisitos.
 
-  * Tipo repuesto
-  * Modelo de vehículo
-  * Cantidad requerida
+* Tipo repuesto
+* Modelo de vehículo
+* Cantidad requerida
 
-  Lo siguiente es ubicar en el los distintos rack el repuesto requerido y realizar picking[^2], para posterior entregar al mecánico y así continuar con la reparación del vehículo. tal como detalla la figura \@ref(fig:bpmnout).
+Lo siguiente es ubicar en el los distintos rack el repuesto requerido y realizar picking[^2], para posterior entregar al mecánico y así continuar con la reparación del vehículo. tal como detalla la figura \@ref(fig:bpmnout).
 
-  El proceso mencionado anteriormente **carese de integridad en la información**[^3] por el procedimiento con el que se realiza la ubicación del repuesto, debido a que no existe registro de su ubicación, esto tiene relación con el procedimiento al almacenar recepción, el cual se agrupa según marca de vehículo y se rotular el packing el producto por modelo, tal como detalla la figura \@ref(fig:bpmnin).
+El proceso mencionado anteriormente **carese de integridad en la información**[^3] por el procedimiento con el que se realiza la ubicación del repuesto, debido a que no existe registro de su ubicación, esto tiene relación con el procedimiento al almacenar recepción, el cual se agrupa según marca de vehículo y se rotular el packing el producto por modelo, tal como detalla la figura \@ref(fig:bpmnin).
 
 \newpage
 
+
 # Capitulo I: Definición del Problema
+
 
 ## Problema y Preguntas de Investigación
 
 El tema abordado en esta memoria nace de un problema presentado de forma directa por `r nam` que es el desconocimiento del stock, desde esta base se ha podido hallar otro problema del proceso de gestión de inventario, como el mencionado anteriormente que es la ubicación del stock en recepción. Analizaremos el inventario existente, clasificado según el tipo de repuesto con un costo de $`r cst.stock` pesos, la variedad de producto es de r lng.ttl.prod y una cantidad total de stock de r sm.total.in. Para resumir el stock existente la figura \@ref(fig:inventario) se presenta la distribución de frecuencia de cantidad agrupado según su clasificación
 
+
+![ishikawa\label{ishi}](fig/ishikawa.png)
 
 Se puede observar la existencia de sobre stock ejemplo de ello es la categoría `r "**categoria**"` el cual presta un producto con un stock superior a `r "**stock max 60**"` unidades
 
@@ -231,13 +265,15 @@ Para entender la importancia del inventario, y por que de enfocarse en ello, se 
 
 ## cual es la problemática que intenta solucionar
 
-  Obtenidos los datos y como se generan, se puede señalar que la problemática es de tipo metodológico (que implican un método o proceso estricto para ser solucionados), e involucra al proceso completo desde la entrada hasta la salida de stock, evidenciando la falta de control del inventario.
+Obtenidos los datos y como se generan, se puede señalar que la problemática es de tipo metodológico (que implican un método o proceso estricto para ser solucionados), e involucra al proceso completo desde la entrada hasta la salida de stock, evidenciando la falta de control del inventario.
 
-  "Las buenas políticas de inventarios pierden sentido si la administración no sabe qué hay disponible en su inventario" [@heizer, pp. 486]. En consecuencia este sera la problemática a solucionar. Para la presente proyecto el objetivo es **mejorar** la gestión de inventario actual de Duarcon con respecto a la rapidez de y solides de la información, para ello se propone implementar una herramienta tecnológica en especifico un software, capas de registrar, controlar y entregar métodos, técnicas que otorguen al administrador capacidad de tomar decisiones concretas acerca de pedidos.
+"Las buenas políticas de inventarios pierden sentido si la administración no sabe qué hay disponible en su inventario" [@heizer, pp. 486]. En consecuencia este sera la problemática a solucionar. Para la presente proyecto el objetivo es **mejorar** la gestión de inventario actual de Duarcon con respecto a la rapidez de y solides de la información, para ello se propone implementar una herramienta tecnológica en especifico un software, capas de registrar, controlar y entregar métodos, técnicas que otorguen al administrador capacidad de tomar decisiones concretas acerca de pedidos.
 
 ## por que este proyecto y no otro
 
-  La realización de este proyecto es importante debido a que "Sólo cuando la organización puede determinar con exactitud qué está disponible es capaz de tomar decisiones concretas acerca de pedidos, programación y embarque", "La exactitud de los registros permite a las organizaciones enfocarse en aquellos artículos que son más necesarios, en vez de tener la seguridad de que “algo de todo” está en inventario" [@heizer, pp. 486], ademas agregar que el proceso de inventario no agrega valor al servicio. Se puede inferir que de haber existido un sistema gestión de inventario, correcto con exactitud en los registros, habría desechado el **costo de oportunidad** de realizar de la ampliación de almacén por utilizar ese espacio en otra estación de reparación.
+La realización de este proyecto es importante debido a que "Sólo cuando la organización puede determinar con exactitud qué está disponible es capaz de tomar decisiones concretas acerca de pedidos, programación y embarque", "La exactitud de los registros permite a las organizaciones enfocarse en aquellos artículos que son más necesarios, en vez de tener la seguridad de que “algo de todo” está en inventario" [@heizer, pp. 486], ademas agregar que el proceso de inventario no agrega valor al servicio. Se puede inferir que de haber existido un sistema gestión de inventario, correcto con exactitud en los registros, habría desechado el **costo de oportunidad** de realizar de la ampliación de almacén por utilizar ese espacio en otra estación de reparación.
+
+![Arbol de problemas ZOPP\label{ZOPP}](fig/Arbol_problema_ZOPP.png)
 
 ## Formulación de hipótesis.
 ### Hipótesis general
@@ -289,11 +325,49 @@ Para entender la importancia del inventario, y por que de enfocarse en ello, se 
 
 ## Alcance de la investigacion
 
-Este proyecto pretende intervenir en el area almacen del taller por lo cual dispone de la autorizacion del dueno a realizar cambios fisicos tales como la dispocicion del inventario como en la crecion de senaleticas y crear sistema que facilite el mantenimiento del inventario, por ultimo en la tutoria del personal de almacen en el uso de mejoras propuestas.
+Este proyecto pretende intervenir en el area almacen del taller por lo cual dispone de la autorizacion del dueno a realizar cambios fisicos tales como la dispocicion del inventario como en la creacion de senaleticas y crear un sistema informatico basico que facilite el control de inventario, por ultimo realizar tutoria al personal de almacen en el uso de mejoras propuestas.
+
+![2do almacen\label{2alma}](fig/2doalmacen.jpg){width=50%}
 
 \newpage
-
+za
 # Capítulo II: MARCO TEÓRICO
+
+## Marco referente a rediseño de procesos
+
+El rediseño de procesos consiste en tomar las actividades de un proceso en su totalidad y someterlas a un cambio fundamental, el cual habitualmente implica un uso intensivo de Tecnologías de la Información que garantice un desempeño claramente mejorado del mismo [@proce, pp. 14], ademas concluye que "en cualquier organización hay un numero pequeño de tipos de procesos y cada uno de ellos ademas, de tener una arquitectura o estructura común que comparte con los otros es muy parecido en su esencia en diferentes contextos, a esta estructura común le denomina **Patrón de proceso**" [@proce, pp. 17]. para esto define el concepto de **Macroproceso** "como un conjunto de procesos que podemos ligar naturalmente y  que en algunas situaciones ocurren en forma totalmente interrelacionada" [@proce, pp. 21]. Coincide con este análisis el Trabajo estándar [@leanmanu, pp. 297] que tiene su fundamento en la excelencia operacional, sin el trabajo estandarizado no se puede garantizar que en las operaciones siempre se elaboren los productos de la misma manera. El trabajo estandarizado hace posible aplicar los elementos de Lean Manufacturing (se interiorizara mas adelante) ya que define de la manera mas eficiente los métodos de trabajo para lograr la mejor calidad y los costos mas bajos".
+
+Es así como se definen 4 macroprocesos que se muestran a continuación:
+
+### Definición Macroprocesos
+
+1. Macroproceso 1, de gestión, producción y provisión del bien o servicio: Se define como aquel que “representa la cadena integral del valor de una empresa, parte desde que se genera el requerimiento del cliente, pasando por la obtención de factores ofrecidos por los proveedores, producción del bien o servicio y entrega al cliente final. Referida a las cadenas de abastecimientos (supply chain) de una organización” [@proce, pp. 22]
+
+2. Macroproceso 2, desarrollo de nuevos productos y/o servicios: “contiene el conjunto de actividades, que muchas veces se encuentran dispersas en diferentes áreas funcionales, que permiten descubrir, definir, evaluar, diseñar, probar e implementar nuevos bienes o servicios en una compañía” [@proce, pp. 23]. Su propósito es innovar incrementando la oferta a los clientes y generar ventajas competitivas.
+
+3. Macroproceso 3 Planificación de negocio: “Son todas aquellas actividades a nivel táctico y estratégico que buscan establecer políticas, planes, programas u orientaciones buscando guiar el destino de la empresa a futuro (mediano o largo plazo)” [@proce, pp. 25]. Estas actividades son: Definición del negocio, Estructura del negocio, Planificación mediano-largo plazo.
+
+4. Macroproceso 4 de apoyo: Ciclo de vida de un recurso
+Contiene el conjunto de actividades que tienen como propósito ejecutar el ciclo de vida de los recursos y su funcionamiento. Consiste en detectar necesidades, obtener, asignar y designar recursos humanos, financieros, de materiales, insumos, infraestructura, entre otros [@proce, pp. 29].
+
+### Modelamiento de procesos
+
+La interacción entre los macroprocesos se da a través de flujos que representan como un macroproceso se alimenta y requiere servicios de los otros macroprocesos. Para el modelamiento de procesos se propone la utilizacion de los diagramas de flujos y patrones conocida como IDEFO (Integration Definition for Function Modeling) [@proce, pp. 34] la figura \@ref.
+
+![modelamientoestructurado](fig/modelamientoestructurado.png)
+
+### Metodología de rediseño mediante el uso de patrones
+
+Barros propone dos metodologías para realizar reingeniería o rediseño de procesos, resumidas indican que:
+
+1. Propuesta originalmente por **Hammer**, enfatiza en la "idea empezar de cero" lo cual implica repensar sin prejuicio histórico, el proceso en cuestión.
+
+2. Propone partir de un conocimiento profundo del proceso actualmente existente, a partir de esto generar una propuesta de rediseño.
+
+de lo anterior adapta la metodología propuestas en el libro Reingeniería de Procesas de Negocios [@proce, pp. 97], que se presenta resumido en la figura \@ref(fig:metoredi)
+
+![metodolagia rediseno juan barros\label{meto}](fig/metologia_rediseno.png)
+
 
 ## Marco referente a Logistica
 
@@ -308,6 +382,7 @@ Etapas de la logística:
 5. Logística inversa: Manejo de devoluciones, atención al cliente.
 
 ### Administración de inventario
+
 El objetivo de la administración de inventarios es encontrar un equilibrio entre la inversión en el inventario y el servicio al cliente. Sin un inventario bien administrado nunca se podrá lograr una estrategia de bajo costo [@heizer, pp. 484] lo cual esta ligado principios del lean manufacturing.
 
 El inventario puede dar servicio a varias funciones que agregan flexibilidad a las operaciones de una empresa. Las cuatro funciones del inventario son:
@@ -321,7 +396,7 @@ El inventario puede dar servicio a varias funciones que agregan flexibilidad a l
 
 El análisis ABC divide el inventario disponible en tres clases con base en su volumen anual en dinero, la figura \@ref(fig:ABC) representa este análisis. El análisis ABC es una aplicación a los inventarios de lo que se conoce como principio de Pareto. El principio de Pareto establece que hay "pocos artículos cruciales y muchos triviales"[^13]. La idea es esablecer políticas de inventarios que centren sus recursos en las pocas partes cruciales del inventario y no en las muchas partes triviales. No es realista monitorear los artículos baratos con la misma intensidad que a los artículos costosos [@heizer, pp. 485]. Ademas se afirma que "si se aplican en forma selectiva políticas de inventarios a estos diferentes grupos, pueden lograrse, con niveles más bajos de inventarios, los objetivos del servicio de inventarios, en vez de una política aplicada colectivamente a todos los productos" [@logist, pp. 376].
 
-![abcteo](fig/abcteo.png)
+![analisis ABC\label{abc}](fig/abcteo.png)
 
 #### Conteo cíclico o "inventario"
 
@@ -342,11 +417,12 @@ El proceso de planificación, organización y gestión de almacenes está a carg
 4. Diseño y Layout de los almacenes: Corresponde a la disposición de los elementos dentro del almacén.
 
 5. Modelo de organización física de los almacenes:
-    + Determinar las ubicaciones de existencias y establecer el sistema de almacenamiento.
-    + Establecer el sistema de manejo de materiales.
-    + Mantener un sistema de control de inventarios.
-    + Establecer procedimientos para tramitar los pedidos.
-    + Seleccionar el medio de transporte.
+
++ Determinar las ubicaciones de existencias y establecer el sistema de almacenamiento.
++ Establecer el sistema de manejo de materiales.
++ Mantener un sistema de control de inventarios.
++ Establecer procedimientos para tramitar los pedidos.
++ Seleccionar el medio de transporte.
 
 Como primicia, la propuesta de esta investigación es la implementación de un métodos de control en la gestión de inventario mediante un software WMS, por lo que respecta a la construcción del software se analizara de forma general sin caer en demasiado tecnicismos, se incluirá información acerca de su funcionamiento, debido a que es un proyecto para el titulo de la carrera ingeniero civil industrial.
 
@@ -355,41 +431,6 @@ Con respecto a lo anterior se ha consultado proyectos con un objetivo similar de
 La problemática de la organización, la cual radica en el método utilizado para la gestión de inventario se presenta algunos conceptos y teorías que se enfocan en **Rediseño de procesos**, **Administración de inventario**, y desarrollo software en especifico **desarrollo web**, para lo cual se mencionaran estrategias y metodología que posibiliten la solución al del problema del almacén, también se menciona la industria 4.0 debido a que se plantea como un modelo actual que reconoce la evolución de la industria en torno a la tecnología.
 
 Para crear el puente a la construcción de software se utilizara la teoría de Oscar Barros el autor propone en su libro que los procesos típicos de todas las organizaciones son pocos y las prácticas para ejecutar dichos procesos no difieren mucho. Es por esto que se puede modelar una estructura general para cada uno de ellos y luego ser aplicada a un dominio específico.
-
-## Marco referente a rediseño de procesos
-El rediseño de procesos consiste en tomar las actividades de un proceso en su totalidad y someterlas a un cambio fundamental, el cual habitualmente implica un uso intensivo de Tecnologías de la Información que garantice un desempeño claramente mejorado del mismo [@proce, pp. 14], ademas concluye que "en cualquier organización hay un numero pequeño de tipos de procesos y cada uno de ellos ademas, de tener una arquitectura o estructura común que comparte con los otros es muy parecido en su esencia en diferentes contextos, a esta estructura común le denomina **Patrón de proceso**" [@proce, pp. 17]. para esto define el concepto de **Macroproceso** "como un conjunto de procesos que podemos ligar naturalmente y  que en algunas situaciones ocurren en forma totalmente interrelacionada" [@proce, pp. 21]. Coincide con este análisis el Trabajo estándar [@leanmanu, pp. 297] que tiene su fundamento en la excelencia operacional, sin el trabajo estandarizado no se puede garantizar que en las operaciones siempre se elaboren los productos de la misma manera. El trabajo estandarizado hace posible aplicar los elementos de Lean Manufacturing (se interiorizara mas adelante) ya que define de la manera mas eficiente los métodos de trabajo para lograr la mejor calidad y los costos mas bajos".
-
-Es así como se definen 4 macroprocesos que se muestran a continuación:
-
-### Definición Macroprocesos
-1. Macroproceso 1, de gestión, producción y provisión del bien o servicio: Se define como aquel que “representa la cadena integral del valor de una empresa, parte desde que se genera el requerimiento del cliente, pasando por la obtención de factores ofrecidos por los proveedores, producción del bien o servicio y entrega al cliente final. Referida a las cadenas de abastecimientos (supply chain) de una organización” [@proce, pp. 22]
-
-2. Macroproceso 2, desarrollo de nuevos productos y/o servicios: “contiene el conjunto de actividades, que muchas veces se encuentran dispersas en diferentes áreas funcionales, que permiten descubrir, definir, evaluar, diseñar, probar e implementar nuevos bienes o servicios en una compañía” [@proce, pp. 23]. Su propósito es innovar incrementando la oferta a los clientes y generar ventajas competitivas.
-
-3. Macroproceso 3 Planificación de negocio: “Son todas aquellas actividades a nivel táctico y estratégico que buscan establecer políticas, planes, programas u orientaciones buscando guiar el destino de la empresa a futuro (mediano o largo plazo)” [@proce, pp. 25]. Estas actividades son: Definición del negocio, Estructura del negocio, Planificación mediano-largo plazo.
-
-4. Macroproceso 4 de apoyo: Ciclo de vida de un recurso
-Contiene el conjunto de actividades que tienen como propósito ejecutar el ciclo de vida de los recursos y su funcionamiento. Consiste en detectar necesidades, obtener, asignar y designar recursos humanos, financieros, de materiales, insumos, infraestructura, entre otros [@proce, pp. 29].
-
-### Modelamiento de procesos
-La interacción entre los macroprocesos se da a través de flujos que representan como un macroproceso se alimenta y requiere servicios de los otros macroprocesos. Para el modelamiento de procesos se propone la utilizacion de los diagramas de flujos y patrones conocida como IDEFO (Integration Definition for Function Modeling) [@proce, pp. 34] la figura \@ref.
-
-![modelamientoestructurado](fig/modelamientoestructurado.png)
-
-
-### Metodología de rediseño mediante el uso de patrones
-
-Barros propone dos metodologías para realizar reingeniería o rediseño de procesos, resumidas indican que:
-
-1. Propuesta originalmente por **Hammer**, enfatiza en la "idea empezar de cero" lo cual implica repensar sin prejuicio histórico, el proceso en cuestión.
-
-2. Propone partir de un conocimiento profundo del proceso actualmente existente, a partir de esto generar una propuesta de rediseño.
-
-de lo anterior adapta la metodología propuestas en el libro Reingeniería de Procesas de Negocios [@proce, pp. 97], que se presenta resumido en la figura \@ref(fig:metoredi)
-
-```{r echo=FALSE,fig.cap='Metodología rediseño', fig.id='metoredi', out.width = '80%',fig.align='center', fig.pos='H'}
-knitr::include_graphics("marco teorico/diagramas/metologia_rediseno.png")
-```
 
 ## Marco referente a métodos, filosofias, herramientas.
 
@@ -414,9 +455,7 @@ El término industria 4.0 se refiere a un nuevo modelo de organización y de con
 
 Falta de estos tópicos del éxito tiene como consecuencia en la productividad [@leanmanu, pp. 26]. Lean manufacturing visibiliza las limitantes de la productividad, los ingenieros japoneses han clasificado estas limitantes en tres grupos a los que llamaron las 3 "Mu", debido a que todas inician con la silaba mu:
 
-```{r echo=FALSE, fig.align='center', fig.cap='Tres limitantes de la productividad', fig.id='leanmu', out.width='50%'}
-knitr::include_graphics("marco teorico/Screenshot from 2021-11-02 00-44-42.png")
-```
+![lean](fig/Screenshot from 2021-11-02 00-44-42.png){width=50%}
 
 #### Principios en los que se basa la filosofía Lean Manufacturing:
 
@@ -443,11 +482,10 @@ El trabajo se relaciona con simples señales visuales y de audio que se identifi
 
 Andon es un elemento del principio Jidoka[^11] que, mediante ingeniosos mecanismos, detecta cuando ocurre una Falla y entonces, con una señal generalmente visual, avisa al operador que se ha generado un problema, Andon es una señal que incorpora elementos visuales, auditivos y de texto que sirven para notificar problemas de calidad o paros por ciertos motivos. Proporciona información en tiempo real y retroalimentación del estado de un proceso,
 
-```{r echo=FALSE, fig.align='center', fig.cap='concepto de andon es medir pfocesos y no personas, La Comunicaclén visual genera acutudes hacia las responsabilidades, no contra los individuos', out.width='50%'}
-knitr::include_graphics("marco teorico/Screenshot from 2021-11-02 17-19-42.png")
-```
+![ando](fig/Screenshot from 2021-11-02 17-19-42.png)
 
 ### Herramienta de calidad
+
 #### AMEF, Analisis de modo y efecto de fallas
 
 "Herramienta muy poderosa que permite identificar fallas en productos y procesos y evaluar objetivamente sus efectos, causas y elementos de detección para evitar su ocurrencia y tener un método documentado de prevencion. El AMEF es un documento vivo en el que podemos almacenar una gran cantidad de datos sobre nuestros procesos y productos, por lo que constituye una Fuente invaluable de información [@leanmanu, pp. 223].
@@ -473,15 +511,14 @@ Las siguientes son algunas de las utilidades de implementar Poka Yoke:
 * Libera la mente del trabajador y le permite desarrollar su creatividad
 * Generalmente los Sistemas Poka Yoke son baratos y sencillos.
 
-## Marco al proceso de desarrollo del software
+## Marco referente al proceso de desarrollo del software
 
 Un proceso de desarrollo de software tiene como propósito la producción eficaz y eficiente de un producto software que reúna los requisitos del cliente. Dicho proceso, en términos globales se muestra en la Figura \@ref(fig:soft_proc) [^8]. Este proceso es intensamente intelectual, afectado por la creatividad y juicio de las personas involucradas[^9]. Aunque un proyecto de desarrollo de software es equiparable en muchos aspectos a cualquier otro proyecto de ingeniería, en el desarrollo de software hay una serie de desafíos adicionales, relativos esencialmente a la naturaleza del producto obtenido. [^18]
 
-```{r echo=FALSE, fig.align='center', fig.cap='Proceso de desarrollo de software', fig.id='soft_proc', out.width='50%'}
-knitr::include_graphics("marco teorico/Screenshot from 2021-11-09 04-03-10.png")
-```
+![soft](fig/Screenshot from 2021-11-09 04-03-10.png)
 
 El proceso de desarrollo de software no es único. No existe un proceso de software universal que sea efectivo para todos los contextos de proyectos de desarrollo. Debido a esta diversidad, es difícil automatizar todo un proceso de desarrollo de software. A pesar de la variedad de propuestas de proceso de software, existe un conjunto de actividades fundamentales que se encuentran presentes en todos ellos [^9]:
+
 1. Especificación de software: Se debe definir la funcionalidad y restricciones operacionales que debe cumplir el software.
 2. Diseño e Implementación: Se diseña y construye el software de acuerdo a la especificación.
 3. Validación: El software debe validarse, para asegurar que cumpla con lo que quiere el cliente.
@@ -497,13 +534,7 @@ A través de los años, la logística ha sufrido importantes transformaciones no
 
 ### Modelo de desarrollo
 
-Desarrollo evolutivo
-La idea detrás de este modelo es el desarrollo de una implantación del sistema inicial, exponerla a los
-comentarios del usuario, refinar en N versiones hasta que se desarrolle el sistema adecuado. En la Figura
-6 se observa cómo las actividades concurrentes: especificación, desarrollo y validación, se realizan durante
-el desarrollo de las versiones hasta llegar al producto final.
-Una ventaja de este modelo es que se obtiene una rápida realimentación del usuario, ya que las actividades
-de especificación, desarrollo y pruebas se ejecutan en cada iteración. \@ref(fig:sftproc)
+**Desarrollo evolutivo :** La idea detrás de este modelo es el desarrollo de una implantación del sistema inicial, exponerla a los comentarios del usuario, refinar en N versiones hasta que se desarrolle el sistema adecuado. En la Figura 6 se observa cómo las actividades concurrentes: especificación, desarrollo y validación, se realizan duranteel desarrollo de las versiones hasta llegar al producto final. Una ventaja de este modelo es que se obtiene una rápida realimentación del usuario, ya que las actividades de especificación, desarrollo y pruebas se ejecutan en cada iteración. \@ref(fig:sftproc)
 
 ```{r echo=FALSE, fig.align='center', fig.cap='Modelo desarrollo evolutivo de software', fig.id='sftproc', out.width='50%'}
 knitr::include_graphics("marco teorico/Screenshot from 2021-11-09 04-24-09.png")
@@ -512,17 +543,14 @@ knitr::include_graphics("marco teorico/Screenshot from 2021-11-09 04-24-09.png")
 Existen dos tipos de desarrollo evolutivo:
 
 * Desarrollo Exploratorio: El objetivo de este enfoque es explorar con el usuario los requisitos hasta llegar a un sistema final. El desarrollo comienza con las partes que se tiene más claras. El sistema evoluciona conforme se añaden nuevas características propuestas por el usuario.
+
 * Enfoque utilizando prototipos: El objetivo es entender los requisitos del usuario y trabajar para mejorar la calidad de los requisitos. A diferencia del desarrollo exploratorio, se comienza por definir los requisitos que no están claros para el usuario y se utiliza un prototipo para experimentar con ellos. El prototipo ayuda a terminar de definir estos requisitos.
 
 Este modelo es efectivo en proyectos pequeños (menos de 100.000 líneas de código) o medianos (hasta 500.000 líneas de código) con poco tiempo para su desarrollo y sin generar documentación para cada versión.
 
 ### Metodologías para desarrollo de software
 
-Metodologías ágiles
-Un proceso es ágil cuando el desarrollo de software es incremental (entregas pequeñas de software, con
-ciclos rápidos), cooperativo (cliente y desarrolladores trabajan juntos constantemente con una cercana
-comunicación), sencillo (el método en sí mismo es fácil de aprender y modificar, bien documentado), y
-adaptable (permite realizar cambios de último momento).
+**Metodologías ágiles:** Un proceso es ágil cuando el desarrollo de software es incremental (entregas pequeñas de software, con ciclos rápidos), cooperativo (cliente y desarrolladores trabajan juntos constantemente con una cercana comunicación), sencillo (el método en sí mismo es fácil de aprender y modificar, bien documentado), y adaptable (permite realizar cambios de último momento).
 
 ### Back
 #### phpMyAdmin
@@ -560,7 +588,7 @@ PostgreSQL en sistemas Linux, formando una combinación barata
 ha sido la expansión de esta combinación que incluso ha merecido
 conocerse con un nombre propio LAMP (formado por las iniciales de
 los diversos productos)
-
+za
 ### End
 
 #### js
@@ -576,19 +604,18 @@ El lenguaje HTML ( hypertext markup language ) se utiliza para crear documentos 
 ### css
 
 \newpage
+
 # Capítulo III: DISEÑO METODOLÓGICO
 
 ## Enfoque
 
-El debido a la naturaleza de la propuesta de rediseño de proceso se puede establecer que la presente investigación tiene un enfoque cuantitativo, por su necesidad de un análisis numérico del stock, el alcance del trabajo sera de campo debido a que se realizara en el almacén. De carácter descriptivo debido a la observación que se incurre en el rediseno de proceso, también se describe como una investigación aplicativa por el objetivo de resolver un problema utilizando el conocimiento e implementar de forma practica, para satisfacer necesidades concretas[^14].
+La propuesta de la presente investigación tiene un enfoque cuantitativo, por su necesidad de un análisis de costo de mantenimiento de stock, el alcance del trabajo sera de campo debido a que se realizara en el almacén. De carácter descriptivo debido a la observación que se incurre en el rediseno de proceso, también se describe como una investigación aplicativa por el objetivo de resolver un problema utilizando el conocimiento e implementar de forma practica, para satisfacer necesidades concretas[^14].
 
 ## Diseño.
 
-Para realizar la propuesta de mejora en el proceso de gestión de almacén se utilizara la teoría de `r l.osc` añadiendo la filosofía de lean manufacturing. Como principio se utilizara para este caso   especifico la variante metodológica de rediseño, que contempla como referencia la situación actual, por tanto la propuesta del diseno de la metodología en general contara con las etapas que describe la figura \@ref(fig:metoredi).
+Para realizar la propuesta de mejora en el proceso de gestión de almacén, utilizara la teoría de `r l.osc` rediseno de procesos de negocios mediante el uso de patrones,para lo cual sera necesario dos pilares fundamentales (ronald ballong), estos son **filosofía de lean manufacturing**, y **software basico orientado a gestion de inventario**. Como principio se utilizara para este caso especifico la variante metodológica de rediseño, que contempla como referencia la situación actual, por tanto la propuesta del diseno de la metodología en general contara con las etapas que describe la figura \ref{metodoresu}.
 
-```{r echo=FALSE,fig.cap='Metodología general', fig.id='metores', out.width = '50%',fig.align='center'}
-knitr::include_graphics("marco teorico/diagramas/metodo_resu.png")
-```
+![resumen metodologico\label{metodoresu}](fig/metodo_resu.png)
 
 ## Contexto
 
@@ -604,14 +631,19 @@ A continuación se establecen y describen las variables que comprende la propues
 La construcción de un nuevo almacén en el taller por falta de espacio debido a un posible sobre stock de repuesto, requiere de un análisis de espacio necesario para el almacenaje de repuesto. En consecuencia la optimizacion de esta variable osea reducir capacidad de almacenamiento necesario de stock es primordial, por lo tanto se propone como variable dependiente la cual se ve afecta por las siguientes variables independientes
 
 ### Variables Independientes Intangible
+insertidumbre
 
 ### Variables Independientes tangibles
+
 #### Volumen packing por repuesto
 Se considera la medidas de la caja del repuesto.
+
 #### Cantidad total por repuesto 
 Esta variable contempla la cantidad total por repuesto
+
 #### Merma
 Esta variable se cuantifica de la existencia teórica con respecto a la existencia real
+
 #### Tecnología o método de control.
 Herramienta o método de control utilizado para la gestión de inventario
 
@@ -624,53 +656,82 @@ La población es el inventario total y la muestra una ubicación en particular
 * entrevista encargado
 * revisión de registro de facturas recepción
 * Medir, la instalaciones
-* observación, del proceso actual, desorden
+* observación del proceso actual, orden.
 * prueba, preguntar ubicación de productos
-* conteo de inventario, 
+* conteo de inventario
 
 ## Plan de análisis.
 
-Para términos de alcance de la presente memoria, se propone enfocar el trabajo en las etapas 1, 2 y 3, dejando de lado la implementación, pero sí logrando un estudio completo que deje las directrices listas para una posible implementación de la solución propuesta.
+Para términos de alcance de la presente memoria, se propone enfocar el trabajo en las etapas 1, 2 y 3 pero dejando de lado la implementación, pero sí lograr un estudio completo que deje las directrices listas para una posible implementación de la solución propuesta.
 A continuación, se explica en detalle en qué consistió cada etapa.
 
-la figura \@ref(fig:metores) describe la metodología general detallando la actividad de cada etapa. A continuación, se explica en detalle en qué consistió cada etapa.
+la figura \ref{meto} describe la metodología de rediseno a utilizar detallando la actividad de cada etapa. A continuación, se explica en detalle en qué consistió cada etapa.
+
+**tal vez hacer otra fig con los dos pilares**
 
 ## Definir proyecto
 
 El objetivo general de la etapa es entregar información suficiente para decidir que proceso y de que macro proceso se intervendrá, se cuenta con la colaboración de la gerencia, necesario para establecer y avalar las definiciones del plan estratégico, también se utilizara la teoría de Thomas L.Wheelen J. David Hunger del libro Administración Estratégica Y Política De Negocios. Independiente si ya existe un planteamiento estratégico se realizara una retroalimentación y aprendizaje debido a que "en la medida en que una empresa o unidad de negocios desarrolla estrategias, programas y cuestiones similares, con frecuencia debe volver atrás para revisar o corregir las decisiones que tomó previamente en el proceso" [@nego, pp. 18].
 
 ### Establecer objetivo del rediseño
+
 Para una mejor comprensión de esta actividad, la figura \@ref(fig:meto1obj) presenta la estructura a seguir.
 
-```{r echo=FALSE,fig.cap='Derivación de los objetivos y atributos de los procesos', fig.id='meto1obj', out.width = '30%',fig.align='center'}
-knitr::include_graphics("marco teorico/diagramas/METO derivarivacion de objetivos.png")
-```
+![metoderi](fig/METO derivarivacion de objetivos.png")
 
-Primero se debe tener claro el planteamiento estratégico de la organización [@proce, pp. 102], para ello se establece cual la estrategia de negocio, con respecto a esto Porter identifica dos estrategias: estrategia de menor costo, estrategia de diferenciación [@nego, pp. 145], para escoger una de ellas, se considerara lo expuesto en `r tesis.ant` del presente proyecto, y para ilustrar análisis ambiental[^16] actual se utilizara la herramienta **matriz FODA** [@nego, pp. 144]. Se diseñara la visión estratégica de los procesos que es una especialización de la estrategia de negocios que entrega una expresión precisa de lo que se espera de los procesos, lo que permitirá establecer lo siguiente:
+Primero se debe tener claro el planteamiento estratégico de la organización [@proce, pp. 102], para ello se establece cual la estrategia de negocio, con respecto a esto Porter identifica dos estrategias: estrategia de menor costo y estrategia de diferenciación [@nego, pp. 145], para escoger una de ellas, se considerara lo expuesto en **cap 1 ANTEcedentes** del presente proyecto, y para ilustrar análisis ambiental[^16] actual se utilizara la herramienta **matriz FODA** [@nego, pp. 144]. De la estrategia de negocios se deriva la Vision estrategica de los procesos [@proce, pp. 103],
+
+Se diseñara la visión estratégica de los procesos que es una especialización de la estrategia de negocios que entrega una expresión precisa de lo que se espera de los procesos, lo que permitirá establecer lo siguiente:
 
 * objetivos de los procesos: variables medibles de desempeño a las cuales se les asignan valores objetivos específicos; eliminar el desperdicio, eliminar la variabilidad, y dar velocidad al tiempo, se le asignaran valores específicos a las variables elegidas, para estos valores se contempla la medición del proceso actual.
-* Atributos de los procesos: características especificas de los procesos, y que cumpla con los objetivos propuestos.
+* Atributos de los procesos: características especificas de los procesos, y que cumpla con los objetivos propuestos, ejemplo el bienestar del tabrajador al realizar una tarea.
 
 ### definir ámbito de proceso a rediseñar
-Consiste en seleccionar y definir los procesos críticos del macroproceso a rediseñar, a continuación se recopila información histórica de los procesos ademas se itera y verifica el cumplimiento de los objetivos propuestos. Se realiza entrevista al operario ejecutor del proceso **cuestionario**, recopilada la información se decide si constituye una unidad que debe ser mejorada.
+
+Consiste en seleccionar y definir los procesos críticos del macroproceso a rediseñar, a continuación se recopila información histórica de los procesos ademas se itera y verifica el cumplimiento de los objetivos propuestos. Se realiza entrevista al operario ejecutor del proceso, recopilada la información se decide si constituye una unidad que debe ser mejorada.
 
 ### Ambiente de Ingeniería de Software
+
 Considerando la implementación de software se establece **tipo de desarrollo de software**  entorno de desarrollo, lenguajes de programación a utilizar, especificar tipo de servidor y base de datos.
 
 ### Establecer si hacer estudio situación actual
+
 El o los procesos a mejorar son evaluado según la calidad de proceso, con respecto al cumplimiento de los objetivos y la formalización del proceso existente. Con esta información se decide si es no necesario como estructura base para la elaboración de un rediseño de lo contrario se este realizaría una reingeniería (comenzar desde cero).
 
 ## Entender situación actual
 
-Se justifica esta etapa solo se en la etapa anterior se a decidido por la realización de rediseño osea que el proceso actual es útil y por tanto se utilizara como base para la mejora. Esta etapa se realizara con la ayuda del jefe de taller y el operario ejecutor del proceso, del macroproceso y proceso elegido anteriormente.
+Se justifica esta etapa solo si en la etapa anterior se a decidido por la realización de rediseño osea que el proceso actual es útil y por tanto se utilizara como base para la mejora. Esta etapa se realizara con la ayuda del jefe de taller y el operario ejecutor del proceso, del macroproceso y proceso elegido anteriormente.
+
+Consistio en interizar en la organizacion y en el area especifica donde se planea realizar el rediseno, identificando los procesos y colaboradores involucrado.
+
+Para levantar la informacion se realizo entrevistas al encargado de almacen, con el objetivo de reunir informacion suficiente de cada uno de los procesos, y sus participantes, cuantificacion de inventario existente, y recopilacion de informacion de recepcion y despacho(push y pull).
 
 ### Modelar la situación actual
 
-"La ventaja de contar con un modelo formal de la situación actual es que facilita la comunicación con quienes conocen el proceso" [@proce. pp, 114]. El objetivo general es entender el funcionamiento del proceso y su coordinación con otros procesos. Se identifican actores participantes, selecciona el patrón [@proce, pp. 33] que mas se ajuste, se modifican las actividades según la necesidad y se establecen elementos que intervienen en la actividad estos se clasifican en, entrada, control, mecanismo, salida.
+Los procesos de que intervienen en el area de almacen se clasifican en 3 estos son push (recepcion), pull (despacho) y control de inventario, por tanto se realizaran 3 modelamientos.
 
-Para finalizar se realiza el levantamiento de proceso mediante la elaboración de un modelo de flujo de proceso de la actividad, realizado en Business Process Model and Notation (BPMN) basado en el libro de Bernhard Hitpass “BPMN Manual de Referencia y Guía Práctica[^17]”.
+"La ventaja de contar con un modelo formal de la situación actual es que facilita la comunicación con quienes conocen el proceso" [@proce. pp, 114]. El objetivo general es entender el funcionamiento del proceso y su coordinación con otros procesos. Se identifica el objetivo, procesos, actividades, participantes, con esta informacion se selecciona el patrón [@proce, pp. 33] que mas se ajuste, se modifican las actividades según la necesidad y se establecen elementos que intervienen en la actividad estos se clasifican en, entrada, control, mecanismo, salida.
+
+Para finalizar se realiza el levantamiento de proceso mediante la elaboración de un modelo de flujo de proceso, realizado en Business Process Model and Notation (BPMN) basado en el libro de Bernhard Hitpass “BPMN Manual de Referencia y Guía Práctica[^17]”.
 
 ### Validar y medir
+
+Levantado el proceso, se buscan actividades claves que contribuyen con el problema identificado.
+
+Se realiza un inventario del almacen debido a que no existe esta informacion, por lo que se tuvo que crear una base de datos con la informacion recopilada del proceso de inventario. Con ello se realizan distintos analisis dependiendo de la clasificacion del proceso, estos son:
+
+Push: capacidad almacenamiento
+
+Pull: rotacion de inventario
+
+control: ABC
+
+ergonomica:
+
+
+costo de inventario, rotacion de stock e inventario de seguridad.
+
+Se cuantifica el push y pull, para ello se recopilo informacion de facturas de los proveedores en cuante al pull se recopila en base a facturas debido a que las boletas no existe el detalle de la prestacion.
 
 Con el modelo de flujo de proceso planteado anteriormente, este es llevado a la practica, buscando la validación del equipo cargo del proceso de ser negativo se realizan los cambios que correspondan. Aceptado el modelo planteado, se continua con la medición del proceso, con el fin de cuantificar el desempeño y generar información que posterior sera utilizada como referencia para la propuesta planteada en el presente proyecto.
 
@@ -681,14 +742,17 @@ $Ubicacióncorrecta = \frac{Despacho}{Despacho-Error en ubicación}$
 \end{center}
 
 El establecer calificaciones para este indicador, permitirá medir el movimiento innecesario del operario en al pickear un producto.
-
+za
 ## Rediseño
-Para esta etapa se contempla la filosofía de lean manufacturing, por lo que se implementara 5's debido a que se dice si en una empresa no ha funcionado la implementación de las 5's, cualquier otro sistema de mejoramiento de procesos esta destinado a fracasar [@leanmanu, pp. 147]. Se realiza en colaboración de jefe de taller y el operario ejecutor del proceso.
+
+Para esta etapa se contempla la filosofía de lean manufacturing, por lo que se implementara 5's debido a que se dice si en una empresa no ha funcionado la implementación de las 5's, cualquier otro sistema de mejoramiento de procesos esta destinado a fracasar [@leanmanu, pp. 147]. Se realiza en colaboración de jefe de taller y el encargade de almacen ejecutor del proceso.
 
 ### Establecer dirección del cambio
+
 Se establecerán un conjunto de diferencias entre el actual proceso y la propuesta para generar cambios reales necesarios según objetivos, para identificar las fallas del actual proceso se empleara la herramienta de AMEF [@leanmanu, pp. 223] con el objetivo construir información útil para el rediseño. Identificar la dirección del cambio si es horizontal, vertical, interno o externo. Como primicia los actores no deberían diferir de los ya indicados, por el contrario se puede inferir en la adición de nuevas tareas. 
 
-### Seleccionar tecnologías habilitantes
+### Seleccionar tecnologías habilidades
+
 Consiste en buscar y evaluar las tecnologías existentes y que hacen factible el cambio propuesto. Como primicia en esta etapa el autor propone construir un software basado en lenguajes Open Source y Free Source, con el objetivo de ajustar el software a las necesidades del proceso. Otro aspecto importante del software es la nula inversión. El software sera diseñado como aplicativo web basado en WMS, por lo tanto sera necesario el uso de un buscador, razón de adoptar este diseño es su compatibilidad con diferentes dispositivos.
 
 El hardware a utilizar sera el computador existente en el área almacén, este también sera utilizado como servidor local por ende tampoco presenta un costo. Se destaca que se podrá acceder desde dispositivos móviles (smartphones), siempre que estén conectados a la misma red que el servidor (computador área almacén). Se agrega un también un lector de barras con conexión USB, el cual también puede ser conectado a dispositivos móviles mediante un adaptador OTG.
@@ -710,23 +774,62 @@ Se detalla el funcionamiento del proceso en conjunto al software.
 
 ## Implementar
 ### Construir software
+
+
+
+back end
+base datos
+tablas
+relaciones
+php
+
+front end
+html
+modulos
+
+
 ### implementar software
 ### Implementar procesos
-
-
 
 ## Resultados Esperados
 
 # Capítulo IV: Desarrollo
 
-## Definir proyecto
+## Analisis situacion Actual
+
+se separara por proceso recepcion y despacho
+
+**ciclo de vida de un producto**
+
+### Recepcion
+#### Modelari
+
+
+
+#### validar y medir
+
+### Despacho
+### Modelar
+### validar y medir
+## rediseno
+
+### Definir proyecto
 ### Establecer objetivo del rediseño
+
+####estrategia de inventario (ronald)
+#### metodos pronostico (ronald)
+
+#### objetivos del inventario , disponibilidada, costo
+
+### control 
+#### control inventario por incremento push
+#### control inventario por demanda pull
+#### control avanzado de inv por demanda
+
+
+
 ### Definir ámbito de proceso a rediseña
 ### Ambiente de Ingeniería de Software (segun figuero romero)
-### Establecer si hacer estudio situación actual
-
-
-## Analisis de la situcion actual
 
 ### Inventarios
 #### tipo de producto ICA 6363
@@ -741,10 +844,6 @@ MODELOS DE INVENTARIO
 Costos de mantener, ordenar y preparar inventario
 
 levanta, diagnosti, control
-
-### Demanda
-
-### Recepción
 
 #### Proceso
 La recepción es una etapa primordial debido a que la eliminación de errores al momento de ingresar repuestos al inventario, condiciona el despacho a incurrir en un error (descartando movimiento de inventario entre recepción y despacho). el proceso actual carece de un sistema tecnológico de información por tanto es propenso a la generación de errores. La figura \@ref(fig:bpmnin) muestra de el flujo de proceso de recepeción
@@ -783,9 +882,8 @@ El costo de orden (**suma el costo de ir a comprar, count date**) del stock que 
 
 ### Despacho
 
-```{r echo=FALSE, fig.pos='H',fig.cap='BPMN de servicio reparación', fig.id='bpmnout', fig.align='center', out.width= '50%'}
-knitr::include_graphics("marco teorico/D_servicio.png")
-```
+/D_servicio.png")
+
 
 tiempo
 error
@@ -851,12 +949,6 @@ estudio de tiempo
 ### Implementar software
 ### Implementar procesos
 
-## Definir proyecto
-## Entender situacion actual
-### Analisis de niveles de inventario
-### Analisis ABC de inventarios
-## Rediseno
-### Procedimiento para la gestión de inventarios
 
 # Capítulo V: EVALUACIÓN ECONÓMICA
 
@@ -910,7 +1002,7 @@ estrategia de diferenciación
 [^13]: Vilfredo Pareto, economista italiano del siglo XIX
 [^14]: http://www2.duoc.cl/biblioteca/crai/definicion-y-proposito-de-la-investigacion-aplicada La Investigación Aplicada tiene por objetivo resolver un determinado problema o planteamiento específico, enfocándose en la búsqueda y consolidación del conocimiento para su aplicación y, por ende, para el enriquecimiento del desarrollo cultural y científico.
 [^15]: https://branward.com/branderstand/estrategia-negocio-estrategia-marca/  https://www.ikusi.com/es/blog/estrategia-de-negocios/
-[^16]: El análisis ambiental implica la vigilancia, evaluación y difusión de información desde los ambientes
+[^16]: El análisis ambiental implica la vigilancia, evaluación y difusión de información de los ambientes
 externo e interno hasta el personal clave de la corporación
 [^17]: https://books.google.es/books?id=B2WyaSJD-P8C&pg=PP5&dq=bernhard+hitpass&hl=es&ei=dDcFTp_5H6S30AGdt_TxCg&sa=X&oi=book_result&ct=result#v=onepage&q&f=true
 [^18]: https://revistas.utp.ac.pa/index.php/ric/article/view/1252/html
