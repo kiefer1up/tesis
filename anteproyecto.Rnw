@@ -1,0 +1,199 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+<<RTest>>=
+2+2
+@
+\section{Nombre del seminario}
+Propuesta de mejora del proceso de gestión y control de inventario, mediante la implementación de WMS  para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON.
+
+\subsection{Fundamentos}
+El inicio de la pandemia del COVID-19 a afectado la venta de automóvil, el primer semestre del año 2020 hubo una reducción en la compra de vehículos livianos y medianos \ref{anac}. Para gráficar el comportamiento a continuación, se presenta las ventas del mercado automotor realizado por Asociación Nacional Automotriz de Chile (ANAC).
+
+Ventas mensuales a publico del mercado de livianos y medianos
+
+![Ventas mensuales a publico del mercado de livianos y medianos\label{anac}](fig/anac.png)
+
+Se puede observar un aumento en el consumo desde el segundo semestre del 2020, ademas informa el diario el mercurio que, el parque de autos se acelera y rozará los 5,5 millones de unidades este año. Esto en un contexto de mayor liquidez por los retiros del 10% de las AFP y también del uso de vehículos para actividades laborales como las de reparto y servicios de movilización privada. Según estimaciones de la Asociación Nacional Automotriz de Chile (ANAC).
+
+Otra de las razones de este comportamiento, indica La Ministra de Transportes, Gloria Hutt; "El uso del auto es una reacción de las personas para sentirse más seguras. Tratan de evitar viajar en modos compartidos, pero la evidencia muestra que el transporte no ha sido un foco de contagios". En consecuencia se espera un aumento en la demanda de los servicios de mantenimiento y reparación automotriz, lo cual es un llamado a revisar y buscar falencia en el servicio, para transformarlas en oportunidad para enfrentar de mejor manera la demanda.
+
+En reparo a lo anterior, el área de bodega del taller presenta falencias debido a que no existe un sistema formal de gestión y control de inventario. Para entender algunos problemas del inventario, entendamos que es. [@Guerrero2017praxis] define inventario, como un conjunto de recursos que se mantienen ociosos hasta el instante mismo en que se necesiten [...]. ademas agrega que [...] la sola permanencia de este inventario está generando un sin número de costos asociados. En conclusión debemos reducir stock al punto que se equilibre con la demanda, para así reducir los costos asociados (mas adelante se especificaran).
+
+A continuación se presenta un resumen de las existencias de la bodega, para una mejor apreciación del inventario.
+
+<br>
+
+```{r echo= FALSE}
+tbl.rsm.inv.docx
+```
+
+Para hacer visible el costo de una mala administración de inventario clasificaremos los costos en 4 tipo, estos son: mantenimiento, penalización,costo por ordenar o fijo, costo variable según [@Guerrero2017praxis], en la practica estos están asociados unos a otros por lo cual incurrir en un costo notoriamente adicionara otro tipo de costo (como el costo de penalización con el de orden que aparece mas adelante).
+
+Referente al costo de mantenimiento de acuerdo a la imagen, se puede observar; espacio reducido y obstruido para desplazamiento, almacenamiento fuera de estándar (véase recomendación almacén), acumulación de polvo y dificultad para limpieza, dificultad para separar y clasificar espacio.
+
+```{r echo=FALSE, fig.cap="Pasillo aceites", out.width = '500px',fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/imagenes/IMG-20210629-WA0017.jpg")
+```
+
+<br>
+
+```{r echo=FALSE, fig.cap="Pasillo disco de freno", out.width = '500px',fig.align='center'}
+knitr::include_graphics("/home/kiefer/R/tesis/imagenes/IMG-20210629-WA0019.jpg")
+```
+
+<br>
+
+Nacionalización, considera las veces que se ha dejado de percibir ganancia debido a la inexistencia de stock, esto a derivado a la búsqueda de alternativas (producto usado en otros modelos de vehículos) o en incurrir en la compra de del producto a un proveedor minorista el cual es mas costoso, esta acción esta ligada también al costo por ordenar.
+
+Costo variable, se puede asociar a la utilización del vehículo en el abastecimiento de productos o un repuesto en especifico, ademas el administrador de la bodega es el responsable de esta tarea lo cual obliga a ausentarse de la bodega.
+
+\pagebreak
+Para resumir el problema en general, continuación se explicara mediante el diagrama de calidad de causa-efecto o espina de pescado (Ichikawa).
+
+El problema o efecto es el tiempo que demora la entrega de repuesto, esto debido a causas y subcausas explicado en las 6 m' (Kaoru Ishikawa), se puede observar que la causa con mas subcausas de medio, debido a que son mas visibles los problemas de este aspecto, por tanto es de esperar que también se intervenga la bodega por necesidades básicas de seguridad.
+
+Para abordar el problema del funcionamiento de la bodega, como objetivo se establecerá reducir el tiempo es la entrega de repuestos, ademas de proporcionar herramientas que permitan un correcto control y gestión de inventario de forma segura para el administrador, procurando no afectar el servicio de mantenimiento automotriz.
+
+## Objetivo general:
+Mejorar el tiempo de respuesta del área de almacén, implementando al proceso un software de gestión y control logístico.
+
+## Objetivos Específicos
+
+Identificar situación actual, estructurar (BPM, Business Process Management), realizar medición de tiempo de cada una de sus etapas
+
+Estructurar el sistema de gestión de almacén e intervenir bodega para ajustarla a los requerimientos del nuevo sistema.
+
+Construir el proceso en base de datos (back-end), testar funcionamiento, proceder con la interfaz de usuario (front-end).
+
+Medir tiempo del proceso utilizando el software y comparar con las mediciones del proceso sin la utilización del software.
+
+Evaluar resultados.
+
+## Metodología
+
+### Tipo de estudio.
+
+El tipo de investigación que se aplico fue **descriptivo**, porque describe la problemática actual que atraviesa la bodega del taller por la falta de un sistema de inventario, ademas de **exploratoria** porque permite participación, para posteriormente obtener los datos suficientes.
+
+### Método de investigación.
+
+Los métodos utilizados en la presente investigación son:
+
+**Metodología explicativa:** Se realizara una técnica explicativa que consiste en buscar el por qué de los hechos mediante el establecimiento de relaciones causa-efecto.
+
+**Metodología descriptiva:** Los datos son obtenidos directamente del proceso, la información es recopilada a través de la observación mientras se realizan las actividades de manera normal, ademas se realizará una entrevista al personal, acerca de la experiencia de la mejora de proceso.
+
+### Fuentes y técnicas para la recolección de información.
+
+#### Fuentes Primarias.
+Para la recolección de la información se usará la técnica de **observación directa**, la cual consiste en observar, y medir atentamente las actividades laborales que se realizan en la Bodega del Taller. Esto se realizará sin obstaculizar ni intervenir en el ambiente de trabajo para que la recolección de datos sea veraz. Después se realizará una entrevista al personal de la bodega, en donde se hará una serie de preguntas las cuales, con base a las respuestas del personal,
+serán tabuladas para detectar las áreas con problemas, para que sean analizadas y a su vez desarrollar una posible solución[^1].
+
+[^1]: texto de la nota al pie. En cualquier parte del documento, aquí lo haremos en esta nota al pie, podemos definir enlaces que [redireccione a páginas web](https://cran.r-project.org/).
+
+#### Fuentes Secundarias.
+Otro método para la recolección de datos, ya inventariado se revisara el comportamiento del stock, ubicación, clasificación, ademas se solicitara el acceso a datos de recepción y despacho, esto para generar información útil para el desarrollo de la presente propuesta.
+
+### Tratamiento de la información.
+La información resultante del proceso de investigación será procesada, analizada utilizando las distintas herramientas de  **TQM** (Total Quality Management; administración de la calidad total), para identificar y priorizar en las principales causas que originan el problema a tratar durante el desarrollo de la presente propuesta. A continuación, se mencionarán algunas herramientas que se utilizarán en la investigación:
+
+#### Análisis causa – efecto:
+Para identificar problemas de calidad y puntos de inspección el diagrama de
+causa y efecto, también es conocido como diagrama de Ishikawa o diagrama de espina de pescado. ilustra un diagrama de este tipo (observe que la forma es parecida al esqueleto de un pez)
+para un problema cotidiano de control de calidad. Cada “hueso” representa
+una fuente posible de error.(p205)
+
+#### Diagrama de Pareto:
+Las gráficas de Pareto son un método empleado para organizar errores, problemas o defectos, con el
+propósito de ayudar a enfocar los esfuerzos para encontrar la solución de problemas. Tienen como
+base el trabajo de Vilfredo Pareto, un economista del siglo XIX. Joseph M. Juran popularizó el trabajo
+de Pareto cuando sugirió que el 80% de los problemas de una empresa son resultado de sólo un
+20% de causas.(p206)
+
+### Diagrama de flujo
+Los diagramas de flujo presentan gráficamente un proceso o sistema utilizando cuadros y líneas
+conectadas. Son sencillos, pero excelentes cuando se busca explicar un proceso o se
+pretende que tenga sentido [@prod, pp. 207].
+
+#### Transformación digital:
+Es la aplicación de capacidades digitales a procesos, productos y activos para mejorar la eficiencia, mejorar el valor para el cliente, gestionar el riesgo y descubrir nuevas oportunidades de generación de ingresos[@Baz].
+
+## Alcance
+Este proyecto propone **mejorar el proceso de gestión de inventario de almacén**, hacer visibles los problemas actuales que de la gestión del almacén y los costos que acarrea, por lo que se tendrá acceso a registros de recepción y despacho durante el periodo 2020 2021, ademas del stock existente. Se intervendra el espacio físico de la bodega dependiendo de los requerimientos de la mejora.
+
+Con respecto a los trabajadores, se pretende motivar a los colaboradores adoptar métodos que involucren la calidad en el proceso, y que posterior al desarrollo de este proyecto, incentive a mejoras en otras áreas del servicio.
+
+## Estructura
+La estructura sería preliminarmente de la siguiente manera:
+
+Título.
+
+Dedicatoria.
+
+Agradecimientos.
+
+Índice de contenido.
+
+Índice de tablas y figuras.
+
+Resumen.
+
+Introducción.
+
+Objetivos.
+
+Objetivo general.
+
+Objetivos específicos.
+
+Marco teórico.
+
+Metodología.
+
+Resumen capitular.
+
+Desarrollo del trabajo.
+
+Conclusiones y/o recomendaciones.
+
+Bibliografía.
+
+Anexos.
+
+## Carta Gantt
+
+```{r echo=FALSE}
+#gantt1
+```
+
+\pagebreak
+# Nombre del(los) memorista(s)
+Nombre:     Felipe Kiefer
+
+Rut:        17.414.046-4
+
+Firma
+
+<br>
+
+## Profesor Guía
+
+Nombre:
+
+Rut:
+
+Firma
+
+<br>
+
+## Malla Curricular
+
+Malla año 2010
+
+\pagebreak
+# Referencias
+
+
+\end{document}

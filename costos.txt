@@ -1,0 +1,37 @@
+
+
+    %costo
+    %Para hacer visible el costo de una mala administración de inventario clasificaremos los costos en 4 tipo, estos son: mantenimiento, penalización,costo por ordenar o fijo, costo variable según [@Guerrero2017praxis], en la practica estos están asociados unos a otros por lo cual incurrir en un costo notoriamente adicionara otro tipo de costo (como el costo de penalización con el de orden que aparece mas adelante).
+
+    %\subsubsection{Costo de mantenimiento}
+    %de acuerdo a la imagen, se puede observar; espacio reducido y obstruido para desplazamiento, almacenamiento fuera de estándar (véase recomendación almacén), acumulación de polvo y dificultad para limpieza, dificultad para separar y clasificar espacio.
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{IMG-20210629-WA0017.jpg}
+      \caption{Ventas mensuales a publico del mercado de livianos y medianos}
+      \label{fig:via_aceite}
+      \end{figure}
+
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{IMG-20210629-WA0019.jpg}
+      \caption{Ventas mensuales a publico del mercado de livianos y medianos}
+      \label{fig:via_freno}
+      \end{figure}
+    \subsubsection{Costo de penalización}
+    considera las veces que se ha dejado de percibir ganancia debido a la inexistencia de stock, esto a derivado a la búsqueda de alternativas (producto usado en otros modelos de vehículos) o en incurrir en la compra de del producto a un proveedor minorista el cual es mas costoso.
+
+    \subsubsection{Costo ordenar}
+
+    \subsubsection{Costo variable}
+    Se asocia a la utilización del vehículo en el abastecimiento de productos o un repuesto en especifico, ademas el administrador de la bodega es el responsable de esta tarea lo cual obliga a ausentarse de la bodega.
+
+   
+    Para resumir el problema en general, continuación se explicara mediante el diagrama de calidad de causa-efecto o espina de pescado (Ichikawa).
+
+      \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{IMG-20210629-WA0019.jpg}
+      \caption{Ventas mensuales a publico del mercado de livianos y medianos}
+      \label{fig:via_freno}
+      \end{figure}

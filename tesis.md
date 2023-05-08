@@ -9,7 +9,6 @@ fontsize: 11pt
 geometry: "left=4cm,right=2cm,top=2cm,bottom=2.5cm"
 metadata:
   bibliography: biblio.bib
-
 ---
 
 # Introducción
@@ -230,7 +229,6 @@ El proceso mencionado anteriormente **carese de integridad en la información**[
 
 
 # Capitulo I: Definición del Problema
-
 
 ## Problema y Preguntas de Investigación
 

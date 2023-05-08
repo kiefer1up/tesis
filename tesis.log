@@ -1,0 +1,591 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.4.11)  26 APR 2023 22:52
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tesis.tex
+(./tesis.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count185
+\l__pdf_internal_box=\box47
+)
+(./tesis.aux)
+\openout1 = `tesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count186
+\scratchdimen=\dimen141
+\scratchbox=\box48
+\nofMPsegments=\count187
+\nofMParguments=\count188
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count189
+\MPscratchDim=\dimen142
+\MPnumerator=\count190
+\makeMPintoPDFobject=\count191
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+! Undefined control sequence.
+\kframe ...argin \hskip \columnwidth }\MakeFramed 
+                                                  {\advance \hsize -\width \...
+l.57 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+? 
+! Undefined control sequence.
+\kframe ... }\MakeFramed {\advance \hsize -\width 
+                                                  \@totalleftmargin \z@ \lin...
+l.57 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.57 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \global 
+l.57 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+? 
+! You can't use `\unskip' in vertical mode.
+\endkframe ->\par \unskip 
+                          \endMakeFramed \at@end@of@kframe 
+l.64 \end{kframe}
+                 
+? 
+! Undefined control sequence.
+\endkframe ->\par \unskip \endMakeFramed 
+                                         \at@end@of@kframe 
+l.64 \end{kframe}
+                 
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.68 #
+       Nombre del seminario
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.71 #
+      # Fundamentos
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.71 ##
+        Fundamentos
+? 
+
+LaTeX Warning: Reference `anac' on page 1 undefined on input line 72.
+
+
+Overfull \hbox (8.91733pt too wide) in paragraph at lines 76--77
+[]\OT1/cmr/m/n/10 ![Ventas men-su-ales a pub-lico del mer-cado de li-vianos y m
+e-di-anos[]](fig/anac.png) 
+ []
+
+
+Overfull \hbox (1.44504pt too wide) in paragraph at lines 82--83
+\OT1/cmr/m/n/10 rero2017praxis] de-fine in-ven-tario, como un con-junto de re-c
+ur-sos que se mantienen
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.101 knitr::include_
+                     graphics("/home/kiefer/R/tesis/imagenes/IMG-20210629-WA...
+
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 101.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 101.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.103 
+      
+? 
+
+Overfull \hbox (21.22296pt too wide) in paragraph at lines 100--103
+[]\OT1/cmr/m/n/10 ```r echo=FALSE, fig.cap="Pasillo aceites", out.width = '500p
+x',fig.align='center'
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.107 knitr::include_
+                     graphics("/home/kiefer/R/tesis/imagenes/IMG-20210629-WA...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.109 
+      
+? 
+
+Overfull \hbox (50.41747pt too wide) in paragraph at lines 106--109
+[]\OT1/cmr/m/n/10 ```r echo=FALSE, fig.cap="Pasillo disco de freno", out.width 
+= '500px',fig.align='center'
+ []
+
+[2]
+! You can't use `macro parameter character #' in horizontal mode.
+l.122 #
+       plot2
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.123 knitr::include_
+                     graphics("/home/kiefer/Rplot05.png")
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.125 
+      
+? 
+
+Overfull \hbox (12.04007pt too wide) in paragraph at lines 121--125
+[]\OT1/cmr/m/n/10 ```r echo=FALSE plot2 knitr::include$[]\OML/cmm/m/it/10 raphi
+cs\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 =home=kiefer=Rplot\OT1/cmr/m/n/10 05\OML/c
+mm/m/it/10 :png\OT1/cmr/m/n/10 ")\`$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.132 #
+       # Objetivo general:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.132 ##
+         Objetivo general:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.135 #
+       # Objetivos Específicos
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.135 ##
+         Objetivos Específicos
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.147 #
+       # Metodología
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.147 ##
+         Metodología
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.149 #
+       ## Tipo de estudio.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.149 ##
+        # Tipo de estudio.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.149 ###
+          Tipo de estudio.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.153 #
+       ## Método de investigación.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.153 ##
+        # Método de investigación.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.153 ###
+          Método de investigación.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.161 #
+       ## Fuentes y técnicas para la recolección de información.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.161 ##
+        # Fuentes y técnicas para la recolección de información.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.161 ###
+          Fuentes y técnicas para la recolección de información.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.163 #
+       ### Fuentes Primarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.163 ##
+        ## Fuentes Primarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.163 ###
+         # Fuentes Primarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.163 ####
+           Fuentes Primarias.
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.165 ...u vez desarrollar una posible solución[^
+                                                  1].
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.166 
+      
+? 
+[3]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.167 [^
+        1]: texto de la nota al pie. En cualquier parte del documento, aquí...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 167.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.167 .... En cualquier parte del documento, aquí
+                                                   lo haremos en esta nota a...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.167 .... En cualquier parte del documento, aquí
+                                                   lo haremos en esta nota a...
+
+? 
+
+LaTeX Warning: Command \i invalid in math mode on input line 167.
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.167 .... En cualquier parte del documento, aquí
+                                                   lo haremos en esta nota a...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 167.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.167 ...s definir enlaces que [redireccione a pá
+                                                  ginas web](https://cran.r-...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.167 ...s definir enlaces que [redireccione a pá
+                                                  ginas web](https://cran.r-...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.168 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.168 
+      
+? 
+Missing character: There is no � in font cmex10!
+Missing character: There is no � in font cmex10!
+
+Overfull \hbox (441.26566pt too wide) in paragraph at lines 167--168
+[]\OT1/cmr/m/n/10 [$[]] : \OML/cmm/m/it/10 textodelanotaalpie:Encualquierparted
+eldocumento; aqu[]$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.169 #
+       ### Fuentes Secundarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.169 ##
+        ## Fuentes Secundarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.169 ###
+         # Fuentes Secundarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.169 ####
+           Fuentes Secundarias.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.172 #
+       ## Tratamiento de la información.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.172 ##
+        # Tratamiento de la información.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.172 ###
+          Tratamiento de la información.
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.175 #
+       ### Análisis causa – efecto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.175 ##
+        ## Análisis causa – efecto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.175 ###
+         # Análisis causa – efecto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.175 ####
+           Análisis causa – efecto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.181 #
+       ### Diagrama de Pareto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.181 ##
+        ## Diagrama de Pareto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.181 ###
+         # Diagrama de Pareto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.181 ####
+           Diagrama de Pareto:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.188 #
+       ## Diagrama de flujo
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.188 ##
+        # Diagrama de flujo
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.188 ###
+          Diagrama de flujo
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.193 #
+       ### Transformación digital:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.193 ##
+        ## Transformación digital:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.193 ###
+         # Transformación digital:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.193 ####
+           Transformación digital:
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.196 #
+       # Alcance
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.196 ##
+         Alcance
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.201 #
+       # Estructura
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.201 ##
+         Estructura
+? 
+[4]
+! You can't use `macro parameter character #' in vertical mode.
+l.238 #
+       # Carta Gantt
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.238 ##
+         Carta Gantt
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.241 #
+       gantt1
+? 
+[5]
+! You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.245 #
+        Nombre del(los) memorista(s)
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.254 #
+       # Profesor Guía
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.254 ##
+         Profesor Guía
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.264 #
+       # Malla Curricular
+? 
+! You can't use `macro parameter character #' in vertical mode.
+l.264 ##
+         Malla Curricular
+? 
+[6]
+! You can't use `macro parameter character #' in vertical mode.
+<recently read> ##
+                  
+l.269 #
+        Referencias
+? 
+[7] (./tesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1721 strings out of 481252
+ 24295 string characters out of 5915888
+ 305668 words of memory out of 5000000
+ 18694 multiletter control sequences out of 15000+600000
+ 404511 words of font info for 31 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 68i,6n,74p,652b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmtt10.pfb>
+Output written on tesis.pdf (7 pages, 98464 bytes).
+PDF statistics:
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

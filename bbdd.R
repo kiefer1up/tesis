@@ -238,3 +238,18 @@ pie.q.tipo<-ggplot(df.q.tipo,aes(x="",y=total, fill=tipo))+
 
 
 ## tables docx
+
+
+## fig ante
+
+#ggplot(data = fdf,mapping= aes(mnth,sales,group=yr,color=yr))+
+#  geom_line()+
+#  geom_point()+
+#  theme_linedraw()+
+#  #ggtitle("Ventas mensuales a publico del mercado de livianos y medianos") +
+#  geom_text(aes(label= sales),vjust = "inward", hjust = "inward",show.legend = FALSE,size = 3)+
+#  labs(x = "Mes", y = "Numero de ventas",
+       #title = "Ventas mensuales a publico del mercado de livianos y medianos",
+#       caption = "ANAC, Mercado Automotor Mayo 2021",colour="Año")+
+#  theme(text=element_text(size=11,  family="calibri"))
+

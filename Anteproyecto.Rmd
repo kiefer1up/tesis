@@ -23,8 +23,9 @@ source('~/R/tesis/bbdd.R')
 ```
 
 \pagebreak
+
 # Nombre del seminario
-Propuesta de mejora del proceso de gestión y control de inventario, mediante la implementación de ERP  para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON.
+Propuesta de mejora del proceso de gestión y control de inventario, mediante la implementación de WMS  para el caso de área de almacén del taller de servicio mecánico integral y electricidad automotriz DUARCON.
 
 ## Fundamentos
 El inicio de la pandemia del COVID-19 a afectado la venta de automóvil, el primer semestre del año 2020 hubo una reducción en la compra de vehículos livianos y medianos. Para graficar el comportamiento a continuación, se presenta las ventas del mercado automotor realizado por Asociación Nacional Automotriz de Chile (ANAC).
